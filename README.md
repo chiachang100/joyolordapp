@@ -4,93 +4,205 @@
 “And do not be grieved, for the joy of the Lord is your strength.”(Nehemiah 8:10b)
 ```
 
-# Ionic Angular Conference Application
+---
+## References
+### Ionic Framework
+- [Ionic Framework](https://ionicframework.com/)
+- [One Codebase Any Platform Just React](https://ionicframework.com/docs/react)
+- [Ionic UI Components](https://ionicframework.com/docs/components)
+- [Your First Ionic App: React](https://ionicframework.com/docs/react/your-first-app)
+  - [Ionic React and Capacitor@GitHub](https://github.com/ionic-team/tutorial-photo-gallery-react.git)
+- [Configure Ionic in Dark Mode](https://ionicframework.com/docs/theming/dark-mode)
 
-This application is purely a kitchen-sink demo of the Ionic Framework and Angular.
+### React
+- [React website](https://react.dev/)
+   - [Legacy React website](https://legacy.reactjs.org/)
 
-**There is not an actual Ionic Conference at this time.** This project is just to show off Ionic components in a real-world application. Please go through the steps in [CONTRIBUTING](https://github.com/ionic-team/ionic-conference-app/blob/main/.github/CONTRIBUTING.md) before submitting an issue.
+### Progressive Web Apps (PWA)
+- [Progressive Web Apps in React](https://ionicframework.com/docs/react/pwa)
 
-## React and Vue Versions
+### Use Capacitor to Deploy to iOS and Android
+- [Capacitor: Deploying to iOS and Android](https://ionicframework.com/docs/vue/your-first-app/deploying-mobile)
 
-We've built versions of this Conference app in React and Vue for developers that would prefer to use one of those framework options:
+### Firebase
+- [Firebase CLI reference](https://firebase.google.com/docs/cli)
+- [Add Firebase to your Flutter app](https://firebase.google.com/docs/flutter/setup?platform=android#available-plugins)
+- Source: [Firebase CLI reference](https://firebase.google.com/docs/cli)
+- [Use the CLI with CI systems](https://firebase.google.com/docs/cli#cli-ci-systems)
+- Install Node.js using NVM (Node Version Manager))
+  - Linux/MacOS: [Node Version Manager](https://github.com/nvm-sh/nvm)
+  - Windows: [nvm-windows](https://github.com/coreybutler/nvm-windows).
+- [Install and Configure Local Emulator Suite](https://firebase.google.com/docs/emulator-suite/install_and_configure)
 
-[https://github.com/ionic-team/ionic-react-conference-app](https://github.com/ionic-team/ionic-react-conference-app)
+---
+## Download Required Tools
+- [LTS version of Node.js](https://nodejs.org/en/).
+- [Visual Studio Code](https://code.visualstudio.com/).
 
-[https://github.com/ionic-team/ionic-vue-conference-app](https://github.com/ionic-team/ionic-vue-conference-app)
+## Install Ionic Tooling
+- `npm install -g @ionic/cli native-run cordova-res`
+- Commonly used Ionic commands
+- `ionic -v`
+- `ionic --help`
+- `ionic start --help`
+- `ionic start joyolordapp blank --type=react --capacitor`
+- `ionic build`
+- `ionic serve`
 
-## Table of Contents
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [App Preview](#app-preview)
-- [Deploying](#deploying)
-  - [Progressive Web App](#progressive-web-app)
-  - [Android](#android)
-  - [iOS](#ios)
+## Create an App
+- Using the `blank` starter template and add `Capacitor` for native functionality.
+  - `ionic start joyolordapp blank --type=react --capacitor`
 
+## Install the necessary Capacitor plugins
+  - `cd joyolordapp`
+  - `npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem`
 
-## Getting Started
+## Progressive Web Apps (PWA) in React
+### PWA Elements
+  - `npm install @ionic/pwa-elements`
+  - `code .`
+  - Next, import `@ionic/pwa-elements` by editing `src/main.tsx`.
+```
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
-* [Download the installer](https://nodejs.org/) for Node LTS.
-* Install the ionic CLI globally: `npm install -g ionic`
-* Clone this repository: `git clone https://github.com/ionic-team/ionic-conference-app.git`.
-* Run `npm install` from the project root.
-* Run `ionic serve` in a terminal from the project root.
-* Profit. :tada:
+// Call the element loader before the render call
+defineCustomElements(window);
 
-_Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+  - That’s it! Now for the fun part - let’s see the app in action.
 
-## Contributing
+---
+### Running `vite-plugin-pwa`
+- Install the `vite-plugin-pwa` package:
+  - `npm install -D vite-plugin-pwa`
+- update your `vite.config.js` or `vite.config.ts` file
+```
+import { VitePWA } from 'vite-plugin-pwa';
 
-See [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/main/.github/CONTRIBUTING.md) :tada::+1:
+export default defineConfig({
+  plugins: [
+    vue(),
+    legacy(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        "name":"主的喜樂",
+        "short_name":"主的喜樂",
+        ...
+      }
+    })
+  ],
+});
+```
 
+## Dark Mode
+- Add `dark.system.css` in `src/App.tsx` to use the System setting:
+```
+/**
+ * Ionic Dark Palette
+ * -----------------------------------------------------
+ * For more information, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
 
-## App Preview
+// import '@ionic/react/css/palettes/dark.always.css';
+// import '@ionic/react/css/palettes/dark.class.css';
+import '@ionic/react/css/palettes/dark.system.css';
+```
 
-### [Menu](https://github.com/ionic-team/ionic-conference-app/blob/main/src/app/app.component.html)
+## Run the APP
+- `ionic serve`
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Menu](/resources/screenshots/android-menu.png) | ![iOS Menu](/resources/screenshots/ios-menu.png) |
+---
+## Deploying to Android
+- `ionic cap add android`
+- Modify `android/app/src/main/AndroidManifest.xml`
+  - Scroll to the `Permissions` section and ensure these entries are included:
+```
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+- `ionic build`
+- `ionic cap copy`
+- `ionic cap sync`
+- `ionic cap run android --livereload --external`
+  - `ionic cap run android --livereload-url=http://localhost:8100`
+- `ionic cap open android`
 
+---
+## Deploying to iOS
+- Complete a fresh build of the Ionic project (web default directory: `build`)
+- `ionic cap add ios`
+- `ionic build`
+- `ionic cap copy`
+- `ionic cap sync`
+- `ionic cap run ios --livereload --external`
+  - `ionic cap run ios --livereload-url=http://localhost:8100`
+- `ionic cap open ios`
+- Modify `Info.plist` and other parameters...
 
-### [Schedule Page](https://github.com/ionic-team/ionic-conference-app/blob/main/src/app/pages/schedule/schedule.html)
+---
+## Using Firebase
+- Install Firebase tools
+  - `npm install -g firebase-tools`
+- Log into Firebase
+  - `firebase login`
+  - `firebase login:ci`
+- Listing your Firebase projects
+  - `firebase projects:list`
+- Initialize a Firebase project
+  - Run the following command from within your app's directory:
+  - `firebase init`
+  - It will create `firebase.json` config file.
+- Use project aliases
+  - `firebase use`
+  - `firebase use <PROJECT_ID|ALIAS>`
+- Serve and test your Firebase project locally
+  - `ionic build --prod`
+  - `firebase serve --only hosting`
+- Test from other local devices
+  - `firebase serve --host 0.0.0.0  --only hosting` // accepts requests to any host
+- Deploy to a Firebase project
+  - `firebase deploy`
+  - OR `firebase deploy --only hosting`
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Schedule](/resources/screenshots/android-schedule.png) | ![iOS Schedule](/resources/screenshots/ios-schedule.png) |
+---
+### Firebase Local Emulator Suite
+- `firebase init emulators`
+  - `firebase.json`
+  - `.firebaserc`
 
-### [Speakers Page](https://github.com/ionic-team/ionic-conference-app/blob/main/src/app/pages/speaker-list/speaker-list.html)
+- Specifying Java options
+  - `export JAVA_TOOL_OPTIONS="-Xmx4g"`
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speakers](/resources/screenshots/android-speakers.png) | ![iOS Speakers](/resources/screenshots/ios-speakers.png) |
+- Start up emulators
+  - `firebase emulators:start --import c:\ws\fb_emulators --export-on-exit`
+  - `firebase emulators:exec scriptpath`
 
-### [Speaker Detail Page](https://github.com/ionic-team/ionic-conference-app/blob/main/src/app/pages/speaker-detail/speaker-detail.html)
+```
+=== Project Setup
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speaker Detail](/resources/screenshots/android-speaker-detail.png) | ![iOS Speaker Detail](/resources/screenshots/ios-speaker-detail.png) |
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
 
-### [About Page](https://github.com/ionic-team/ionic-conference-app/blob/main/src/app/pages/about/about.html)
+i  Using project xlcdapp (xlcdapp)
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android About](/resources/screenshots/android-about.png) | ![iOS About](/resources/screenshots/ios-about.png) |
-
-
-## Deploying
-
-### Progressive Web App
-
-1. Run `ionic build --prod`
-2. Push the `www` folder to your hosting service
-
-### Android
-
-1. Run `ionic cap run android --prod`
-
-### iOS
-
-1. Run `ionic cap run ios --prod`
+=== Emulators Setup
+=== Emulators Setup
+? Which Firebase emulators do you want to set up? Press Space to select emulators, then Enter to confirm your choices.
+Authentication Emulator, Firestore Emulator, Database Emulator, Hosting Emulator
+i  Port for auth already configured: 9099
+i  Port for firestore already configured: 8080
+i  Port for database already configured: 9000
+i  Port for hosting already configured: 5000
+i  Emulator UI already enabled with port: (automatic)
+? Would you like to download the emulators now? Yes
+```
 
 ---
