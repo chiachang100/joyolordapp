@@ -1,89 +1,35 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
 
-# .gitignore for Firebase projects
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
+
+*.log
+log.txt
+npm-debug.log*
+
+# Firebase
 .firebase/
 
-# .gitignore for React projects
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-yarn.lock
-
-# Logs
-logs/
-*.log
-
-# macOS
-.DS_Store
-
-# Build artifacts
-build/
-
-# .gitignore for React Native projects
-
-# Android/IntelliJ
-android/build/
-android/app/build/
-android/.gradle/
-local.properties
-
-# Xcode
-ios/build/
-ios/*.pbxuser
-ios/*.mode1v3
-ios/*.mode2v3
-ios/*.perspectivev3
-ios/xcuserdata/
-ios/*.xccheckout
-ios/*.moved-aside
-ios/DerivedData/
-ios/*.hmap
-ios/*.ipa
-ios/*.xcuserstate
-ios/project.xcworkspace/
-
-# Fastlane (optional)
-*/fastlane/report.xml
-*/fastlane/Preview.html
-*/fastlane/screenshots
-
-# Bundle artifact (optional)
-*.jsbundle
-
-# Dependency directories
-.pnp
-.pnp.js
-
-# Distribution directories
-dist/
-
-# Typescript v1 declaration files
-typings/
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# testing
-/coverage
-
-# misc
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-/.nx
-/.nx/cache
+/.idea
+/.ionic
+/.sass-cache
+/.sourcemaps
+/.versions
 /.vscode/*
 !/.vscode/extensions.json
-.idea
+/coverage
+/dist
+/node_modules
+/platforms
+/plugins
+/www

@@ -1,21 +1,27 @@
 import legacy from '@vitejs/plugin-legacy'
-import react from '@vitejs/plugin-react'
+import vue from '@vitejs/plugin-vue'
+import path from 'path'
 import { defineConfig } from 'vite'
+
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    vue(),
     legacy(),
     VitePWA({
       registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}']
-      },
       manifest: {
-        "short_name": "主的喜樂",
-        "name": "主的喜樂",
+        "name":"主的喜樂",
+        "short_name":"主的喜樂",
+        "start_url":"/",
+        "display":"standalone",
+        "lang":"en",
+        "scope":"/",
+        "theme_color": "#ffffff",
+        "background_color": "#eeeeee",
+        "description": "主的喜樂-joyolordapp",
         "icons": [
           {
             "src": "assets/icons/icon-48.webp",
@@ -59,19 +65,17 @@ export default defineConfig({
             "sizes": "512x512",
             "purpose": "any maskable"
           }
-        ],
-        "start_url": "/",
-        "scope":"/",
-        "display": "standalone",
-        "theme_color": "#ffffff",
-        "background_color": "#eeeeee",
-        "description": "主的喜樂-joyolordapp"
+        ]
       }
     })
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   test: {
     globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/setupTests.ts',
+    environment: 'jsdom'
   }
 })
