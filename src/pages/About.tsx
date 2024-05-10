@@ -42,16 +42,31 @@ const About: React.FC = () => {
 
         <IonCard>
           <IonImg
-            src="assets/images/xlcd/xlcdapp_qrcode.png"
-            alt="二維碼(QR Code)">
+            src="assets/images/joyolord/joyolordapp_qrcode.png"
+            alt="joyolordapp(「主的喜樂」App二維碼(QR Code)">
           </IonImg>
           <IonCardHeader>
-            <IonCardTitle>二維碼(QR Code)</IonCardTitle>
-            <IonCardSubtitle>二維碼(QR Code)'</IonCardSubtitle>
+            <IonCardTitle>「主的喜樂」App二維碼</IonCardTitle>
+            <IonCardSubtitle>「主的喜樂」App (joyolordapp) 二維碼(QR Code)</IonCardSubtitle>
           </IonCardHeader>
 
           <IonCardContent>
-            請掃描二維碼(QR Code)便於使用xlcdapp(「笑裡藏道」App)。
+            請掃描「主的喜樂」App (joyolordapp) 二維碼(QR Code)便於使用「主的喜樂」App。
+          </IonCardContent>
+        </IonCard>
+
+        <IonCard>
+          <IonImg
+            src="assets/images/xlcd/xlcdapp_qrcode.png"
+            alt="xlcdapp(「笑裡藏道」App二維碼(QR Code)">
+          </IonImg>
+          <IonCardHeader>
+            <IonCardTitle>「笑裡藏道」App二維碼</IonCardTitle>
+            <IonCardSubtitle>「笑裡藏道」App (xlcdapp) 二維碼(QR Code)</IonCardSubtitle>
+          </IonCardHeader>
+
+          <IonCardContent>
+            請掃描「笑裡藏道」App (xlcdapp) 二維碼(QR Code)便於使用「笑裡藏道」App。
           </IonCardContent>
         </IonCard>
 
