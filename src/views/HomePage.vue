@@ -1,13 +1,11 @@
 <template>
   <ion-page>
-    <ion-header>
+    <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>聖經經文</ion-title>
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
+        <ion-title>Inbox</ion-title>
       </ion-toolbar>
     </ion-header>
+
     <ion-content :fullscreen="true">
       <ion-refresher slot="fixed" @ionRefresh="refresh($event)">
         <ion-refresher-content></ion-refresher-content>
@@ -15,7 +13,7 @@
 
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">聖經經文</ion-title>
+          <ion-title size="large">Inbox</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -28,16 +26,14 @@
 
 <script setup lang="ts">
 import {
-  IonButtons,
+  IonContent,
   IonHeader,
   IonList,
-  IonMenuButton,
+  IonPage,
   IonRefresher,
   IonRefresherContent,
-  IonPage,
-  IonToolbar,
   IonTitle,
-  IonContent,
+  IonToolbar,
 } from '@ionic/vue';
 import ScriptureListItem from '@/components/ScriptureListItem.vue';
 import { getScriptures, Scripture } from '@/data/scriptures';
