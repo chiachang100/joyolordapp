@@ -3,7 +3,7 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>
-          <ion-icon aria-hidden="true" :icon="bookOutline" color="primary"></ion-icon>
+          <!--<ion-icon aria-hidden="true" :icon="bookOutline" color="primary"></ion-icon>-->
           {{ scripture.title }}
           <span class="likes">
             <ion-note>{{ scripture.likes }}</ion-note>
@@ -50,34 +50,44 @@
       </ion-item>
 
       <!-- YouTube Section -->
+
+      <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
+
+      <!-- youtube iframe with progressive enhancement (extra queries after the url to optimize the embed) -->
+      <!--src="https://www.youtube.com/embed/Mez7DnMOlgc?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"-->
+<!--
       <ion-card>
         <ion-card-header>
           <ion-card-title>▶️曾興才牧師@YouTube</ion-card-title>
           <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
         </ion-card-header>
-
-        <ion-card-content>  
-          <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
-          <!-- youtube iframe with progressive enhancement (extra queries after the url to optimize the embed) -->
-          <!--src="https://www.youtube.com/embed/Mez7DnMOlgc?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"-->
+        <ion-card-content>
           <vue-plyr>
             <div class="plyr__video-embed">
               <iframe
                 :src=videoSrc
                 allowfullscreen
                 allowtransparency
-                allow="autoplay"
               ></iframe>
             </div>
           </vue-plyr>
+        </ion-card-content>
+      </ion-card>
+-->
 
-          <!-- youtube div element -->
-          <!--
+      <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
+      <!-- youtube div element (None progressive enhancement )-->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>▶️曾興才牧師@YouTube</ion-card-title>
+          <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
           <vue-plyr>
             <div data-plyr-provider="youtube" :data-plyr-embed-id=scripture.videoId></div>
           </vue-plyr>
-          -->
-      </ion-card-content>
+        </ion-card-content>
       </ion-card>
 
     </ion-content>
@@ -92,7 +102,7 @@ import {
   IonContent,
   IonHeader,
   IonImg,
-  IonIcon,
+  //IonIcon,
   IonLabel,
   IonNote,
   IonPage,
@@ -100,6 +110,7 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/vue';
+/* 
 import {
   bookOutline,
   happyOutline,
@@ -108,7 +119,8 @@ import {
   starSharp,
   logoYoutube,
 } from 'ionicons/icons';
-import { getScripture } from '../data/scriptures';
+
+ */import { getScripture } from '../data/scriptures';
 
 const getBackButtonText = () => {
   const win = window as any;
