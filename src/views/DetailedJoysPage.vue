@@ -53,28 +53,6 @@
 
       <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
 
-      <!-- youtube iframe with progressive enhancement (extra queries after the url to optimize the embed) -->
-      <!--src="https://www.youtube.com/embed/Mez7DnMOlgc?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"-->
-<!--
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>▶️曾興才牧師@YouTube</ion-card-title>
-          <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          <vue-plyr>
-            <div class="plyr__video-embed">
-              <iframe
-                :src=videoSrc
-                allowfullscreen
-                allowtransparency
-              ></iframe>
-            </div>
-          </vue-plyr>
-        </ion-card-content>
-      </ion-card>
--->
-
       <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
       <!-- youtube div element (None progressive enhancement )-->
       <ion-card>
@@ -86,6 +64,29 @@
         <ion-card-content>
           <vue-plyr>
             <div data-plyr-provider="youtube" :data-plyr-embed-id=scripture.videoId></div>
+          </vue-plyr>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- youtube iframe with progressive enhancement (extra queries after the url to optimize the embed) -->
+      <!--src="https://www.youtube.com/embed/Mez7DnMOlgc?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"-->
+<!--
+-->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>▶️曾興才牧師@YouTube (PE)</ion-card-title>
+          <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <vue-plyr>
+            <div class="plyr__video-embed">
+              <iframe
+                :src=videoSrc
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </vue-plyr>
         </ion-card-content>
       </ion-card>
