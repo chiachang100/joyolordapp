@@ -1,17 +1,17 @@
 <template>
-  <ion-item v-if="scripture" :routerLink="'/scripture/' + scripture.id" :detail="false" class="list-item">
+  <ion-item v-if="scripture" :routerLink="'/scripture/' + scripture.articleId" :detail="false" class="list-item">
     <div slot="start" :class="!scripture.read ? 'dot dot-unread' : 'dot'"></div>
     <ion-label class="ion-text-wrap">
       <h2>
-        {{ scripture.bibleBookName }}
-        <span class="like">
-          <ion-note>{{ scripture.like }}</ion-note>
+        {{ scripture.scriptureName }} {{ scripture.scriptureChapter }}
+        <span class="likes">
+          <ion-note>{{ scripture.likes }}</ion-note>
           <ion-icon aria-hidden="true" :icon="chevronForward" size="small" v-if="isIos()"></ion-icon>
         </span>
       </h2>
-      <h3>{{ scripture.bibleVerseChapter }}</h3>
+      <h3>{{ scripture.title }}</h3>
       <p>
-        {{ scripture.bibleScriptureVerse }}
+        {{ scripture.scriptureVerse }}
       </p>
     </ion-label>
   </ion-item>
@@ -65,7 +65,7 @@ const isIos = () => {
   width: 95%;
 }
 
-.list-item .like {
+.list-item .likes {
   align-items: center;
   display: flex;
 }

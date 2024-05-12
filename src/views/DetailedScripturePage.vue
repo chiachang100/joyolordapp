@@ -2,29 +2,37 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
+        <ion-title>聖經經文細節</ion-title>
         <ion-buttons slot="start">
-          <ion-back-button :text="getBackButtonText()" default-href="/"></ion-back-button>
+          <!--<ion-back-button :text="getBackButtonText()" default-href="/"></ion-back-button>-->
+          <ion-menu-button></ion-menu-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true" v-if="scripture">
+      <ion-header collapse="condense">
+        <ion-toolbar>
+          <ion-title size="large">聖經經文細節</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
       <ion-item>
         <ion-icon aria-hidden="true" :icon="bookOutline" color="primary"></ion-icon>
         <ion-label class="ion-text-wrap">
           <h2>
-            {{ scripture.bibleBookName }} ({{ scripture.bibleVerseChapter }})
-            <span class="like">
-              <ion-note>{{ scripture.like }}</ion-note>
+            {{ scripture.title }}
+            <span class="likes">
+              <ion-note>{{ scripture.likes }}</ion-note>
             </span>
           </h2>
         </ion-label>
       </ion-item>
 
       <div class="ion-padding">
-        <h1>{{ scripture.bibleBookName }} ({{ scripture.bibleVerseChapter }})</h1>
+        <h1>{{ scripture.scriptureName }} {{ scripture.scriptureChapter }}</h1>
         <p>
-          {{ scripture.bibleScriptureVerse }}
+          {{ scripture.scriptureVerse }}
         </p>
       </div>
     </ion-content>
@@ -51,7 +59,7 @@ import { getScripture } from '../data/scriptures';
 const getBackButtonText = () => {
   const win = window as any;
   const mode = win && win.Ionic && win.Ionic.mode;
-  return mode === 'ios' ? 'Inbox' : '';
+  return mode === 'ios' ? '聖經經文' : '';
 };
 
 const route = useRoute();
@@ -84,7 +92,7 @@ ion-item h2 {
   justify-content: space-between;
 }
 
-ion-item .like {
+ion-item .likes {
   align-items: center;
   display: flex;
 }

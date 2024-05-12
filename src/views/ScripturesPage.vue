@@ -12,7 +12,6 @@
       <ion-refresher slot="fixed" @ionRefresh="refresh($event)">
         <ion-refresher-content></ion-refresher-content>
       </ion-refresher>
-
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">聖經經文</ion-title>
@@ -20,7 +19,7 @@
       </ion-header>
 
       <ion-list>
-        <ScriptureListItem v-for="scripture in scriptures" :key="scripture.id" :scripture="scripture" />
+        <ScriptureListItem v-for="scripture in scriptures" :key="scripture.articleId" :scripture="scripture" />
       </ion-list>
     </ion-content>
   </ion-page>
@@ -32,9 +31,9 @@ import {
   IonHeader,
   IonList,
   IonMenuButton,
+  IonPage,
   IonRefresher,
   IonRefresherContent,
-  IonPage,
   IonToolbar,
   IonTitle,
   IonContent,

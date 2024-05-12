@@ -17,16 +17,31 @@
 
       <ion-card>
         <ion-img
-          src="assets/images/xlcd/xlcdapp_qrcode.png"
-          alt="二維碼(QR Code)">
+          src="assets/images/joyolord/joyolordapp_qrcode.png"
+          alt="joyolordapp QR Code">
         </ion-img>
         <ion-card-header>
-          <ion-card-title>二維碼(QR Code)</ion-card-title>
-          <ion-card-subtitle>二維碼(QR Code)'</ion-card-subtitle>
+          <ion-card-title>joyolordapp QR Code</ion-card-title>
+          <ion-card-subtitle>「主的喜樂」App 二維碼 (joyolordapp QR Code)</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
-          請掃描二維碼(QR Code)便於使用xlcdapp(「笑裡藏道」App)。
+          請掃描二維碼(QR Code)便於使用 joyolordapp (「笑裡藏道」App)。
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-img
+          src="assets/images/xlcd/xlcdapp_qrcode.png"
+          alt="xlcdapp QR Code">
+        </ion-img>
+        <ion-card-header>
+          <ion-card-title>xlcdapp QR Code</ion-card-title>
+          <ion-card-subtitle>「笑裡藏道」App 二維碼 (xlcdapp QR Code)</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          請掃描二維碼(QR Code)便於使用 xlcdapp (「笑裡藏道」App)。
         </ion-card-content>
       </ion-card>
 
