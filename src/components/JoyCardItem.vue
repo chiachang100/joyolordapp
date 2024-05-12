@@ -1,15 +1,13 @@
 <template>
   <ion-card v-if="scripture" :routerLink="'/joys/joy/' + scripture.articleId" :detail="false">
-    <ion-img
-      :src=scripture.photoUrl :alt=scripture.title>
-    </ion-img>
+    <ion-img :src=scripture.photoUrl :alt=scripture.title />
     <ion-card-header>
       <ion-card-title>{{ scripture.title }}</ion-card-title>
       <ion-card-subtitle>✞{{ scripture.scriptureVerse }} ({{ scripture.scriptureName }} {{ scripture.scriptureChapter }})</ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
-      {{ scripture.laugh }}...
+      🌞{{ scripture.laugh.substr(0, 20) }}...👉
     </ion-card-content>
 
 <!--

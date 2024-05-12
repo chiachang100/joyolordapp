@@ -34,6 +34,12 @@
   - Windows: [nvm-windows](https://github.com/coreybutler/nvm-windows).
 - [Install and Configure Local Emulator Suite](https://firebase.google.com/docs/emulator-suite/install_and_configure)
 
+### Additional Tools
+- [Ionic Icons](https://ionic.io/ionicons/)
+- [Emoji](https://emojidb.org/more-emojis?utm_source=user_search)
+- [vue-plyr: YouTube Video Player](https://github.com/redxtech/vue-plyr)
+  - [VueYoutube](https://github.com/vue-youtube/vue-youtube). Tried but it didn't work for me.
+
 ---
 ## Download Required Tools
 - [LTS version of Node.js](https://nodejs.org/en/).

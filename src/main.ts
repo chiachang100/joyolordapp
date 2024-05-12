@@ -34,13 +34,21 @@ import '@ionic/vue/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 
+// vue-plyr
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css'
+
+
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 defineCustomElements(window);
 
 // Above the createApp() line
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(VuePlyr, {
+    plyr: {}
+  });
 
 router.isReady().then(() => {
   app.mount('#app');

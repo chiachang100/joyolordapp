@@ -2,10 +2,10 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>聖經經文細節</ion-title>
+        <ion-title>聖經經文全文</ion-title>
         <ion-buttons slot="start">
-          <!--<ion-back-button :text="getBackButtonText()" default-href="/"></ion-back-button>-->
-          <ion-menu-button></ion-menu-button>
+          <ion-back-button :text="getBackButtonText()" default-href="/"></ion-back-button>
+          <!--<ion-menu-button></ion-menu-button>-->
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
