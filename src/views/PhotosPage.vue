@@ -2,7 +2,12 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>相片存檔</ion-title>
+        <ion-title>
+          <ion-item>
+            <app-logo />
+            <ion-label>相片存檔</ion-label>
+          </ion-item>
+        </ion-title>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -43,28 +48,28 @@ import {
   IonRow,
   IonTitle,
   IonToolbar,
-} from '@ionic/vue';
-import { camera, trash, close } from 'ionicons/icons';
-import { usePhotoGallery, UserPhoto } from '@/composables/usePhotoGallery';
+} from "@ionic/vue";
+import { camera, trash, close } from "ionicons/icons";
+import { usePhotoGallery, UserPhoto } from "../composables/usePhotoGallery";
 
 const { photos, takePhoto, deletePhoto } = usePhotoGallery();
 
 const showActionSheet = async (photo: UserPhoto) => {
   const actionSheet = await actionSheetController.create({
-    header: 'Photos',
+    header: "Photos",
     buttons: [
       {
-        text: 'Delete',
-        role: 'destructive',
+        text: "Delete",
+        role: "destructive",
         icon: trash,
         handler: () => {
           deletePhoto(photo);
         },
       },
       {
-        text: 'Cancel',
+        text: "Cancel",
         icon: close,
-        role: 'cancel',
+        role: "cancel",
         handler: () => {
           // Nothing to do, action sheet is automatically closed
         },

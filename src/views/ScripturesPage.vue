@@ -2,7 +2,12 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>聖經經文</ion-title>
+        <ion-title>
+          <ion-item>
+            <app-logo />
+            <ion-label>聖經經文</ion-label>
+          </ion-item>
+        </ion-title>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -19,7 +24,12 @@
       </ion-header>
 
       <ion-list>
-        <ScriptureListItem v-for="scripture in scriptures" :key="scripture.articleId" :scripture="scripture" />
+        <ScriptureListItem
+          v-for="(scripture, index) in scriptures"
+          :key="scripture.articleId"
+          :scripture="scripture"
+          :index="index"
+        />
       </ion-list>
     </ion-content>
   </ion-page>
@@ -37,10 +47,10 @@ import {
   IonToolbar,
   IonTitle,
   IonContent,
-} from '@ionic/vue';
-import ScriptureListItem from '@/components/ScriptureListItem.vue';
-import { getScriptures, Scripture } from '@/data/scriptures';
-import { ref } from 'vue';
+} from "@ionic/vue";
+import ScriptureListItem from "@/components/ScriptureListItem.vue";
+import { getScriptures, Scripture } from "../data/scriptures";
+import { ref } from "vue";
 
 const scriptures = ref<Scripture[]>(getScriptures());
 

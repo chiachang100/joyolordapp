@@ -2,7 +2,12 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>聖經經文全文</ion-title>
+        <ion-title>
+          <ion-item>
+            <app-logo />
+            <ion-label>聖經經文全文</ion-label>
+          </ion-item>
+        </ion-title>
         <ion-buttons slot="start">
           <ion-back-button :text="getBackButtonText()" default-href="/"></ion-back-button>
           <!--<ion-menu-button></ion-menu-button>-->
@@ -17,49 +22,42 @@
         </ion-toolbar>
       </ion-header>
 
-      <ion-item>
-        <ion-icon aria-hidden="true" :icon="bookOutline" color="primary"></ion-icon>
-        <ion-label class="ion-text-wrap">
-          <h2>
-            {{ scripture.title }}
-            <span class="likes">
-              <ion-note>{{ scripture.likes }}</ion-note>
-            </span>
-          </h2>
-        </ion-label>
-      </ion-item>
-
-      <div class="ion-padding">
-        <h1>{{ scripture.scriptureName }} {{ scripture.scriptureChapter }}</h1>
-        <p>
-          {{ scripture.scriptureVerse }}
-        </p>
-      </div>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>
+            <h2>{{ scripture.scriptureName }} {{ scripture.scriptureChapter }}</h2>
+          </ion-label>
+        </ion-list-header>
+        <ion-item>
+          <app-avatar-logo />
+          <ion-label>
+            {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
+            {{ scripture.scriptureChapter }})
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
+import { useRoute } from "vue-router";
 import {
   IonBackButton,
   IonButtons,
   IonContent,
   IonHeader,
-  IonIcon,
   IonItem,
   IonLabel,
-  IonNote,
   IonPage,
   IonToolbar,
-} from '@ionic/vue';
-import { bookOutline, listCircleOutline } from 'ionicons/icons';
-import { getScripture } from '../data/scriptures';
+} from "@ionic/vue";
+import { getScripture } from "../data/scriptures";
 
 const getBackButtonText = () => {
   const win = window as any;
   const mode = win && win.Ionic && win.Ionic.mode;
-  return mode === 'ios' ? '聖經經文' : '';
+  return mode === "ios" ? "聖經經文" : "";
 };
 
 const route = useRoute();
@@ -79,7 +77,7 @@ ion-label {
 
 ion-item h2 {
   font-weight: 600;
-  
+
   /**
    * With larger font scales
    * the date/time should wrap to the next

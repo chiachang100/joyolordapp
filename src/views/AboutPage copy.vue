@@ -20,65 +20,40 @@
         </ion-toolbar>
       </ion-header>
 
-      <!-- 「主的喜樂」 joyolordapp QR Code Section -->
       <ion-card>
-        <ion-grid
-          ><ion-row
-            ><ion-col size="4" offset="4">
-              <ion-img
-                src="assets/images/joyolord/joyolordapp_qrcode.png"
-                alt="joyolordapp QR Code"
-              >
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
+        <ion-img
+          src="assets/images/joyolord/joyolordapp_qrcode.png"
+          alt="joyolordapp QR Code"
+        >
+        </ion-img>
         <ion-card-header>
-          <ion-card-title>「主的喜樂」App 二維碼</ion-card-title>
+          <ion-card-title>joyolordapp QR Code</ion-card-title>
           <ion-card-subtitle
             >「主的喜樂」App 二維碼 (joyolordapp QR Code)</ion-card-subtitle
           >
         </ion-card-header>
 
-        <ion-card-content style="padding-top: 0; white-space: pre-wrap">
-          請掃描二維碼便於使用「主的喜樂」App。 (v{{ appVer }})
+        <ion-card-content>
+          請掃描二維碼(QR Code)便於使用 joyolordapp (「笑裡藏道」App)。
         </ion-card-content>
-
-        <ion-button fill="outline" expand="block" href="https://joyolordapp.web.app/"
-          >「主的喜樂」App (joyolordapp)</ion-button
-        >
       </ion-card>
 
-      <!-- 「笑裡藏道」 xlcdapp QR Code Section -->
       <ion-card>
-        <ion-grid
-          ><ion-row
-            ><ion-col size="4" offset="4">
-              <ion-img src="assets/images/xlcd/xlcdapp_qrcode.png" alt="xlcdapp QR Code">
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
+        <ion-img src="assets/images/xlcd/xlcdapp_qrcode.png" alt="xlcdapp QR Code">
+        </ion-img>
         <ion-card-header>
-          <ion-card-title>「笑裡藏道」App 二維碼</ion-card-title>
+          <ion-card-title>xlcdapp QR Code</ion-card-title>
           <ion-card-subtitle>「笑裡藏道」App 二維碼 (xlcdapp QR Code)</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content style="padding-top: 0; white-space: pre-wrap">
-          請掃描二維碼便於使用「笑裡藏道」App。
+        <ion-card-content>
+          請掃描二維碼(QR Code)便於使用 xlcdapp (「笑裡藏道」App)。
         </ion-card-content>
-        <ion-button fill="outline" expand="block" href="https://xlcdapp.web.app/"
-          >「笑裡藏道」App (xlcdapp)</ion-button
-        >
       </ion-card>
 
-      <!-- 「笑裡藏道」書籍介紹 Section -->
       <ion-card>
-        <ion-grid
-          ><ion-row
-            ><ion-col size="8" offset="2">
-              <ion-img
-                src="assets/images/xlcd/xlcd_book_photo.png"
-                alt="「笑裡藏道」書籍"
-              >
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
+        <ion-img src="assets/images/xlcd/xlcd_book_photo.png" alt="「笑裡藏道」書籍">
+        </ion-img>
         <ion-card-header>
           <ion-card-title>「笑裡藏道」書籍介紹</ion-card-title>
           <ion-card-subtitle
@@ -90,40 +65,14 @@
           「笑裡藏道」是曾興才牧師首本著作，收集了五十二篇他這些年於矽谷生命河靈糧堂主日證道中分享的精彩笑話及其中引申的經文應用。
           喜樂的心乃是良藥，這本讓人開懷大笑的好書，能使大家從幽默文字中領悟屬靈的道理，也為您打開與人分享真理的機會之門！
         </ion-card-content>
-
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-button
-                fill="outline"
-                expand="block"
-                href="https://graceph.com/product/01i072/"
-                >天恩出版社</ion-button
-              >
-            </ion-col>
-            <ion-col>
-              <ion-button
-                fill="outline"
-                expand="block"
-                href="https://www.rolcc.net/opencart/index.php?route=product/product&product_id=358"
-                >靈糧書房</ion-button
-              >
-            </ion-col>
-          </ion-row>
-        </ion-grid>
       </ion-card>
 
-      <!-- 「笑裡藏道」書籍作者 Section -->
       <ion-card>
-        <ion-grid
-          ><ion-row
-            ><ion-col size="8" offset="2">
-              <ion-img
-                src="assets/images/xlcd/pastor_cheng_photo.png"
-                alt="曾興才牧師: 「笑裡藏道」書籍作者"
-              >
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
+        <ion-img
+          src="assets/images/xlcd/pastor_cheng_photo.png"
+          alt="曾興才牧師: 「笑裡藏道」書籍作者"
+        >
+        </ion-img>
         <ion-card-header>
           <ion-card-title>曾興才牧師: 「笑裡藏道」書籍作者</ion-card-title>
           <ion-card-subtitle>曾興才牧師: 「笑裡藏道」書籍作者'</ion-card-subtitle>
@@ -136,26 +85,14 @@
           2001年全家返美，加入「矽谷生命河靈糧堂」事奉團隊，目前負責牧養處事工。 與師母
           Connie 育有兩個女兒。
         </ion-card-content>
-
-        <ion-button
-          fill="outline"
-          expand="block"
-          href="https://www.youtube.com/results?search_query=%22%E6%9B%BE%E8%88%88%E6%89%8D%E7%89%A7%E5%B8%AB%22"
-          >曾興才牧師講道視頻</ion-button
-        >
       </ion-card>
 
-      <!-- 讚揚「笑裡藏道」書籍 Section -->
       <ion-card>
-        <ion-grid
-          ><ion-row
-            ><ion-col size="8" offset="2">
-              <ion-img
-                src="assets/images/xlcd/xlcdapp_photo_default.png"
-                alt="讚揚「笑裡藏道」書籍"
-              >
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
+        <ion-img
+          src="assets/images/xlcd/xlcdapp_photo_default.png"
+          alt="讚揚「笑裡藏道」書籍"
+        >
+        </ion-img>
         <ion-card-header>
           <ion-card-title>讚揚「笑裡藏道」書籍</ion-card-title>
           <ion-card-subtitle
@@ -199,70 +136,33 @@
             </ion-item>
           </ion-list>
         </ion-card-content>
-
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-button
-                fill="outline"
-                expand="block"
-                href="https://graceph.com/product/01i072/"
-                >天恩出版社</ion-button
-              >
-            </ion-col>
-            <ion-col>
-              <ion-button
-                fill="outline"
-                expand="block"
-                href="https://www.rolcc.net/opencart/index.php?route=product/product&product_id=358"
-                >靈糧書房</ion-button
-              >
-            </ion-col>
-          </ion-row>
-        </ion-grid>
       </ion-card>
 
-      <!-- 軟件(App)設計者 Section -->
       <ion-card>
-        <ion-grid
-          ><ion-row
-            ><ion-col size="8" offset="2">
-              <ion-img
-                src="assets/images/xlcd/joy_pray_thanks.png"
-                alt="張嘉: 「笑裡藏道」App開發者"
-              >
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
+        <ion-img
+          src="assets/images/xlcd/joy_pray_thanks.png"
+          alt="張嘉: 「笑裡藏道」App開發者"
+        >
+        </ion-img>
         <ion-card-header>
-          <ion-card-title>張嘉: 軟件(App)設計者</ion-card-title>
-          <ion-card-subtitle
-            >張嘉: 「主的喜樂」和「笑裡藏道」軟件(App)設計者'</ion-card-subtitle
-          >
+          <ion-card-title>張嘉: 「笑裡藏道」App開發者</ion-card-title>
+          <ion-card-subtitle>張嘉: 「笑裡藏道」App開發者'</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
           感謝主!
-          如同聖經上的應許:「一生一世有主的恩惠、慈愛隨著我!」出生於台灣，大學畢業，服完兵役，來美留學，完成電腦碩士及兼職完成企管碩士。
+          我一生一世如同聖經上應許:「有主的恩惠、慈愛隨著我!」出生於台灣，大學畢業，服完兵役，來美留學，完成電腦碩士及兼職完成企管碩士。
           1981年起即在矽谷電腦公司，從事多種電腦軟體工程開發。2023年從Microsoft退休。
           業餘時領受主的呼召及恩典，在教會裡擔任過多種事奉，傳主福音，跟隨耶穌，榮神益人。
-          與妻子Judy目前繼續領受主賜兒孫滿堂的恩典。
+          與妻子Judy目前領受主賜兒孫滿堂。
           祈求藉著「笑裡藏道」書籍+App為主多傳喜樂的福音，領人歸主。頌讚、榮耀歸於我們的神，直到永永遠遠！阿們。
         </ion-card-content>
-
-        <ion-button
-          fill="outline"
-          expand="block"
-          href="https://www.biblegateway.com/passage/?search=%E5%B8%96%E6%92%92%E7%BE%85%E5%B0%BC%E8%BF%A6%E5%89%8D%E6%9B%B8+5%3A16-18&version=CUVMPT"
-          >線上閱讀聖經</ion-button
-        >
       </ion-card>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { inject } from "vue";
-
 import {
   IonButtons,
   IonCard,
@@ -281,6 +181,4 @@ import {
   IonTitle,
   IonContent,
 } from "@ionic/vue";
-
-const appVer = inject<string>("appVersion");
 </script>

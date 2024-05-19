@@ -1,15 +1,18 @@
 <template>
   <ion-item
     v-if="scripture"
-    :routerLink="'/scriptures/scripture/' + scripture.articleId"
+    :routerLink="'/joys/article/' + scripture.articleId"
     :detail="false"
     class="list-item"
   >
-    <app-avatar-logo />
+    <ion-thumbnail slot="start">
+      <img :src="scripture.photoUrl" alt="thumbnail" />
+    </ion-thumbnail>
     <ion-label class="ion-text-wrap">
       <h2>
-        {{index! + 1}}. {{ scripture.scriptureName }} {{ scripture.scriptureChapter }}
+        {{index! + 1}}. {{ scripture.title }}({{ scripture.articleId }})
         <span class="likes">
+          <ion-note>{{ scripture.likes }}</ion-note>
           <ion-icon
             aria-hidden="true"
             :name="chevronForward"
@@ -22,12 +25,13 @@
         ✞{{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
         {{ scripture.scriptureChapter }})
       </p>
+      <p>•ᴗ•{{ scripture.laugh }}</p>
     </ion-label>
   </ion-item>
 </template>
 
 <script setup lang="ts">
-import { IonIcon, IonItem, IonLabel } from "@ionic/vue";
+import { IonIcon, IonItem, IonLabel, IonNote, IonThumbnail } from "@ionic/vue";
 import { chevronForward } from "ionicons/icons";
 
 defineProps({

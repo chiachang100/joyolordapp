@@ -4,16 +4,52 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="app-list">
-            <ion-list-header>選單</ion-list-header>
+            <ion-list-header>核心選項</ion-list-header>
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
-              <ion-item @click="selectedIndex = i" router-direction="root" :router-link="p.url" lines="none" :detail="false" class="hydrated" :class="{ selected: selectedIndex === i }">
-                <ion-icon aria-hidden="true" slot="start" :ios="p.iosIcon" :md="p.mdIcon"></ion-icon>
+              <ion-item
+                @click="selectedIndex = i"
+                router-direction="root"
+                :router-link="p.url"
+                lines="none"
+                :detail="false"
+                class="hydrated"
+                :class="{ selected: selectedIndex === i }"
+              >
+                <ion-icon
+                  aria-hidden="true"
+                  slot="start"
+                  :ios="p.iosIcon"
+                  :md="p.mdIcon"
+                ></ion-icon>
                 <ion-label>{{ p.title }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
 
+          <ion-list id="info-list">
+            <ion-list-header>附加選項</ion-list-header>
+
+            <ion-menu-toggle :auto-hide="false" v-for="(p, i) in infoPages" :key="i">
+              <ion-item
+                @click="selectedIndex = i"
+                router-direction="root"
+                :router-link="p.url"
+                lines="none"
+                :detail="false"
+                class="hydrated"
+                :class="{ selected: selectedIndex === i }"
+              >
+                <ion-icon
+                  aria-hidden="true"
+                  slot="start"
+                  :ios="p.iosIcon"
+                  :md="p.mdIcon"
+                ></ion-icon>
+                <ion-label>{{ p.title }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
         </ion-content>
       </ion-menu>
       <ion-router-outlet id="main-content"></ion-router-outlet>
@@ -34,59 +70,82 @@ import {
   IonMenuToggle,
   IonRouterOutlet,
   IonSplitPane,
-} from '@ionic/vue';
-import { ref } from 'vue';
+} from "@ionic/vue";
+import { ref } from "vue";
 import {
+  bookOutline,
+  bookSharp,
   homeOutline,
   homeSharp,
   imagesOutline,
   imagesSharp,
-  listOutline,
-  listSharp,
-  peopleOutline,
-  peopleSharp,
+  informationCircleOutline,
+  informationCircleSharp,
+  listCircleOutline,
+  listCircleSharp,
+  newspaperOutline,
+  newspaperSharp,
   settingsOutline,
   settingsSharp,
-} from 'ionicons/icons';
+} from "ionicons/icons";
 
 const selectedIndex = ref(0);
+
 const appPages = [
   {
-    title: '笑裡藏道',
-    url: '/tabs/joys',
+    title: "聖經經文",
+    url: "/tabs/scriptures",
+    iosIcon: bookOutline,
+    mdIcon: bookSharp,
+  },
+  {
+    title: "笑裡藏道",
+    url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
   },
   {
-    title: '聖經經文',
-    url: '/tabs/scriptures',
-    iosIcon: listOutline,
-    mdIcon: listSharp,
+    title: "喜樂榜",
+    url: "/tabs/rankinglist",
+    iosIcon: listCircleOutline,
+    mdIcon: listCircleSharp,
+    tab: "rankinglist",
   },
   {
-    title: '個人設置',
-    url: '/tabs/settings',
-    iosIcon: settingsOutline,
-    mdIcon: settingsSharp,
+    title: "新出爐",
+    url: "/tabs/newlist",
+    iosIcon: newspaperOutline,
+    mdIcon: newspaperSharp,
+    tab: "newlist",
   },
+];
+
+const infoPages = [
   {
-    title: '資源簡介',
-    url: '/tabs/about',
-    iosIcon: peopleOutline,
-    mdIcon: peopleSharp,
-  },
-  {
-    title: '相片存檔',
-    url: '/tabs/photos',
+    title: "相片存檔",
+    url: "/tabs/photos",
     iosIcon: imagesOutline,
     mdIcon: imagesSharp,
   },
+  {
+    title: "資源簡介",
+    url: "/tabs/about",
+    iosIcon: informationCircleOutline,
+    mdIcon: informationCircleSharp,
+  },
+  {
+    title: "個人設置",
+    url: "/tabs/settings",
+    iosIcon: settingsOutline,
+    mdIcon: settingsSharp,
+  },
 ];
-//const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
-const path = window.location.pathname.split('tabs/')[1];
+const path = window.location.pathname.split("tabs/")[1];
 if (path !== undefined) {
-  selectedIndex.value = appPages.findIndex((page) => page.title.toLowerCase() === path.toLowerCase());
+  selectedIndex.value = appPages.findIndex(
+    (page) => page.title.toLowerCase() === path.toLowerCase()
+  );
 }
 </script>
 

@@ -36,7 +36,7 @@ const scriptures: Scripture[] = [
         +'\n\n  老張被嚇著了，說：「糟糕，我害死了牠！」便馬上打開冷凍櫃的門。'
         +'\n\n  只見鸚鵡冷靜地走出來，踏上老張伸出來的手背，說道：「相信我粗魯的言談和行為必定冒犯了您，我會努力改進我的行為，我真的很抱歉，希望您能夠原諒我。」'
         +'\n\n  老張對鸚鵡態度的轉變很是驚訝!正想要問這樣戲劇性的變化是什麼原因，牠又接著說道:「我可以問一下，裡面那隻被扒光毛的鳥做錯了什麼事嗎?」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_1.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_1.png',
     "videoId": 'Mez7DnMOlgc',
     "videoName": '不要怕！你要得人了 | 曾興才牧師 | 20240225 | 生命河 ROLCCmedia',
     "talk": '  要珍惜別人善意的勸勉，尤其是出於愛的勸告。出於愛的推動力是可以幫助我們，在艱難的環境中持續做正確的事情。'
@@ -64,7 +64,7 @@ const scriptures: Scripture[] = [
             +'\n\n  最近她又回到卡布，發現那裡的女人仍然是這樣跟在丈夫背後。雖然塔利班（Taliban）政權已經被推翻，但是這些婦女們仍然樂於遵從這個傳統。'
             +'主持人華特斯小姐在訪問其中一名婦女時，在好奇心的驅使下就問：「妳們為什麼樂於堅守這個曾經一度極力要推翻的傳統呢？」'
             +'\n\n  那個女人目不轉睛地望著華特小姐，然後毫不猶豫地回答說：「因為有地雷！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_2.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_2.png',
     "videoId": 'GkRrP2iBaKw',
     "videoName": '不斷成長，進入豐盛 | 曾興才牧師 | 20240121 | 生命河 ROLCCmedia',
     "talk": '  是的，恐懼會促使你做各樣的措施來保護自已。但有時候，沒有任何預備能夠幫助你面對它。'
@@ -94,7 +94,7 @@ const scriptures: Scripture[] = [
         +'我們走在鳥語花香的園區理，到處都是人們羨慕的眼光。'
         +'\n\n  突然間，路邊衝出一個渾身惡臭、滿臉污穢，看來好無家可歸的老太太，垂著頭低聲地向我討東西，差點嚇我的一對寶貝。'
         +'驚嚇之餘，我再仔細一看，『天啊！竟然是我國小五年級的國文老師！』」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_3.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_3.png',
     "videoId": 'Ay5KpU3QS44',
     "videoName": '聖靈，再一次充滿我們 | #曾興才牧師 | 20230611 | 生命河 ROLCCmedia',
     "talk": '  饒怨乃是一個決定，不能夠憑感覺。因為受傷害的感覺會使我們的思想混亂不清。'
@@ -126,7 +126,7 @@ const scriptures: Scripture[] = [
         +'\n\n  還是沒有回應。因此，他就走到廚房門口，離開太太約有十呎，問：「親愛的，今天晚上吃什麽呀？」'
         +'\n\n  又是沒反應。老王就走到太太的背後，問說：「親愛的，今天晚上吃什麼呀？」'
         +'\n\n  太太回答說：「老公，這是第五次了，宮保雞丁！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_4.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_4.png',
     "videoId": 'gUxlZ4S_meE',
     "videoName": '你要我為你做什麼 | 曾興才牧師 | 20220109 | 生命河 ROLCCmedia',
     "talk": '  當我們承認自己不是十分完美時，我們就會以不同的眼光去看待周圍的人。一個成功的人知道自己的優點和缺點，'
@@ -156,7 +156,7 @@ const scriptures: Scripture[] = [
         +'\n\n  這一次，老太太說：「不必了，謝謝你，我們習慣了分享每一件東西。」'
         +'\n\n  終於老先生吃完了，他就用紙巾擦乾淨自己的險。那位青年人又走到老太太面前，看她什麼都還沒吃，就問她說：「您還在等什麼呀？」'
         +'\n\n  老太太不慌不忙地回答說：「我在等他的假牙！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_5.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_5.png',
     "videoId": 'sUuT3a-ibbs',
     "videoName": '那九個在哪裡呢？ | 曾興才牧師 | 20231112 | 生命河 ROLCCmedia',
     "talk": '  若是人人都有一顆與他人分享好東西的心， 這世界肯定會更加溫暖、可愛。'
@@ -183,7 +183,7 @@ const scriptures: Scripture[] = [
         +'\n\n  兩分鐘之後，又有一個護士出來，對小李說：「恭喜你，李先生，你太太生了三胞胎！」'
         +'\n\n  小李高興得合不攏口，說：「這可真巧呀！我是在三環公司上班的！」'
         +'\n\n  小曾在旁聽了以後，臉色都變了，一面跑向大門，-面叫著說：「不得了啊，不得了啊！我是在7-Eleven 上班的啊！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_6.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_6.png',
     "videoId": 'CDtAEvmJo4k',
     "videoName": '第二次機會的福音 | 曾興才牧師 | 20230423 | 生命河 ROLCCmedia',
     "talk": '  坦白說，我們都希望每天可以聽到好消息。其實，與其在等待聽好消息，不如成為報好消息的人，因為好消息可以使骨頭滋潤，心情愉快。'
@@ -207,7 +207,7 @@ const scriptures: Scripture[] = [
         +'\n\n  很不幸地，沒多久，這位阿拉伯先生仍要做一次改正手術。當然，那位猶太人很樂意再捐血給他，相信他會給更多的禮物。'
         +'\n\n  第二次手術也非常成功，這位阿拉伯先生又寄一艮感謝卡片加上一盒巧克力糖！猶太人覺得好驚奇，看到他不像上一次那樣送大禮物給他，於是打電話給他，想知道事情的真相。'
         +'\n\n  結果，這位阿拉伯先生回答說：「親愛的朋友，你不要忘記，我現在身體裡面流的血是猶太人的血啊！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_7.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_7.png',
     "videoId": 'zwsBDQ0WLpg',
     "videoName": '擁抱天父的心 | 曾興才牧師 | 20231015 | 生命河 ROLCCmedia',
     "talk": '  你曾否領受別人的施予？特別是當你有困難的時候，你當時的感覺又如何？要領受別人的慷慨樂施，不如先成為一個慷慨樂施的人。'
@@ -232,7 +232,7 @@ const scriptures: Scripture[] = [
         +'\n\n  「今天晚上妳就會知道了，親愛的！」丈夫若有所思地回答說。'
         +'\n\n  這一整天，王太太根本無法控制她興奮的心情，她非常急迫地等待她老公下班回來。'
         +'\n\n  果然，老公手上拿著一個包得非常精緻美麗的小盒子。當老公把這小盒子送給太太之後，她迫不及待地把它打開來，卻發現是一本書，書名是——《異夢的解釋》。',
-    "photoUrl": 'assets/photos/xlcdapp_photo_8.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_8.png',
     "videoId": 'tyTmt2fWMn0',
     "videoName": '高舉聖誕節的耶穌 | 曾興才牧師 | 20231210 | 生命河 ROLCCmedia',
     "talk": '  男女之間的不同從身體上的構造，對事情的看法，及處理問題的方式，都是顯而易見的。'
@@ -258,7 +258,7 @@ const scriptures: Scripture[] = [
         +'\n\n  「神看見我餓了，就造了一個包子，神看見我渴了，就造了一杯涼茶，祂看我在黑暗中，就造了光，祂看見我沒有問題，就造了妳。」'
         +'\n\n  何太太也不是省油的燈，看了以後，也寫一首詩回他。她寫道：'
         +'\n\n  「我把你的名字寫在沙灘上，它被沖走了，我把你的名字寫在天空中，它被吹走了，然後，我把你的名字寫在我的心上，我得了心臟病！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_9.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_9.png',
     "videoId": 'ZQyr9RgkVmQ',
     "videoName": '風浪中你可以有平安 | 曾興才牧師 | 20220918 | 生命河 ROLCCmedia',
     "talk": '  雖然人際關係中的摩擦和衝突是相處的副產品，但是彼此傷害是可以避免的。只要願意謹慎自己，在衝突時選擇溝通，不要感情用事，生氣時要勒住舌頭，不要以惡報惡，將你的即時反應延後三分鐘，結果就必截然不同。'
@@ -282,7 +282,7 @@ const scriptures: Scripture[] = [
         +'\n\n  第二個男生說：「我家裡還有妻子、兒女需要我照顧，我也不能死！」拿了第二包降落傘也跳了下去。'
         +'\n\n  現在只剩下小朱和另一個單身女子。小朱說：「我已經步入中年了，妳還年輕，最後一包降落傘還是給妳用吧！」'
         +'\n\n  單身女子卻很冷靜地回答說：「其實我們還有兩個降落傘，因為第一個男子拿了我的背包跳下去了！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_10.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_10.png',
     "videoId": '4GfLe4AWUag',
     "videoName": '成為神和人喜愛的人 | 曾興才牧師 | 20230521 | 生命河 ROLCCmedia',
     "talk": '  是的，各人不要只顧自己的事，也要顧別人的事。'
@@ -308,7 +308,7 @@ const scriptures: Scripture[] = [
         +'\n\n  四、五個小時過去了，他已經精疲力盡了，滿肚于香蕉。當他從一棵樹想跳到另一棵樹去的時候，覺得頭一點暈，不小心就掉進隔壁的獅子坑裡。'
         +'\n\n  他大聲喊叫：「救命啊，救命啊！」'
         +'\n\n  那獅子就走過來，小聲地對他說：「如果你不住口，我們兩人都要失去工作了！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_11.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_11.png',
     "videoId": 'Y7rWKYWAZWE',
     "videoName": '新的季節，重新得力 | 曾興才牧師 | 20230903 | 生命河 ROLCCmedia',
     "talk": '  上帝的心意是要你活出你的最高點。要活出你的最高點是要去發掘上帝給你那獨特的份：你對什麼事最有熱情？你最擅長的技能是什麼？親友最常讃賞你的是什麼？'
@@ -337,7 +337,7 @@ const scriptures: Scripture[] = [
         +'\n\n  警官說：「你也不夠資格，帶你太太回家吧！」'
         +'\n\n  最後，輪到那個女的，給了她同樣的指示，要她殺她的丈夫。她拿了手槍走進房間，「呼！呯！」槍聲響了幾下，接著有尖明聲，椅子打在牆上的聲音。'
         +'\n\n  幾分鐘之後，一切恢復安靜，門慢慢地打開了，那女人站在那裡，汗流滿面地說：「這手槍裡的子彈是空的，我只好用椅子打他！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_12.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_12.png',
     "videoId": 'hDQn8tOm3rs',
     "videoName": '翻轉生命的敬拜 | 曾興才牧師 | 20230212 | 生命河 ROLCCmedia',
     "talk": '  成功（Success）是需要付代價的，但是要有所成就（Significant）或有影響力，你需要付更高的代價。'
@@ -367,7 +367,7 @@ const scriptures: Scripture[] = [
         +'\n\n  沈姊妹一聽．也只能這樣了。不是有句話說，「近朱者赤」嗎？於是把鸚鵡帶到牧師家裡，牧師就把兩隻鸚鵡放在一起。'
         +'\n\n  開始時母鸚鵡還有一些拘謹，看那隻公鸚鵡在籠子的一角默默地禱告，還真不忍心打擾，可是牠忍不住，終於說：「親一親我，寶貝！」'
         +'\n\n  公鸚鵡聽到這話，停止了禱告，轉身看看母鸚鵡，忽然，淚如雨下說：「感謝神，我的禱告終於實現了！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_13.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_13.png',
     "videoId": 'qz9teFHW-vo',
     "videoName": '新的挑戰 新的應許 | 曾興才牧師 | 20210613 | 生命河 ROLCCmedia',
     "talk": '  要做新事不是一件困難的事。當你願意調整你的思想，放慢你的腳步，多一點的觀察和聆聽，你每天都可以經歷新的事。'
@@ -395,7 +395,7 @@ const scriptures: Scripture[] = [
         +'\n\n  老劉注視了青蛙片刻後，伸出手，很小心地把青蛙放入他的口袋裡。'
         +'\n\n  青蛙說：「怎麼，你瘋啦？你沒聽我說嗎？我說，吻我一下，然後我就會成為你美麗的新娘。」'
         +'\n\n  老劉撥開他的口袋，看著青蛙說：「算了吧，以我這樣的年紀，我寧願有一隻會說話的青蛙。」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_14.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_14.png',
     "videoId": 'caFA7orVD_w',
     "videoName": '沒有救自己的耶穌 | 曾興才牧師 | 20220410 | 生命河 ROLCCmedia',
     "talk": '  在這充滿試探的環境裡，要謹慎行事是最好的勸告。因為謹慎與否就決定了你是愚昧人還是智慧人。'
@@ -425,10 +425,12 @@ const scriptures: Scripture[] = [
         +'\n\n  「這一個應該適合你了！」'
         +'\n\n  果然，老牧師帶上了以後，感覺就像自己的，好高興，但卻很好奇地問他說：「這位弟兄，你怎麼會有這麼多假牙，請問你是牙醫嗎？」'
         +'\n\n  「不，不，不」執事笑著回答說：「我是在殯儀館替死人化妝的。」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_15.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_15.png',
     "videoId": 'AGTacXFkFDQ',
     "videoName": '耶穌必能為你平靜風浪 | 曾興才牧師 | 20200315 | 生命河 ROLCCmedia',
-    "talk": '  上帝榮耀的豐富 ，。..',
+    "talk": '  需要得到滿足是一件很快樂的事。其實， 要滿足我們所有的需要是不可能的。 當我們只想去滿足我們自己的需要時，結果往往是令我們失望和灰心，有時還會造成別人的傷害。 '
+        + '\n\n  當我們把需要帶到這位創造宇宙萬物的上帝時，並相信祂會在最恰當的時候，透過最好的方法，使我們一切所需用的都充足。 但是許多時候，上帝也會以祂的智慧，透過周圍的人來成就這事。 '
+        + '\n\n  請問你是否想過，上帝也曾透過你滿足了別人的需要，或許，今天祂就要這樣使用你。',
     "likes": 1,
     "type": 1,
     "isNew": true,
@@ -450,7 +452,7 @@ const scriptures: Scripture[] = [
         +'\n\n  剛訂婚的二姊說：「那天晚上，我穿著風衣到他的公寓，當我打開風衣讓他看見了黑色緊身皮衣、皮褲子、高跟馬靴、頭套和眼罩，他沒有說一個字，從此以後，他每天迫不及待地要見我。」'
         +'\n\n  已經結婚的大姊說：「我已經很久沒有和老公約會了，所以，先安排孩子們到媽媽那裡，這樣就可以和我的老公享受二人世界了。我點了幾根蠟燭，穿上我的黑色緊身皮衣、皮褲子、高跟馬靴、頭套和眼罩，興奮地等他下班回家。'
         +'\n\n  當他開門之後，看見了我，竟然指著餐桌問我說： 『晚餐吃什麼，蝙蝠俠！』」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_16.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_16.png',
     "videoId": 'jNSw1OJkzdY',
     "videoName": '經歷感恩的能力 | 曾興才牧師 | 20221113 | 生命河 ROLCCmedia',
     "talk": '  以弗所的教會是一個模範教會，這教會乃是七間教會中被耶穌讚了又讚的教會，他們有好的表現，勞碌，忍耐，為主的名勞苦，'
@@ -478,7 +480,7 @@ const scriptures: Scripture[] = [
         +'媽媽在一旁視若無睹或袖手旁觀，從來不曾見義勇為，有時甚至助紂為虐。」'
         +'\n\n  老師看後問小明：「你考試成績不好的話，你父母怎麼處罰你？」'
         +'\n\n  小明回答說：「八十分以下女子單打，七十分以下男子單打，六十分以下男女混合雙打！！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_17.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_17.png',
     "videoId": 'hbxbb2vvbcw',
     "videoName": '耶穌降⽣的三⼤恢復 | 曾興才牧師 | 20221211 | 生命河 ROLCCmedia',
     "talk": '  我們都很懷念童年的時光，無憂無慮，單純地信靠父母親會完全地供應及滿足我們一切的需要。但年紀大了之後，經歷也多了，思想變複雜了，生活因此增加了許多憂慮。'
@@ -508,7 +510,7 @@ const scriptures: Scripture[] = [
         +'我覺得要和他好好談一談，但是他居然已經睡著了，我只好躺在他身邊默默地流淚。'
         +'\n\n  我現在非常的確定，他肯定有別的女人了，這真是像天塌下來了一樣。天哪！那，我真不知道活著還有什麼意義！」'
         +'\n\n  丈夫老胡的日記則只有一行字：「氣死人了，昨天舊金山巨人隊又輸了！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_18.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_18.png',
     "videoId": 'PWT_rjy2jbM',
     "videoName": '神的殿，我們的家 | 曾興才牧師 | 20220814 | 生命河 ROLCCmedia',
     "talk": '  我非常同意有人如此說：「掛慮乃是錯誤的使用我們的想像力。」試想一想，你現在掛慮的是什麼？是一件未發生的事情，但你卻想像它會如何的發生。'
@@ -533,7 +535,7 @@ const scriptures: Scripture[] = [
         +'\n\n  「我已經被關了一千年，感謝妳們把我放出來，現在妳們可以各自許一個願望，我會幫妳們實現。」'
         +'\n\n  姊姊美芬一向嫉妒妹妹較得父母寵愛，所以她說： 「不管妹妹的願望是什麼，我都要她的兩倍。」'
         +'\n\n  妹妹聽了之後，想都沒想的接著說：「我希望我的三圍是38、24、38。」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_19.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_19.png',
     "videoId": 'Y3OWjoQ9KO0',
     "videoName": '當你灰心失望時 | 曾興才牧師 | 20190317 | 生命河 ROLCCmedia',
     "talk": '  以惡報惡雖然是一般人的自然反應，但它可以不是你的自然反應。我們沒有辦法控制別人的行為，但是我們可以選擇要對他的行為做出什麼樣的回應。'
@@ -560,7 +562,7 @@ const scriptures: Scripture[] = [
         +'\n\n  老闆提醒他說：「再買個充電器吧！別忘了燒個充電器給他，不然老祖宗來找你就不好了，找你還是小事，叫你送去可就麻煩了。」'
         +'\n\n  老楊只好又買了一個充電器，付錢的時候老楊跟老闆要了一張名片，說：「我會把它和祭品一起燒給老祖宗，手機若出了問題，就可以直接找你保修了。」'
         +'\n\n  老闆聽後昏倒了！',
-    "photoUrl": 'assets/photos/xlcdapp_photo_20.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_20.png',
     "videoId": '9w1BPwQG7-0',
     "videoName": '患難中的盼望 | 曾興才牧師 | 20210822 | 生命河 ROLCCmedia',
     "talk": '  基督教非常看重孝道，因為上帝非常看重孝道。十誠裡的前四誡都是有關人對上帝的敬拜和尊崇，後六誡乃是有關人與人之間的誡命，'
@@ -586,7 +588,7 @@ const scriptures: Scripture[] = [
         +'若您想擴大戰果，本層對面是鐵道部的一位高官，樓上一家是紅十字會的領導，樓下那家是銀行的行長，他們都很有錢而且這不取報警。」'
         +'\n\n  一個多月之後，老夫婦回來，發現桌子上的錢變成十萬！也附有一張紙條，上面寫著：'
         +'\n\n 「感謝老師的教誨，過去不用功讀書，唉，相識恨晚，那...一切盡在無言中。特留下十萬元資訊費，請笑納！」',
-    "photoUrl": 'assets/photos/xlcdapp_photo_00.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
     "videoId": 'Rom7byceNRM',
     "videoName": '無人像耶穌這樣愛你 | 曾興才牧師 | 20210321 | 生命河 ROLCCmedia',
     "talk": '  靈巧像蛇，馴良像鴿子是主耶穌基督給祂的門徒們的忠告，因為耶穌知道當時的世代險惡，善良的門徒們好像羊走入狼群，要他們提高警惕的心。'
@@ -615,7 +617,7 @@ const scriptures: Scripture[] = [
         +'\n\n  終於到了歡迎醫生到來的那一天，部落的人想，好不容易把醫生請來，為了尊重他起見，咱們就破例一次吧。'
         +'所以那一天大家都穿上衣服，打上了領帶，聚集在他們的會堂裡。'
         +'\n\n  鐘聲響過之後，醫生走了進來，大家一下子都愣住了。只見年紀老邁，白髮蒼蒼的醫生背著重重的醫療包，身上卻一絲不掛！',
-    "photoUrl": 'assets/photos/xlcdapp_photo_52.png',
+    "photoUrl": 'assets/images/xlcd/xlcdapp_photo_52.png',
     "videoId": 'WLssNhv886A',
     "videoName": '同心領受命定的福 | 曾興才牧師 | 20180922 | 生命河 ROLCCmedia',
     "talk": '  使徒保羅是主耶穌最偉大的門徒之一。他為了傳福音，就是好消息，受盡了逼迫、災難和痛苦，他也願意放下身段和他所接觸的人認同。'
@@ -638,4 +640,10 @@ const scriptures: Scripture[] = [
 
 export const getScriptures = () => scriptures;
 
+//export const getScripture = (id: number) => scriptures.find(m => m.id === id);
 export const getScripture = (id: number) => scriptures.find(m => m.articleId === id);
+export const getNewScriptures = () => scriptures.map(m => {
+    if (m.isNew == true) {
+        return m;
+    }
+});

@@ -12,12 +12,12 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/tabs/joys'
   },
   {
-    path: '/scripture/:id',
+    path: '/scriptures/scripture/:id',
     component: () => import('@/views/DetailedScripturePage.vue')
   },
   {
-    path: '/joys/joy/:id',
-    component: () => import('@/views/DetailedJoysPage.vue')
+    path: '/joys/article/:id',
+    component: () => import('@/views/DetailedArticlePage.vue')
   },
   {
     path: '/tabs/',
@@ -29,7 +29,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'joys',
-        component: () => import('@/views/JoysPage.vue')
+        component: () => import('@/views/ArticlesPage.vue')
       },
       {
         path: 'scriptures',

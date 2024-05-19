@@ -33,11 +33,13 @@ import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import AppAvatarLogo from './components/AppAvatarLogo.vue';
+import AppLogo from './components/AppLogo.vue';
+import packageJson from '../package.json';
 
 // vue-plyr
 import VuePlyr from 'vue-plyr'
 import 'vue-plyr/dist/vue-plyr.css'
-
 
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 defineCustomElements(window);
@@ -50,6 +52,23 @@ const app = createApp(App)
     plyr: {}
   });
 
+app.component('app-avatar-logo', AppAvatarLogo);
+app.component('app-logo', AppLogo);
+
+// Global variables
+app.provide('appVersion', packageJson.version);
+app.provide('appUrl', packageJson.homepage);
+app.provide('appUrlForXlcd', 'https://xlcdapp.web.app');
+app.provide('appName', '主的喜樂');
+app.provide('appNameInEnglish', packageJson.name);
+app.provide('appLogo', 'assets/icon/joyolordapp-logo.webp');
+app.provide('appLogoAlt', packageJson.name + ' logo');
+app.provide('appDescription', 'packageJson.description');
+app.provide('appEmail: string', 'chiachang100@gmail.com');
+
+app.provide('maxTopNumber', 5);
+
+// Hooray! we can mount our app now!
 router.isReady().then(() => {
   app.mount('#app');
 });

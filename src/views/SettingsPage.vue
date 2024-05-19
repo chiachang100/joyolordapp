@@ -2,7 +2,12 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>個人設置</ion-title>
+        <ion-title>
+          <ion-item>
+            <app-logo />
+            <ion-label>個人設置</ion-label>
+          </ion-item>
+        </ion-title>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -16,17 +21,22 @@
       </ion-header>
 
       <ion-card>
-        <ion-img
-          src="https://docs-demo.ionic.io/assets/madison.jpg"
-          alt="The Wisconsin State Capitol building in Madison, WI at night">
-        </ion-img>
+        <ion-grid
+          ><ion-row
+            ><ion-col size="5" offset="3">
+              <ion-img src="assets/images/xlcd/joy_pray_thanks.png" alt="個人設置">
+              </ion-img> </ion-col></ion-row
+        ></ion-grid>
         <ion-card-header>
           <ion-card-title>語言設置</ion-card-title>
-          <ion-card-subtitle>繁體中文|简体中文</ion-card-subtitle>
+          <ion-card-subtitle>語言設置更換後，請重新啟動應用程式。</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
-          語言設置更換後，請重新啟動應用程式。
+          <ion-select label="選擇語言" label-placement="floating">
+            <ion-select-option value="zh_tw">繁體中文</ion-select-option>
+            <ion-select-option value="zh_cn">简体中文</ion-select-option>
+          </ion-select>
         </ion-card-content>
       </ion-card>
     </ion-content>
@@ -43,11 +53,10 @@ import {
   IonCardTitle,
   IonImg,
   IonMenuButton,
-
   IonPage,
   IonHeader,
   IonToolbar,
   IonTitle,
   IonContent,
-} from '@ionic/vue';
+} from "@ionic/vue";
 </script>

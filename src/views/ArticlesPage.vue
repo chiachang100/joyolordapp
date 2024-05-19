@@ -1,8 +1,13 @@
 <template>
   <ion-page>
-    <ion-header>
+    <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>笑裡藏道</ion-title>
+        <ion-title>
+          <ion-item>
+            <app-logo />
+            <ion-label>笑裡藏道</ion-label>
+          </ion-item>
+        </ion-title>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -18,9 +23,16 @@
         </ion-toolbar>
       </ion-header>
 
-      <JoyCardItem v-for="scripture in scriptures" :key="scripture.articleId" :scripture="scripture" />
+      <ion-list>
+        <ArticleListItem
+          v-for="(scripture, index) in scriptures"
+          :key="scripture.articleId"
+          :scripture="scripture"
+          :index="index"
+        />
+      </ion-list>
 
-<!--
+      <!--
       <ion-card>
         <ion-img
           src="https://cdn.pixabay.com/photo/2016/10/03/21/13/jerusalem-1712855_1280.jpg"
@@ -38,7 +50,6 @@
         <ion-button expand="block" fill="outline" href="/tabs/settings">✞神的道是有功效的</ion-button>
       </ion-card>
 -->
-
     </ion-content>
   </ion-page>
 </template>
@@ -47,6 +58,7 @@
 import {
   IonButtons,
   IonHeader,
+  IonList,
   IonMenuButton,
   IonPage,
   IonRefresher,
@@ -54,11 +66,11 @@ import {
   IonToolbar,
   IonTitle,
   IonContent,
-} from '@ionic/vue';
+} from "@ionic/vue";
 
-import { ref } from 'vue';
-import { getScriptures, Scripture } from '@/data/scriptures';
-import JoyCardItem from '@/components/JoyCardItem.vue';
+import { ref } from "vue";
+import { getScriptures, Scripture } from "../data/scriptures";
+import ArticleListItem from "@/components/ArticleListItem.vue";
 
 const scriptures = ref<Scripture[]>(getScriptures());
 
