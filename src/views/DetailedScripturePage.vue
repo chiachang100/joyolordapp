@@ -49,10 +49,15 @@ import {
   IonHeader,
   IonItem,
   IonLabel,
+  IonList,
+  IonListHeader,
   IonPage,
+  IonTitle,
   IonToolbar,
 } from "@ionic/vue";
 import { getScripture } from "../data/scriptures";
+import AppLogo from "../components/AppLogo.vue";
+import AppAvatarLogo from "../components/AppAvatarLogo.vue";
 
 const getBackButtonText = () => {
   const win = window as any;

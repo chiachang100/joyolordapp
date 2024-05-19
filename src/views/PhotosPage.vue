@@ -43,6 +43,8 @@ import {
   IonHeader,
   IonIcon,
   IonImg,
+  IonItem,
+  IonLabel,
   IonPage,
   IonMenuButton,
   IonRow,
@@ -51,6 +53,7 @@ import {
 } from "@ionic/vue";
 import { camera, trash, close } from "ionicons/icons";
 import { usePhotoGallery, UserPhoto } from "../composables/usePhotoGallery";
+import AppLogo from "../components/AppLogo.vue";
 
 const { photos, takePhoto, deletePhoto } = usePhotoGallery();
 

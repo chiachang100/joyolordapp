@@ -25,7 +25,7 @@
 
       <ion-list>
         <ArticleListItem
-          v-for="(scripture, index) in scriptures"
+          v-for="(scripture, index) in newListOfArticles"
           :key="scripture.articleId"
           :scripture="scripture"
           :index="index"
@@ -39,6 +39,8 @@
 import {
   IonButtons,
   IonHeader,
+  IonItem,
+  IonLabel,
   IonList,
   IonMenuButton,
   IonPage,
@@ -49,17 +51,20 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import { ref } from "vue";
-//import { getNewScriptures, Scripture } from '@/data/scriptures';
-import { getScriptures, Scripture } from "@/data/scriptures";
+import { computed } from "vue";
+import { getScriptures, Scripture } from "../data/scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
+import AppLogo from "../components/AppLogo.vue";
 
-//const scriptures = ref<Scripture[]>(getNewScriptures());
-const scriptures = ref<Scripture[]>(getScriptures());
+// const scriptures = ref<Scripture[]>(getScriptures());
 
 const refresh = (ev: CustomEvent) => {
   setTimeout(() => {
     ev.detail.complete();
   }, 3000);
 };
+
+const newListOfArticles = computed<Scripture[]>(() => {
+  return getScriptures().filter((m) => m.isNew === true);
+});
 </script>

@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>喜樂榜</ion-label>
+            <ion-label>喜樂榜 (名額: {{ maxTopNum }})</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -25,7 +25,7 @@
 
       <ion-list>
         <ArticleListItem
-          v-for="(scripture, index) in scriptures"
+          v-for="(scripture, index) in rankingListOfArticles"
           :key="scripture.articleId"
           :scripture="scripture"
           :index="index"
@@ -39,6 +39,8 @@
 import {
   IonButtons,
   IonHeader,
+  IonItem,
+  IonLabel,
   IonList,
   IonMenuButton,
   IonPage,
@@ -49,15 +51,25 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import { ref } from "vue";
-import { getScriptures, Scripture } from "@/data/scriptures";
+import { computed, inject } from "vue";
+import { getScriptures, Scripture } from "../data/scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
+import AppLogo from "../components/AppLogo.vue";
 
-const scriptures = ref<Scripture[]>(getScriptures());
+// const scriptures = ref<Scripture[]>(getScriptures());
 
 const refresh = (ev: CustomEvent) => {
   setTimeout(() => {
     ev.detail.complete();
   }, 3000);
 };
+
+const maxTopNum = inject<number>("maxTopNumber");
+
+const rankingListOfArticles = computed<Scripture[]>(() => {
+  const filteredArray = getScriptures().filter((m) => m.likes > 0);
+  filteredArray.sort((a, b) => b.likes - a.likes);
+  const topItems = filteredArray.slice(0, maxTopNum);
+  return topItems;
+});
 </script>

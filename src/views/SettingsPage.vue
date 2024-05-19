@@ -51,12 +51,21 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
+  IonCol,
+  IonGrid,
+  IonHeader,
   IonImg,
+  IonItem,
+  IonLabel,
   IonMenuButton,
   IonPage,
-  IonHeader,
+  IonRow,
+  IonSelect,
+  IonSelectOption,
   IonToolbar,
   IonTitle,
   IonContent,
 } from "@ionic/vue";
+
+import AppLogo from "../components/AppLogo.vue";
 </script>

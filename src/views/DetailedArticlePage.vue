@@ -138,7 +138,9 @@ import {
   IonCardSubtitle,
   IonCardTitle,
   IonCardHeader,
+  IonCol,
   IonContent,
+  IonGrid,
   IonHeader,
   IonImg,
   IonItem,
@@ -147,6 +149,7 @@ import {
   // IonMenuButton,
   IonNote,
   IonPage,
+  IonRow,
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
@@ -160,7 +163,10 @@ import {
   logoYoutube,
 } from 'ionicons/icons';
 
- */ import { getScripture } from "../data/scriptures";
+ */
+
+import { getScripture } from "../data/scriptures";
+import AppLogo from "../components/AppLogo.vue";
 
 const getBackButtonText = () => {
   const win = window as any;

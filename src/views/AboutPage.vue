@@ -264,23 +264,29 @@
 import { inject } from "vue";
 
 import {
+  IonButton,
   IonButtons,
   IonCard,
   IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
+  IonCol,
+  IonGrid,
+  IonHeader,
   IonImg,
   IonItem,
   IonLabel,
   IonList,
   IonMenuButton,
   IonPage,
-  IonHeader,
+  IonRow,
   IonToolbar,
   IonTitle,
   IonContent,
 } from "@ionic/vue";
+
+import AppLogo from "../components/AppLogo.vue";
 
 const appVer = inject<string>("appVersion");
 </script>

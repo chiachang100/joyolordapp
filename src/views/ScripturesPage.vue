@@ -12,6 +12,17 @@
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
       </ion-toolbar>
+      <ion-toolbar>
+        <ion-searchbar
+          v-model="searchTerm"
+          @ionInput="onSearchInput"
+          show-clear-button="focus"
+          show-cancel-button="focus"
+          placeholder="搜尋"
+          :debounce="100"
+        >
+        </ion-searchbar>
+      </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-refresher slot="fixed" @ionRefresh="refresh($event)">
@@ -25,7 +36,7 @@
 
       <ion-list>
         <ScriptureListItem
-          v-for="(scripture, index) in scriptures"
+          v-for="(scripture, index) in filteredListOfScriptures"
           :key="scripture.articleId"
           :scripture="scripture"
           :index="index"
@@ -39,24 +50,48 @@
 import {
   IonButtons,
   IonHeader,
+  IonItem,
+  IonLabel,
   IonList,
   IonMenuButton,
   IonPage,
   IonRefresher,
   IonRefresherContent,
+  IonSearchbar,
   IonToolbar,
   IonTitle,
   IonContent,
 } from "@ionic/vue";
 import ScriptureListItem from "@/components/ScriptureListItem.vue";
 import { getScriptures, Scripture } from "../data/scriptures";
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import AppLogo from "../components/AppLogo.vue";
 
-const scriptures = ref<Scripture[]>(getScriptures());
+// const scriptures = ref<Scripture[]>(getScriptures());
 
 const refresh = (ev: CustomEvent) => {
   setTimeout(() => {
     ev.detail.complete();
   }, 3000);
+};
+
+const searchTerm = ref("");
+
+const filteredListOfScriptures = computed<Scripture[]>(() => {
+  if (!searchTerm.value?.trim()) {
+    return getScriptures();
+  } else {
+    const searchText = searchTerm.value!.toLowerCase();
+    console.log("searchText=" + searchText);
+    return getScriptures().filter(
+      (m) =>
+        m.scriptureVerse.toLowerCase().includes(searchText) ||
+        (m.scriptureName + " " + m.scriptureChapter).toLowerCase().includes(searchText)
+    );
+  }
+});
+
+const onSearchInput = () => {
+  console.log("searchTerm=" + searchTerm.value?.trim());
 };
 </script>
