@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>笑裡藏道</ion-label>
+            <ion-label>{{ t("xlcd") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -18,7 +18,7 @@
           @ionInput="onSearchInput"
           show-clear-button="focus"
           show-cancel-button="focus"
-          placeholder="搜尋"
+          :placeholder="t('search')"
           :debounce="100"
         >
         </ion-searchbar>
@@ -30,7 +30,7 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">笑裡藏道</ion-title>
+          <ion-title size="large">{{ t("xlcd") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -67,6 +67,9 @@ import { computed, ref } from "vue";
 import { getScriptures, Scripture } from "../../public/data/scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
 import AppLogo from "@/components/AppLogo.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 // const scriptures = ref<Scripture[]>(getScriptures());
 

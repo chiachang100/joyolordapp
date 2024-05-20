@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>相片存檔</ion-label>
+            <ion-label>{{ t("photos") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -54,6 +54,9 @@ import {
 import { camera, trash, close } from "ionicons/icons";
 import { usePhotoGallery, UserPhoto } from "../composables/usePhotoGallery";
 import AppLogo from "@/components/AppLogo.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 const { photos, takePhoto, deletePhoto } = usePhotoGallery();
 

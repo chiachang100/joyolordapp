@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>聖經經文</ion-label>
+            <ion-label>{{ t("bibleVerse") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -18,7 +18,7 @@
           @ionInput="onSearchInput"
           show-clear-button="focus"
           show-cancel-button="focus"
-          placeholder="搜尋"
+          :placeholder="t('search')"
           :debounce="100"
         >
         </ion-searchbar>
@@ -30,7 +30,7 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">聖經經文</ion-title>
+          <ion-title size="large">{{ t("bibleVerse") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -66,6 +66,9 @@ import ScriptureListItem from "@/components/ScriptureListItem.vue";
 import { getScriptures, Scripture } from "../../public/data/scriptures";
 import { computed, ref } from "vue";
 import AppLogo from "@/components/AppLogo.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 // const scriptures = ref<Scripture[]>(getScriptures());
 

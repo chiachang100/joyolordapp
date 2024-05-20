@@ -38,7 +38,9 @@
           <ion-select v-model="selectedLocale" label-placement="floating">
             <ion-select-option value="zh-TW">{{ t("locale_zh-TW") }}</ion-select-option>
             <ion-select-option value="zh-CN">{{ t("locale_zh-CN") }}</ion-select-option>
+            <!--
             <ion-select-option value="en-US">{{ t("locale_en-US") }}</ion-select-option>
+            -->
           </ion-select>
         </ion-card-content>
       </ion-card>

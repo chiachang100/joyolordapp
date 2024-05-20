@@ -5,7 +5,10 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>喜樂榜 (名額: {{ maxTopNum }})</ion-label>
+            <ion-label
+              >{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }}
+              {{ t("ming") }})</ion-label
+            >
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -19,7 +22,7 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">喜樂榜</ion-title>
+          <ion-title size="large">{{ t("rankingList") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -55,6 +58,9 @@ import { computed, inject } from "vue";
 import { getScriptures, Scripture } from "../../public/data/scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
 import AppLogo from "@/components/AppLogo.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 // const scriptures = ref<Scripture[]>(getScriptures());
 

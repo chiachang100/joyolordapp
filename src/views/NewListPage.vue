@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>新出爐</ion-label>
+            <ion-label>{{ t("newList") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -19,7 +19,7 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">新出爐</ion-title>
+          <ion-title size="large">{{ t("newList") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -55,6 +55,9 @@ import { computed } from "vue";
 import { getScriptures, Scripture } from "../../public/data/scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
 import AppLogo from "@/components/AppLogo.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 // const scriptures = ref<Scripture[]>(getScriptures());
 

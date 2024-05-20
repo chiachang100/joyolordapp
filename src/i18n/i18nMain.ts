@@ -1,8 +1,12 @@
 import { createI18n } from 'vue-i18n';
-import enUS from '../locales/en-US.json';
-import zhCN from '../locales/zh-CN.json';
-import zhTW from '../locales/zh-TW.json';
+// import enUS from '../locales/en-US.json';
+// import zhCN from '../locales/zh-CN.json';
+// import zhTW from '../locales/zh-TW.json';
 // import defaultMessages from '../locales/en-US.json';
+
+import enUS from '../locales/en-US';
+import zhCN from '../locales/zh-CN';
+import zhTW from '../locales/zh-TW';
 
 // Set and expose the default locale
 // export const defaultLocale = 'en-US'

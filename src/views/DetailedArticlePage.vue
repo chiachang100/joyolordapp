@@ -49,7 +49,7 @@
       <p></p>
       <ion-card color="primary">
         <ion-card-header>
-          <ion-card-title>前奏曲</ion-card-title>
+          <ion-card-title>{{ t("DetailedPage.prelude") }}</ion-card-title>
           <ion-card-subtitle></ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
@@ -60,7 +60,7 @@
       <!-- Laugh Section -->
       <ion-card color="secondary">
         <ion-card-header>
-          <ion-card-title>開懷大笑</ion-card-title>
+          <ion-card-title>{{ t("DetailedPage.laugh") }}</ion-card-title>
           <ion-card-subtitle></ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
@@ -71,7 +71,7 @@
       <!-- Talk Section -->
       <ion-card color="tertiary">
         <ion-card-header>
-          <ion-card-title>笑裡藏道</ion-card-title>
+          <ion-card-title>{{ t("xlcd") }}</ion-card-title>
           <ion-card-subtitle></ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
@@ -87,7 +87,7 @@
       <!-- youtube div element (None progressive enhancement )-->
       <ion-card color="success">
         <ion-card-header>
-          <ion-card-title>YouTube視頻</ion-card-title>
+          <ion-card-title>{{ t("DetailedPage.youtubeVideo") }}</ion-card-title>
           <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
         </ion-card-header>
 
@@ -167,6 +167,9 @@ import {
 
 import { getScripture } from "../../public/data/scriptures";
 import AppLogo from "@/components/AppLogo.vue";
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 const getBackButtonText = () => {
   const win = window as any;

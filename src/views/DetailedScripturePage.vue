@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>聖經經文全文</ion-label>
+            <ion-label>{{ t("bibleVerse") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -18,7 +18,7 @@
     <ion-content :fullscreen="true" v-if="scripture">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">聖經經文細節</ion-title>
+          <ion-title size="large">{{ t("bibleVerse") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -59,10 +59,13 @@ import { getScripture } from "../../public/data/scriptures";
 import AppLogo from "@/components/AppLogo.vue";
 import AppAvatarLogo from "@/components/AppAvatarLogo.vue";
 
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
 const getBackButtonText = () => {
   const win = window as any;
   const mode = win && win.Ionic && win.Ionic.mode;
-  return mode === "ios" ? "聖經經文" : "";
+  return mode === "ios" ? t("bibleVerse") : "";
 };
 
 const route = useRoute();
