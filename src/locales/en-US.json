@@ -1,7 +1,7 @@
 {
   "appTitle": "主的喜樂",
   "joyolordapp": "主的喜樂",
-  
+
   "bibleVerse": "聖經經文",
   "xlcd": "笑裡藏道",
   "about": "資源簡介",
@@ -12,6 +12,10 @@
 
   "coreMenu": "核心選項",
   "infoMenu": "附加選項",
+
+  "locale_zh-TW": "繁體中文",
+  "locale_zh-CN": "簡體中文",
+  "locale_en-US": "英文",
 
   "bible": "聖經",
   "home": "首頁",
@@ -24,5 +28,12 @@
     "joyolordappQrCode": "「主的喜樂」App 二維碼",
     "xlcdappQrCode": "「笑裡藏道」App 二維碼"
   },
+  "SettingsPage": {
+    "langSetting": "語言設置 (Language Setting)",
+    "langSettingsSubtitle": "請選擇你想用的語言。",
+    "selectLanguage": "選擇語言"
+  },
+
+
   "zzz": "茲茲"
 }

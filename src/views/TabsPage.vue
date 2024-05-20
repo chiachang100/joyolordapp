@@ -22,7 +22,6 @@ import {
   IonTabButton,
   IonTabs,
 } from "@ionic/vue";
-import { ref } from "vue";
 import {
   bookOutline,
   bookSharp,
@@ -38,9 +37,13 @@ import {
   // newspaperSharp,
 } from "ionicons/icons";
 
+import { computed, watch } from "vue";
+import i18n from "../i18n/i18nMain";
+import { useI18n } from "vue-i18n";
+
+import { ref } from "vue";
 const selectedIndex = ref(0);
 
-import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
 const appPages = [
@@ -92,4 +95,9 @@ if (path !== undefined) {
     (page) => page.title.toLowerCase() === path.toLowerCase()
   );
 }
+
+const currentLocale = computed(() => i18n.global.locale);
+watch(currentLocale, (newLocale) => {
+  console.log("TabsPage: New locale:", newLocale);
+});
 </script>

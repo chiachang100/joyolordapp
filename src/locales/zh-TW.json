@@ -13,6 +13,10 @@
   "coreMenu": "核心選項",
   "infoMenu": "附加選項",
 
+  "locale_zh-TW": "繁體中文",
+  "locale_zh-CN": "簡體中文",
+  "locale_en-US": "英文",
+
   "bible": "聖經",
   "home": "首頁",
   "qrCode": "二維碼",
@@ -24,5 +28,12 @@
     "joyolordappQrCode": "「主的喜樂」App 二維碼",
     "xlcdappQrCode": "「笑裡藏道」App 二維碼"
   },
+  "SettingsPage": {
+    "langSetting": "語言設置",
+    "langSettingsSubtitle": "請選擇你想用的語言。",
+    "selectLanguage": "選擇語言"
+  },
+
+
   "zzz": "茲茲"
 }
