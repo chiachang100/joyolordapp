@@ -83,16 +83,11 @@
               </ion-img> </ion-col></ion-row
         ></ion-grid>
         <ion-card-header>
-          <ion-card-title>「笑裡藏道」書籍介紹</ion-card-title>
-          <ion-card-subtitle
-            >「笑裡藏道」，曾興才著，天恩出版社，2016年11月初版，2022第七版。'</ion-card-subtitle
-          >
+          <ion-card-title>{{ t("AboutPage.bookIntro") }}</ion-card-title>
+          <ion-card-subtitle>{{ t("AboutPage.bookIntroSubtitle") }}</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
-          「笑裡藏道」是曾興才牧師首本著作，收集了五十二篇他這些年於矽谷生命河靈糧堂主日證道中分享的精彩笑話及其中引申的經文應用。
-          喜樂的心乃是良藥，這本讓人開懷大笑的好書，能使大家從幽默文字中領悟屬靈的道理，也為您打開與人分享真理的機會之門！
-        </ion-card-content>
+        <ion-card-content>{{ t("AboutPage.bookIntroContent") }}</ion-card-content>
 
         <ion-grid>
           <ion-row>
@@ -101,7 +96,7 @@
                 fill="outline"
                 expand="block"
                 href="https://graceph.com/product/01i072/"
-                >天恩出版社</ion-button
+                >{{ t("AboutPage.gracephBookStore") }}</ion-button
               >
             </ion-col>
             <ion-col>
@@ -109,7 +104,7 @@
                 fill="outline"
                 expand="block"
                 href="https://www.rolcc.net/opencart/index.php?route=product/product&product_id=358"
-                >靈糧書房</ion-button
+                >{{ t("AboutPage.riverbankBookStore") }}</ion-button
               >
             </ion-col>
           </ion-row>
@@ -210,7 +205,7 @@
                 fill="outline"
                 expand="block"
                 href="https://graceph.com/product/01i072/"
-                >天恩出版社</ion-button
+                >{{ t("AboutPage.gracephBookStore") }}</ion-button
               >
             </ion-col>
             <ion-col>
@@ -218,46 +213,37 @@
                 fill="outline"
                 expand="block"
                 href="https://www.rolcc.net/opencart/index.php?route=product/product&product_id=358"
-                >靈糧書房</ion-button
+                >{{ t("AboutPage.riverbankBookStore") }}</ion-button
               >
             </ion-col>
           </ion-row>
         </ion-grid>
       </ion-card>
 
-      <!-- 軟件(App)設計者 Section -->
+      <!-- App 程式開發員 Section -->
       <ion-card>
         <ion-grid
           ><ion-row
             ><ion-col size="8" offset="2">
               <ion-img
                 src="assets/images/xlcd/joy_pray_thanks.png"
-                alt="張嘉: 「笑裡藏道」App開發者"
+                :alt="t('AboutPage.appDeveloper')"
               >
               </ion-img> </ion-col></ion-row
         ></ion-grid>
         <ion-card-header>
-          <ion-card-title>張嘉: 軟件(App)設計者</ion-card-title>
-          <ion-card-subtitle
-            >張嘉: 「主的喜樂」和「笑裡藏道」軟件(App)設計者'</ion-card-subtitle
-          >
+          <ion-card-title>{{ t("AboutPage.appDeveloper") }}</ion-card-title>
+          <ion-card-subtitle>{{ t("AboutPage.appDeveloperSubtitle") }}</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
-          感謝主!
-          如同聖經上的應許:「一生一世有主的恩惠、慈愛隨著我!」出生於台灣，大學畢業，服完兵役，來美留學，完成電腦碩士及兼職完成企管碩士。
-          1981年起即在矽谷電腦公司，從事多種電腦軟體工程開發。2023年從Microsoft退休。
-          業餘時領受主的呼召及恩典，在教會裡擔任過多種事奉，傳主福音，跟隨耶穌，榮神益人。
-          與妻子Judy目前繼續領受主賜兒孫滿堂的恩典。
-          祈求藉著「笑裡藏道」書籍+App為主多傳喜樂的福音，領人歸主。頌讚、榮耀歸於我們的神，直到永永遠遠！阿們。
-        </ion-card-content>
+        <ion-card-content>{{ t("AboutPage.appDeveloperContent") }}</ion-card-content>
 
         <ion-button
           fill="outline"
           expand="block"
           href="https://www.biblegateway.com/passage/?search=%E5%B8%96%E6%92%92%E7%BE%85%E5%B0%BC%E8%BF%A6%E5%89%8D%E6%9B%B8+5%3A16-18&version=CUVMPT"
-          >線上閱讀聖經</ion-button
-        >
+          >{{ t("AboutPage.onlineBible") }}
+        </ion-button>
       </ion-card>
     </ion-content>
   </ion-page>
