@@ -1,0 +1,28 @@
+{
+  "appTitle": "主的喜乐",
+  "joyolordapp": "主的喜乐",
+  
+  "bibleVerse": "圣经经文",
+  "xlcd": "笑里藏道",
+  "about": "资源简介",
+  "settings": "个人设置",
+  "rankingList": "喜乐榜",
+  "newList": "新出炉",
+  "photos": "相片存档",
+
+  "coreMenu": "核心选项",
+  "infoMenu": "附加选项",
+
+  "bible": "圣经",
+  "home": "首頁",
+  "qrCode": "二维码",
+  "joyolordappApp": "「主的喜乐」App",
+  "xlcdappApp": "「笑里藏道」App",
+  "useQrCode": "请扫描二维码便于使用",
+  "AboutPage": {
+    "title": "资源简介",
+    "joyolordappQrCode": "「主的喜乐」App 二维码",
+    "xlcdappQrCode": "「笑里藏道」App 二维码"
+  },
+  "zzz": "茲茲"
+}

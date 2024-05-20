@@ -165,8 +165,8 @@ import {
 
  */
 
-import { getScripture } from "../data/scriptures";
-import AppLogo from "../components/AppLogo.vue";
+import { getScripture } from "../../public/data/scriptures";
+import AppLogo from "@/components/AppLogo.vue";
 
 const getBackButtonText = () => {
   const win = window as any;

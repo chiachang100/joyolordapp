@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>資源簡介</ion-label>
+            <ion-label>{{ t("AboutPage.title") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -16,7 +16,7 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">資源簡介</ion-title>
+          <ion-title size="large">{{ t("AboutPage.title") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -32,18 +32,19 @@
               </ion-img> </ion-col></ion-row
         ></ion-grid>
         <ion-card-header>
-          <ion-card-title>「主的喜樂」App 二維碼</ion-card-title>
+          <ion-card-title>{{ t("AboutPage.joyolordappQrCode") }}</ion-card-title>
           <ion-card-subtitle
-            >「主的喜樂」App 二維碼 (joyolordapp QR Code)</ion-card-subtitle
+            >{{ t("AboutPage.joyolordappQrCode") }} (joyolordapp QR
+            Code)</ion-card-subtitle
           >
         </ion-card-header>
 
         <ion-card-content style="padding-top: 0; white-space: pre-wrap">
-          請掃描二維碼便於使用「主的喜樂」App。 (v{{ appVer }})
+          {{ t("useQrCode") }}{{ t("joyolordappApp") }}。 (v{{ appVer }})
         </ion-card-content>
 
         <ion-button fill="outline" expand="block" href="https://joyolordapp.web.app/"
-          >「主的喜樂」App (joyolordapp)</ion-button
+          >{{ t("joyolordappApp") }} (joyolordapp)</ion-button
         >
       </ion-card>
 
@@ -56,15 +57,17 @@
               </ion-img> </ion-col></ion-row
         ></ion-grid>
         <ion-card-header>
-          <ion-card-title>「笑裡藏道」App 二維碼</ion-card-title>
-          <ion-card-subtitle>「笑裡藏道」App 二維碼 (xlcdapp QR Code)</ion-card-subtitle>
+          <ion-card-title>{{ t("AboutPage.xlcdappQrCode") }}</ion-card-title>
+          <ion-card-subtitle
+            >{{ t("AboutPage.xlcdappQrCode") }} (xlcdapp QR Code)</ion-card-subtitle
+          >
         </ion-card-header>
 
         <ion-card-content style="padding-top: 0; white-space: pre-wrap">
-          請掃描二維碼便於使用「笑裡藏道」App。
+          {{ t("useQrCode") }}{{ t("xlcdappApp") }}。
         </ion-card-content>
         <ion-button fill="outline" expand="block" href="https://xlcdapp.web.app/"
-          >「笑裡藏道」App (xlcdapp)</ion-button
+          >{{ t("xlcdappApp") }} (xlcdapp)</ion-button
         >
       </ion-card>
 
@@ -286,7 +289,10 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import AppLogo from "../components/AppLogo.vue";
+import AppLogo from "@/components/AppLogo.vue";
 
 const appVer = inject<string>("appVersion");
+
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>

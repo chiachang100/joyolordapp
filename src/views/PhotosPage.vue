@@ -16,7 +16,7 @@
     <ion-content :fullscreen="true">
       <ion-grid>
         <ion-row>
-          <ion-col size="6" v-for="photo in photos" :key="photo">
+          <ion-col size="6" v-for="photo in photos" :key="photo.webviewPath">
             <ion-img :src="photo.webviewPath" @click="showActionSheet(photo)"></ion-img>
           </ion-col>
         </ion-row>
@@ -53,7 +53,7 @@ import {
 } from "@ionic/vue";
 import { camera, trash, close } from "ionicons/icons";
 import { usePhotoGallery, UserPhoto } from "../composables/usePhotoGallery";
-import AppLogo from "../components/AppLogo.vue";
+import AppLogo from "@/components/AppLogo.vue";
 
 const { photos, takePhoto, deletePhoto } = usePhotoGallery();
 

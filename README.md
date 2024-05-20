@@ -212,3 +212,92 @@ i  Emulator UI already enabled with port: (automatic)
 ```
 
 ---
+---
+## Vue I18N
+- [Vue I18n Internationalization plugin for Vue.js](https://vue-i18n.intlify.dev/)
+  - [vue-i18n-next: Vue I18n 9 for Vue 3 @GitHub](https://github.com/intlify/vue-i18n-next)
+  - [Getting Started](https://vue-i18n.intlify.dev/guide/essentials/started.html)
+    - [Example on stackblitz.com](https://stackblitz.com/edit/vue-i18n-get-started?file=main.js)
+- [vue-i18n-locale-message](https://github.com/intlify/vue-i18n-locale-message)
+- [Intlify CLI: CLI Tooling for i18n development](https://github.com/intlify/cli)
+- [A Comprehensive Guide to Vue Localization By Mohammad Ashour](https://phrase.com/blog/posts/ultimate-guide-to-vue-localization-with-vue-i18n/)
+  - [vue3-i18n-2022: Vue I18N Demo](https://github.com/PhraseApp-Blog/vue3-i18n-2022/tree/i18n-composition)
+
+- `npm install vue-i18n`
+
+### Create the locale messages
+- Create a json file for each locale in `src/locales/`
+  - `src/locales/`
+    - `en-US.json`
+    - `zh-CN.json`
+    - `zh-TW.json`
+
+### Include all local files in `src/i18n/i18nMain.ts`
+- Create `src/i18n/i18nMain.ts`
+
+### Add the `vue-18n` init in `main.ts`:
+```
+import i18n from './i18n/i18nMain';
+
+app.use(i18n);
+
+```
+
+### Use `useI18n` in the `.vue` components:
+```
+<script setup> 
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n() 
+</script>
+
+<template>
+  <h1>{{ $t("message.hello") }}</h1>
+OR
+  <h1>{{ t("message.hello") }}</h1>
+</template>
+```
+
+### Message Translation
+- [Composition API: Message Translation](https://vue-i18n.intlify.dev/guide/advanced/composition.html)
+
+```
+<script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({
+  locale: 'en',
+  messages: {
+    en: {
+      msg: 'hello',
+      named: '{msg} world!',
+      list: '{0} world!',
+      literal: "{'hello'} world!",
+      the_world: 'the world',
+      dio: 'DIO:',
+      linked: '@:dio @:the_world !!!!'
+    },
+    ja: {
+      msg: 'こんにちは',
+      named: '{msg} 世界！',
+      list: '{0} 世界！',
+      literal: "{'こんにちは'} 世界！",
+      the_world: 'ザ・ワールド！',
+      dio: 'ディオ:',
+      linked: '@:dio @:the_world ！！！！'
+    }
+  }
+})
+
+const msg = computed(() => t('msg'))
+</script>
+
+<template>
+  <p>{{ t('named', { msg }) }}</p>
+  <p>{{ t('list', [msg]) }}</p>
+  <p>{{ t('literal') }}</p>
+  <p>{{ t('linked') }}</p>
+</template>
+```
+
+---

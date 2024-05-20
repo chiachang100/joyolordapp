@@ -4,7 +4,7 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="app-list">
-            <ion-list-header>核心選項</ion-list-header>
+            <ion-list-header>{{ t("coreMenu") }}</ion-list-header>
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
               <ion-item
@@ -28,7 +28,7 @@
           </ion-list>
 
           <ion-list id="info-list">
-            <ion-list-header>附加選項</ion-list-header>
+            <ion-list-header>{{ t("infoMenu") }}</ion-list-header>
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in infoPages" :key="i">
               <ion-item
@@ -91,28 +91,35 @@ import {
 
 const selectedIndex = ref(0);
 
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
 const appPages = [
   {
-    title: "聖經經文",
+    // title: "聖經經文",
+    title: t("bibleVerse"),
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
   },
   {
-    title: "笑裡藏道",
+    // title: "笑裡藏道",
+    title: t("xlcd"),
     url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
   },
   {
-    title: "喜樂榜",
+    // title: "喜樂榜",
+    title: t("rankingList"),
     url: "/tabs/rankinglist",
     iosIcon: listCircleOutline,
     mdIcon: listCircleSharp,
     tab: "rankinglist",
   },
   {
-    title: "新出爐",
+    // title: "新出爐",
+    title: t("newList"),
     url: "/tabs/newlist",
     iosIcon: newspaperOutline,
     mdIcon: newspaperSharp,
@@ -122,19 +129,22 @@ const appPages = [
 
 const infoPages = [
   {
-    title: "相片存檔",
+    // title: "相片存檔",
+    title: t("photos"),
     url: "/tabs/photos",
     iosIcon: imagesOutline,
     mdIcon: imagesSharp,
   },
   {
-    title: "資源簡介",
+    // title: "資源簡介",
+    title: t("about"),
     url: "/tabs/about",
     iosIcon: informationCircleOutline,
     mdIcon: informationCircleSharp,
   },
   {
-    title: "個人設置",
+    // title: "個人設置",
+    title: t("settings"),
     url: "/tabs/settings",
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,

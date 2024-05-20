@@ -52,9 +52,9 @@ import {
 } from "@ionic/vue";
 
 import { computed } from "vue";
-import { getScriptures, Scripture } from "../data/scriptures";
+import { getScriptures, Scripture } from "../../public/data/scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
-import AppLogo from "../components/AppLogo.vue";
+import AppLogo from "@/components/AppLogo.vue";
 
 // const scriptures = ref<Scripture[]>(getScriptures());
 

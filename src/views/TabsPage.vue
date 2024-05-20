@@ -40,37 +40,45 @@ import {
 
 const selectedIndex = ref(0);
 
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
 const appPages = [
   {
-    title: "聖經經文",
+    // title: "聖經經文",
+    title: t("bibleVerse"),
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
     tab: "scriptures",
   },
   {
-    title: "笑裡藏道",
+    // title: "笑裡藏道",
+    title: t("xlcd"),
     url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
     tab: "joys",
   },
   {
-    title: "資源簡介",
+    // title: "資源簡介",
+    title: t("about"),
     url: "/tabs/about",
     iosIcon: informationCircleOutline,
     mdIcon: informationCircleSharp,
     tab: "about",
   },
   // {
-  //   title: "喜樂榜",
+  // // title: "喜樂榜",
+  // title: t("rankingList"),
   //   url: "/tabs/rankinglist",
   //   iosIcon: listCircleOutline,
   //   mdIcon: listCircleSharp,
   //   tab: "rankinglist",
   // },
   // {
-  //   title: "新出爐",
+  // // title: "新出爐",
+  // title: t("newList"),
   //   url: "/tabs/newlist",
   //   iosIcon: newspaperOutline,
   //   mdIcon: newspaperSharp,

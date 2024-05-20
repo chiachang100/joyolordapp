@@ -33,9 +33,14 @@
         </ion-card-header>
 
         <ion-card-content>
-          <ion-select label="選擇語言" label-placement="floating">
-            <ion-select-option value="zh_tw">繁體中文</ion-select-option>
-            <ion-select-option value="zh_cn">简体中文</ion-select-option>
+          <ion-select
+            v-model="selectedLocale"
+            label="選擇語言"
+            label-placement="floating"
+          >
+            <ion-select-option value="zh-TW">繁體中文</ion-select-option>
+            <ion-select-option value="zh-CN">简体中文</ion-select-option>
+            <ion-select-option value="en-US">英文</ion-select-option>
           </ion-select>
         </ion-card-content>
       </ion-card>
@@ -67,5 +72,15 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import AppLogo from "../components/AppLogo.vue";
+import AppLogo from "@/components/AppLogo.vue";
+
+import { ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
+const { t, locale } = useI18n();
+
+const selectedLocale = ref<string>("");
+watch(selectedLocale, (newLocale) => {
+  console.log("Selected locale:", newLocale);
+  locale.value = newLocale;
+});
 </script>

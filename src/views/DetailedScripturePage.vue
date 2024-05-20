@@ -55,9 +55,9 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
-import { getScripture } from "../data/scriptures";
-import AppLogo from "../components/AppLogo.vue";
-import AppAvatarLogo from "../components/AppAvatarLogo.vue";
+import { getScripture } from "../../public/data/scriptures";
+import AppLogo from "@/components/AppLogo.vue";
+import AppAvatarLogo from "@/components/AppAvatarLogo.vue";
 
 const getBackButtonText = () => {
   const win = window as any;

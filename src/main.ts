@@ -33,8 +33,8 @@ import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import AppAvatarLogo from './components/AppAvatarLogo.vue';
-import AppLogo from './components/AppLogo.vue';
+import AppAvatarLogo from '@/components/AppAvatarLogo.vue';
+import AppLogo from '@/components/AppLogo.vue';
 import packageJson from '../package.json';
 
 // vue-plyr
@@ -43,6 +43,14 @@ import 'vue-plyr/dist/vue-plyr.css'
 
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 defineCustomElements(window);
+
+// I18N
+//import i18n, { defaultLocale } from './i18n/i18nMain';
+import i18n from './i18n/i18nMain';
+
+// const i18n = createI18n({
+//   // something vue-i18n options here ...
+// })
 
 // Above the createApp() line
 const app = createApp(App)
@@ -64,9 +72,11 @@ app.provide('appNameInEnglish', packageJson.name);
 app.provide('appLogo', 'assets/icon/joyolordapp-logo.webp');
 app.provide('appLogoAlt', packageJson.name + ' logo');
 app.provide('appDescription', 'packageJson.description');
-app.provide('appEmail: string', 'chiachang100@gmail.com');
+app.provide('appEmail', 'chiachang100@gmail.com');
 
 app.provide('maxTopNumber', 5);
+
+app.use(i18n);
 
 // Hooray! we can mount our app now!
 router.isReady().then(() => {
