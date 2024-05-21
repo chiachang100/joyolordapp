@@ -26,14 +26,15 @@
           </ion-row>
         </ion-grid>
         <ion-card-header>
+          <ion-card-title>{{ scripture.title }} ({{ scripture.articleId }})</ion-card-title>
+        <!--
           <ion-card-title>
-            <h2>
-              {{ scripture.title }}({{ scripture.articleId }})
-              <span class="likes">
-                <ion-note>{{ scripture.likes }}</ion-note>
-              </span>
-            </h2>
+            {{ scripture.title }}({{ scripture.articleId }})
+            <span class="likes">
+              <ion-note>{{ scripture.likes }}</ion-note>
+            </span>
           </ion-card-title>
+        -->
           <ion-card-subtitle
             >{{ scripture.scriptureName }}
             {{ scripture.scriptureChapter }}</ion-card-subtitle
@@ -147,7 +148,7 @@ import {
   IonLabel,
   //IonIcon,
   // IonMenuButton,
-  IonNote,
+  //IonNote,
   IonPage,
   IonRow,
   IonTitle,
@@ -175,7 +176,7 @@ const { t } = useI18n();
 const getBackButtonText = () => {
   const win = window as any;
   const mode = win && win.Ionic && win.Ionic.mode;
-  return mode === "ios" ? "聖經經文" : "";
+  return mode === "ios" ? t("back") : "";
 };
 
 const route = useRoute();
@@ -211,6 +212,10 @@ onReady((event: PlayerEvent): void => {
 </script>
 
 <style scoped>
+ion-card-title {
+  font-size: 18px;
+}
+
 ion-item {
   --inner-padding-end: 0;
   --background: transparent;
@@ -222,7 +227,7 @@ ion-label {
 }
 
 ion-item h2 {
-  font-weight: 400;
+  font-weight: 600;
 
   /**
    * With larger font scales

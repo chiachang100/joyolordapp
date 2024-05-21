@@ -11,6 +11,7 @@
     <ion-label class="ion-text-wrap">
       <h2>
         {{index! + 1}}. {{ scripture.title }}({{ scripture.articleId }})
+        <!--
         <span class="likes">
           <ion-note>{{ scripture.likes }}</ion-note>
           <ion-icon
@@ -20,6 +21,7 @@
             v-if="isIos()"
           ></ion-icon>
         </span>
+        -->
       </h2>
       <p>
         ✞ {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
@@ -31,18 +33,24 @@
 </template>
 
 <script setup lang="ts">
-import { IonIcon, IonItem, IonLabel, IonNote, IonThumbnail } from "@ionic/vue";
-import { chevronForward } from "ionicons/icons";
+import {
+  // IonIcon,
+  IonItem,
+  IonLabel,
+  // IonNote,
+  IonThumbnail,
+} from "@ionic/vue";
+// import { chevronForward } from "ionicons/icons";
 
 defineProps({
   scripture: Object,
   index: Number,
 });
 
-const isIos = () => {
-  const win = window as any;
-  return win && win.Ionic && win.Ionic.mode === "ios";
-};
+// const isIos = () => {
+//   const win = window as any;
+//   return win && win.Ionic && win.Ionic.mode === "ios";
+// };
 </script>
 
 <style scoped>
@@ -73,6 +81,7 @@ const isIos = () => {
 }
 
 .list-item p {
+  font-weight: 600;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

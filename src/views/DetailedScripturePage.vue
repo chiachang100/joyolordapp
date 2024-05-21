@@ -65,7 +65,7 @@ const { t } = useI18n();
 const getBackButtonText = () => {
   const win = window as any;
   const mode = win && win.Ionic && win.Ionic.mode;
-  return mode === "ios" ? t("bibleVerse") : "";
+  return mode === "ios" ? t("back") : "";
 };
 
 const route = useRoute();
@@ -79,8 +79,9 @@ ion-item {
 }
 
 ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 8px;
 }
 
 ion-item h2 {

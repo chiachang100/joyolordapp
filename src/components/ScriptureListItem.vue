@@ -9,6 +9,7 @@
     <ion-label class="ion-text-wrap">
       <h2>
         {{index! + 1}}. {{ scripture.scriptureName }} {{ scripture.scriptureChapter }}
+        <!--
         <span class="likes">
           <ion-icon
             aria-hidden="true"
@@ -17,9 +18,10 @@
             v-if="isIos()"
           ></ion-icon>
         </span>
+        -->
       </h2>
       <p>
-        ✞ {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
+        {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
         {{ scripture.scriptureChapter }})
       </p>
     </ion-label>
@@ -27,18 +29,22 @@
 </template>
 
 <script setup lang="ts">
-import { IonIcon, IonItem, IonLabel } from "@ionic/vue";
-import { chevronForward } from "ionicons/icons";
+import {
+  // IonIcon,
+  IonItem,
+  IonLabel,
+} from "@ionic/vue";
+// import { chevronForward } from "ionicons/icons";
 
 defineProps({
   scripture: Object,
   index: Number,
 });
 
-const isIos = () => {
-  const win = window as any;
-  return win && win.Ionic && win.Ionic.mode === "ios";
-};
+// const isIos = () => {
+//   const win = window as any;
+//   return win && win.Ionic && win.Ionic.mode === "ios";
+// };
 </script>
 
 <style scoped>
@@ -48,8 +54,8 @@ const isIos = () => {
 }
 
 .list-item ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .list-item h2 {
@@ -69,6 +75,7 @@ const isIos = () => {
 }
 
 .list-item p {
+  font-weight: 600;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
