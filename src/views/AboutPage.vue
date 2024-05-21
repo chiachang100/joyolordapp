@@ -259,3 +259,9 @@ const appVer = inject<string>("appVersion");
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
+
+<style scoped>
+ion-card-title {
+  font-size: 18px;
+}
+</style>

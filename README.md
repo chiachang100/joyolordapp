@@ -24,16 +24,6 @@
 ### Use Capacitor to Deploy to iOS and Android
 - [Capacitor: Deploying to iOS and Android](https://ionicframework.com/docs/vue/your-first-app/deploying-mobile)
 
-### Firebase
-- [Firebase CLI reference](https://firebase.google.com/docs/cli)
-- [Add Firebase to your Flutter app](https://firebase.google.com/docs/flutter/setup?platform=android#available-plugins)
-- Source: [Firebase CLI reference](https://firebase.google.com/docs/cli)
-- [Use the CLI with CI systems](https://firebase.google.com/docs/cli#cli-ci-systems)
-- Install Node.js using NVM (Node Version Manager))
-  - Linux/MacOS: [Node Version Manager](https://github.com/nvm-sh/nvm)
-  - Windows: [nvm-windows](https://github.com/coreybutler/nvm-windows).
-- [Install and Configure Local Emulator Suite](https://firebase.google.com/docs/emulator-suite/install_and_configure)
-
 ### Additional Tools
 - [Ionic Icons](https://ionic.io/ionicons/)
 - [Emoji](https://emojidb.org/more-emojis?utm_source=user_search)
@@ -153,7 +143,17 @@ import '@ionic/react/css/palettes/dark.system.css';
 - Modify `Info.plist` and other parameters...
 
 ---
-## Using Firebase
+---
+## Using Firebase Hosting
+- [Firebase CLI reference](https://firebase.google.com/docs/cli)
+- [Add Firebase to your Flutter app](https://firebase.google.com/docs/flutter/setup?platform=android#available-plugins)
+- Source: [Firebase CLI reference](https://firebase.google.com/docs/cli)
+- [Use the CLI with CI systems](https://firebase.google.com/docs/cli#cli-ci-systems)
+- Install Node.js using NVM (Node Version Manager))
+  - Linux/MacOS: [Node Version Manager](https://github.com/nvm-sh/nvm)
+  - Windows: [nvm-windows](https://github.com/coreybutler/nvm-windows).
+- [Install and Configure Local Emulator Suite](https://firebase.google.com/docs/emulator-suite/install_and_configure)
+
 - Install Firebase tools
   - `npm install -g firebase-tools`
 - Log into Firebase
@@ -299,5 +299,17 @@ const msg = computed(() => t('msg'))
   <p>{{ t('linked') }}</p>
 </template>
 ```
+
+---
+## Firebase Authentication, Firestore and Analytics
+- Please see ** Firebase Hosting ** section above for Firebase information.
+
+- [VueFire Official Firebase bindings for Vue.js](https://vuefire.vuejs.org/)
+
+- Install VueFIre
+- `npm i vuefire firebase`
+
+- Firebase Analytics
+- `npm install firebase @capacitor-community/firebase-analytics`
 
 ---
