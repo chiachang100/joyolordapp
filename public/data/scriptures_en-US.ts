@@ -533,7 +533,7 @@ const scriptures_enUS: Scripture[] = [
     "articleId": 20,
     "title": '要孝敬父母',
     "scriptureName": 'Ephesians',
-    "scriptureChapter": '6:2~3',
+    "scriptureChapter": '6:2-3',
     "scriptureVerse": '“Honor your father and mother” which is the first commandment with a promise so that it may go well with you and that you may enjoy long life on the earth.',
     "prelude": '  忠孝仁愛禮義廉恥是中國人的傳統美德。孝敬父母理當是天經地義之事，兒女報答父母養育之恩可要趁著他們還健在的時候。'
         +'當父母親不在人間時，做什麼都不是那麼重要了。',
