@@ -5,7 +5,7 @@
       <ion-tab-bar slot="bottom">
         <ion-tab-button v-for="(p, i) in appPages" :key="i" :tab="p.tab" :href="p.url">
           <ion-icon :ios="p.iosIcon" :md="p.mdIcon" />
-          <ion-label>{{ p.title }}</ion-label>
+          <ion-label>{{ t(p.title) }}</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -29,12 +29,6 @@ import {
   homeSharp,
   informationCircleOutline,
   informationCircleSharp,
-  // peopleOutline,
-  // peopleSharp,
-  // listCircleOutline,
-  // listCircleSharp,
-  // newspaperOutline,
-  // newspaperSharp,
 } from "ionicons/icons";
 
 import { computed, watch } from "vue";
@@ -49,7 +43,7 @@ const { t } = useI18n();
 const appPages = [
   {
     // title: "聖經經文",
-    title: t("bibleVerse"),
+    title: 'bibleVerse',
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
@@ -57,7 +51,7 @@ const appPages = [
   },
   {
     // title: "笑裡藏道",
-    title: t("xlcd"),
+    title: 'xlcd',
     url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
@@ -65,7 +59,7 @@ const appPages = [
   },
   {
     // title: "資源簡介",
-    title: t("about"),
+    title: 'about',
     url: "/tabs/about",
     iosIcon: informationCircleOutline,
     mdIcon: informationCircleSharp,
@@ -73,7 +67,7 @@ const appPages = [
   },
   // {
   // // title: "喜樂榜",
-  // title: t("rankingList"),
+  //   title: 'rankingList',
   //   url: "/tabs/rankinglist",
   //   iosIcon: listCircleOutline,
   //   mdIcon: listCircleSharp,
@@ -81,7 +75,7 @@ const appPages = [
   // },
   // {
   // // title: "新出爐",
-  // title: t("newList"),
+  //   title: 'newList',
   //   url: "/tabs/newlist",
   //   iosIcon: newspaperOutline,
   //   mdIcon: newspaperSharp,
@@ -96,8 +90,8 @@ if (path !== undefined) {
   );
 }
 
-const currentLocale = computed(() => i18n.global.locale);
+const currentLocale = computed(() => i18n.global.locale.value);
 watch(currentLocale, (newLocale) => {
-  console.log("TabsPage: New locale:", newLocale);
+  console.log("TabsPage: New i18n.global.locale.value = ", newLocale);
 });
 </script>

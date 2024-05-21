@@ -17,7 +17,7 @@
 
     <ion-content :fullscreen="true" v-if="scripture">
       <!-- Bible Scripture Section -->
-      <ion-card color="warning">
+      <ion-card color="light">
         <ion-grid>
           <ion-row>
             <ion-col size="12">
@@ -47,7 +47,7 @@
 
       <!-- Prelude Section -->
       <p></p>
-      <ion-card color="primary">
+      <ion-card color="light">
         <ion-card-header>
           <ion-card-title>{{ t("DetailedPage.prelude") }}</ion-card-title>
           <ion-card-subtitle></ion-card-subtitle>
@@ -58,7 +58,7 @@
       </ion-card>
 
       <!-- Laugh Section -->
-      <ion-card color="secondary">
+      <ion-card color="light">
         <ion-card-header>
           <ion-card-title>{{ t("DetailedPage.laugh") }}</ion-card-title>
           <ion-card-subtitle></ion-card-subtitle>
@@ -69,7 +69,7 @@
       </ion-card>
 
       <!-- Talk Section -->
-      <ion-card color="tertiary">
+      <ion-card color="light">
         <ion-card-header>
           <ion-card-title>{{ t("xlcd") }}</ion-card-title>
           <ion-card-subtitle></ion-card-subtitle>
@@ -85,7 +85,7 @@
 
       <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
       <!-- youtube div element (None progressive enhancement )-->
-      <ion-card color="success">
+      <ion-card color="light">
         <ion-card-header>
           <ion-card-title>{{ t("DetailedPage.youtubeVideo") }}</ion-card-title>
           <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
@@ -165,6 +165,7 @@ import {
 
  */
 
+//import { Scripture } from "../../public/data/I_Scriptures";
 import { getScripture } from "../../public/data/scriptures";
 import AppLogo from "@/components/AppLogo.vue";
 

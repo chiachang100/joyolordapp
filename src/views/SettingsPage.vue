@@ -38,9 +38,7 @@
           <ion-select v-model="selectedLocale" label-placement="floating">
             <ion-select-option value="zh-TW">{{ t("locale_zh-TW") }}</ion-select-option>
             <ion-select-option value="zh-CN">{{ t("locale_zh-CN") }}</ion-select-option>
-            <!--
             <ion-select-option value="en-US">{{ t("locale_en-US") }}</ion-select-option>
-            -->
           </ion-select>
         </ion-card-content>
       </ion-card>
@@ -87,5 +85,8 @@ watch(selectedLocale, (newLocale) => {
   console.log("SettingPage: Selected locale:", newLocale);
   locale.value = newLocale;
   i18n.global.locale.value = newLocale as SupportedLocale;
+
+  // Refresh the entire app
+  // window.location.reload();
 });
 </script>

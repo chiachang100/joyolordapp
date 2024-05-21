@@ -19,7 +19,7 @@
         </span>
       </h2>
       <p>
-        ✞{{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
+        ✞ {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
         {{ scripture.scriptureChapter }})
       </p>
     </ion-label>

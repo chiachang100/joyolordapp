@@ -22,7 +22,7 @@
                   :ios="p.iosIcon"
                   :md="p.mdIcon"
                 ></ion-icon>
-                <ion-label>{{ p.title }}</ion-label>
+                <ion-label>{{ t(p.title) }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
@@ -46,7 +46,7 @@
                   :ios="p.iosIcon"
                   :md="p.mdIcon"
                 ></ion-icon>
-                <ion-label>{{ p.title }}</ion-label>
+                <ion-label>{{ t(p.title) }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
@@ -97,21 +97,21 @@ const { t } = useI18n();
 const appPages = [
   {
     // title: "聖經經文",
-    title: t("bibleVerse"),
+    title: 'bibleVerse',
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
   },
   {
     // title: "笑裡藏道",
-    title: t("xlcd"),
+    title: 'xlcd',
     url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
   },
   {
     // title: "喜樂榜",
-    title: t("rankingList"),
+    title: 'rankingList',
     url: "/tabs/rankinglist",
     iosIcon: listCircleOutline,
     mdIcon: listCircleSharp,
@@ -119,7 +119,7 @@ const appPages = [
   },
   {
     // title: "新出爐",
-    title: t("newList"),
+    title: 'newList',
     url: "/tabs/newlist",
     iosIcon: newspaperOutline,
     mdIcon: newspaperSharp,
@@ -128,23 +128,23 @@ const appPages = [
 ];
 
 const infoPages = [
-  {
-    // title: "相片存檔",
-    title: t("photos"),
-    url: "/tabs/photos",
-    iosIcon: imagesOutline,
-    mdIcon: imagesSharp,
-  },
+  // {
+  //   // title: "相片存檔",
+  //   title: 'photos',
+  //   url: "/tabs/photos",
+  //   iosIcon: imagesOutline,
+  //   mdIcon: imagesSharp,
+  // },
   {
     // title: "資源簡介",
-    title: t("about"),
+    title: 'about',
     url: "/tabs/about",
     iosIcon: informationCircleOutline,
     mdIcon: informationCircleSharp,
   },
   {
     // title: "個人設置",
-    title: t("settings"),
+    title: 'settings',
     url: "/tabs/settings",
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,

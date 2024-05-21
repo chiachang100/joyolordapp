@@ -6,8 +6,7 @@
           <ion-item>
             <app-logo />
             <ion-label
-              >{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }}
-              {{ t("ming") }})</ion-label
+              >{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }})</ion-label
             >
           </ion-item>
         </ion-title>
@@ -55,7 +54,8 @@ import {
 } from "@ionic/vue";
 
 import { computed, inject } from "vue";
-import { getScriptures, Scripture } from "../../public/data/scriptures";
+import { getScriptures } from "../../public/data/scriptures";
+import { Scripture } from "../../public/data/I_Scriptures";
 import ArticleListItem from "@/components/ArticleListItem.vue";
 import AppLogo from "@/components/AppLogo.vue";
 

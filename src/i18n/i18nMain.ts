@@ -14,22 +14,20 @@ import zhTW from '../locales/zh-TW';
 export const defaultLocale = 'zh-TW'
 
 // type MessageSchema = typeof enUS;
+// const i18n = createI18n<[MessageSchema], 'en-US' | 'zh-CN' | 'zh-TW'>({
 
 // call with I18n option
-// const i18n = createI18n<[MessageSchema], 'en-US' | 'zh-CN' | 'zh-TW'>({
 const i18n = createI18n({
   legacy: false, // Set to use Composition API
-  locale: defaultLocale, // default locale
+  locale: defaultLocale,
   fallbackLocale: defaultLocale,
   messages: {
-    // [defaultLocale]: defaultMessages,
     'en-US': enUS,
     'zh-CN': zhCN,
     'zh-TW': zhTW
   }
 });
 
-// setLocale(defaultLocale);
 // i18n.global.locale.value = defaultLocale;
 // i18n.global.locale.value = 'en-US';
 

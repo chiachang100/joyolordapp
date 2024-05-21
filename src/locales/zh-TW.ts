@@ -19,7 +19,6 @@ export default {
   "locale_en-US": "英文",
   "search": "搜尋",
   "qian": "前",
-  "ming": "名",
 
   "bible": "聖經",
   "home": "首頁",

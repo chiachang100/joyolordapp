@@ -1,32 +1,14 @@
-export interface Scripture {
-  id: number;
-  articleId: number;
-  title: string;
-  scriptureName: string;
-  scriptureChapter: string;
-  scriptureVerse: string;
-  prelude: string;
-  laugh: string;
-  photoUrl: string;
-  videoId: string;
-  videoName: string;
-  talk: string;
-  likes: number;
-  type: number;
-  isNew: boolean;
-  category: string;
-}
+import { Scripture } from "./I_Scriptures";
 
-const scriptures: Scripture[] = [
-//const localJoyStoreForZhTw: Scripture[] = [
-// Locale: zh_Hant_TW
+const scriptures_enUS: Scripture[] = [
+// Locale: en-US
   {
     "id": 0,
     "articleId": 1,
     "title": '愛的激勵',
-    "scriptureName": '哥林多後書',
+    "scriptureName": '2 Corinthians',
     "scriptureChapter": '5:14',
-    "scriptureVerse": '「原來基督的愛激勵我們，因我們想：一人既替眾人死，眾人就都死了；」',
+    "scriptureVerse": 'For Christ’s love compels us, because we are convinced that one died for all, and therefore all died.',
     "prelude": '  我們都需要推動力來激勵我們作好人或行善事。基本上有兩種推動力,即正面和負面的推動力。'
         +'有一些人需要正面的推動力，有一些人或動物卻需要負面的推動力，他們才會被激發去做他們該做的事。',
     "laugh": '  老張在他生日時，收到好朋友送給他一隻會說話的鸚鵡，但這隻鸚鵡的態度很差，滿口都是髒話，不是罵人的話，就是一些粗話。'
@@ -53,9 +35,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 2,
     "title": '勝過恐懼',
-    "scriptureName": '詩篇',
+    "scriptureName": 'Psalms',
     "scriptureChapter": '23:4',
-    "scriptureVerse": '「我雖然行過死蔭的幽谷，也不怕遭害，因為你與我同在，你的杖、你的竿都安慰我。」',
+    "scriptureVerse": 'Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me.',
     "prelude":
         '  恐懼對我們並不陌生。生活在不斷變的世界裡，常常會遇到「突然的事情」叫我們措手不及，若不留心，很容易會落入恐懼的深淵裡。因此，為了生存，我們會想盡辦法來保護自己。',
     "laugh":
@@ -82,9 +64,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 3,
     "title": '彼此饒恕',
-    "scriptureName": '歌羅西書',
+    "scriptureName": 'Colossians',
     "scriptureChapter": '3:13',
-    "scriptureVerse": '「倘若這人與那人有嫌隙，總要彼此包容，彼此饒恕；主怎樣饒恕了你們，你們也要怎樣饒恕人。」',
+    "scriptureVerse": 'Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.',
     "prelude":
         '  饒恕別人的過犯是一種美德，也是上帝要我們做的一件事。但是，我們往往會因為別人的傷害，無論是有意或無意的，耿耿於懷，久久都不能放下。連一個小學生也不例外。',
     "laugh": '  小美一直以來都不喜歡五年級班的國文老師，她在等待機會向老師表達她心中的不滿。'
@@ -112,9 +94,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 4,
     "title": '先去掉眼中樑木',
-    "scriptureName": '馬太福音',
+    "scriptureName": 'Matthew',
     "scriptureChapter": '7:4',
-    "scriptureVerse": '「你自己眼中有梁木，怎能對你弟兄說『容我去掉你眼中的刺』呢？」',
+    "scriptureVerse": 'How can you say to your brother, ‘Let me take the speck out of your eye,’ when all the time there is a plank in your own eye?',
     "prelude": '  每一個人都有優點，也有缺點。許多人際關係上的衝突，通常是出自人的自我中心，就是只看到別人的短處，而不知自己的缺點；'
         +'總是覺得別人有問題，自己是完美的。',
     "laugh": '  老王擔心他太太的聽覺有問題，可能需要帶耳機，他不知如何開口，就問他的醫生。'
@@ -142,9 +124,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 5,
     "title": '分享的喜樂',
-    "scriptureName": '路加福音',
+    "scriptureName": 'Luke',
     "scriptureChapter": '3:11',
-    "scriptureVerse": '「約翰回答說：『有兩件衣裳的，就分給那沒有的，有食物的也當這樣行。』」',
+    "scriptureVerse": 'John answered, “Anyone who has two shirts should share with the one who has none, and anyone who has food should do the same.”',
     "prelude": '  分享的喜樂是雙倍的喜樂。能夠與別人分享好的東西，不但是一種美德，也是一種祝福，因為這表示你有，你才會與別人分享。',
     "laugh": '  有一天，有一位老先生買了一個漢堡、薯條和一杯飲料。坐下以後，就把漢堡小心地切成一半，一半給太太，'
         +'然後小心地把薯條分成兩堆，一堆放在太太面前。之後，他喝了一口飲料，太太也喝了一口，就把它放在中間。'
@@ -172,9 +154,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 6,
     "title": '選擇報告好消息',
-    "scriptureName": '新譯本，箴言',
+    "scriptureName": 'Proverbs',
     "scriptureChapter": '15:30',
-    "scriptureVerse": '「眼中的光采使人心快樂；好消息使骨頭滋潤。」',
+    "scriptureVerse": 'Light in a messenger’s eyes brings joy to the heart, and good news gives health to the bones.',
     "prelude":
         '  我們每天聽到的消息，壞消息總是比好消息多。其實，每一件事情的發生，有它好的一面，也有不好的一面，關鍵是在於我們怎麼去看待所發生的事。',
     "laugh": '  有一天，在產房的後客廳坐了三位準爸爸：小張、小李和小曾，等候他們的太太生產，就聊起天來。'
@@ -198,9 +180,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 7,
     "title": '慷慨樂施',
-    "scriptureName": '提摩太前書',
+    "scriptureName": '1 Timothy',
     "scriptureChapter": '6:18',
-    "scriptureVerse": '「又要囑咐他們行善，在好事上富足，甘心施捨，樂意供給(或譯:體貼)人。」',
+    "scriptureVerse": 'Command them to do good, to be rich in good deeds, and to be generous and willing to share.',
     "prelude": '  一個慷慨大方的人，是人人都想結交的朋友。其實，慷慨樂施不是天生就會付的事，反而可以從別人身上學來的，或被環境影響的。',
     "laugh": '  有一個阿拉伯人要做心臟移植手術，醫生為他驗血，以防萬一需要輸血。卻發現他有稀有的血型，當地找不到，要到外國去找，終於找到一位猶太人有相同血型出願意捐血給他。'
         +'\n\n  手術非常的成功，這位阿拉伯先生寄一張感謝卡他，另外加上一顆很名貴的鑽石，還有一輛勞斯萊斯 （Rolls-Royce）名車送給他。'
@@ -223,9 +205,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 8,
     "title": '男女有別',
-    "scriptureName": '創世記',
+    "scriptureName": 'Genesis',
     "scriptureChapter": '1:27',
-    "scriptureVerse": '「神就照著自己的形象造人，乃是照著他的形象，造男造女。」',
+    "scriptureVerse": 'So God created mankind in his own image, in the image of God he created them; male and female he created them.',
     "prelude": '  自古以來，男女或夫妻之間的糾紛不斷，主要原因之一，乃是不了解男女之別。男女不但在溝通上大有區別，理解的程度也大有不同。',
     "laugh":
         '  有一天早上，王太太起床後很高興地對丈夫說： 「昨天晚上我做了一個很真實的夢，我夢見你買了一顆非常昂貴的鑽石戒指作我的生日禮物，我從來沒有做過這樣的夢，你想這是什麼意思呢？」'
@@ -249,9 +231,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 9,
     "title": '停止相咬相吞',
-    "scriptureName": '加拉太書',
+    "scriptureName": 'Galatians',
     "scriptureChapter": '5:15',
-    "scriptureVerse": '「你們要謹慎，若相咬相吞，只怕要彼此消滅了。」',
+    "scriptureVerse": 'f you bite and devour each other, watch out or you will be destroyed by each other.',
     "prelude": '  兩個人在一起相處，摩擦和衝突是自然的副產品，尤其是夫妻。但是無論如何，千萬不要在氣頭上多說話，免得後悔莫及。',
     "laugh":
         '  有一天，何先生和太太吵架之後，非常生氣，決定不和她說話，宣告冷戰。但心中掩不下一團的怒火，就決定做一首詩來發洩心中的怒氣。詩是這樣寫的：'
@@ -272,9 +254,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 10,
     "title": '不要只顧自己',
-    "scriptureName": '腓立比書',
+    "scriptureName": 'Philippians',
     "scriptureChapter": '2:4',
-    "scriptureVerse": '「各人不要單顧自己的事，也要顧別人的事。」',
+    "scriptureVerse": 'not looking to your own interests but each of you to the interests of the others.',
     "prelude": '  自我中心是人罪性的最具體寫照。自我中心的人是不受人歡迎的，因為他/她只是想到自己和自己的利益，不管他人的死活。',
     "laugh": '  小朱好不容易等到了中年，儲蓄了錢去大峽谷旅行，他就乘坐飛機遊覽大峽谷的風景。'
         +'當飛機飛到峽谷的上空時，引擎突然間發生故障，飛機師就對他們說：「你們一共有四個人，但我只有三個降落傘，你們自己決定如何分配吧！」'
@@ -298,9 +280,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 11,
     "title": '活出你的最高點',
-    "scriptureName": '以弗所書',
+    "scriptureName": 'Ephesians',
     "scriptureChapter": '4:1',
-    "scriptureVerse": '「我為主被囚的勸你們：既然蒙召，行事為人就當與蒙召的恩相稱，」',
+    "scriptureVerse": 'As a prisoner for the Lord, then, I urge you to live a life worthy of the calling you have received.',
     "prelude": '  每個人心中都有自己夢想的工作，但是常常因為現實環境所逼，久久都未能美夢成真，只好因為生活委曲求全。',
     "laugh": '  朱先生失業快一年了，有一天看到動物園招聘員工廣告，當他去詢問時，才驚然發覺只剩下一個空缺，就要人扮猴子。'
         +'因為過幾天就是公共假期，有很多孩子會來動物園，動物園剛好缺猴子，因此請人假扮。朱先生因著要用錢，就決定做這個假扮猴子的工作。'
@@ -322,9 +304,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 12,
     "title": '肯付代價',
-    "scriptureName": '馬太福音',
+    "scriptureName": 'Matthew',
     "scriptureChapter": '16:24',
-    "scriptureVerse": '「於是，耶穌對門徒說：「若有人要跟從我，就當捨己，背起他的十字架來跟從我。」',
+    "scriptureVerse": 'Then Jesus said to his disciples, “Whoever wants to be my disciple must deny themselves and take up their cross and follow me.',
     "prelude": '  凡是有價值的東西都附帶著代價；有成就和有影響力的人都是肯付代價的人。 往往代價的輕重決定於成就或影響力的大小。',
     "laugh":
         '  有一次，美國聯邦特警在徵召殺手，經過了所有的背景調查，面試及考試後，最後剩下三個人，兩個男的，一個女的。面對最後的考試，美國聯邦特警警官把第一個男子帶到鐵門口前，把一支手槍交給他說：'
@@ -353,9 +335,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 13,
     "title": '要做新事',
-    "scriptureName": '以賽亞書',
+    "scriptureName": 'Isaiah',
     "scriptureChapter": '43:19',
-    "scriptureVerse": '「看哪，我要做一件新事，如今要發現，你們豈不知道嗎？我必在曠野開道路，在沙漠開江河。」',
+    "scriptureVerse": 'See, I am doing a new thing! Now it springs up; do you not perceive it? I am making a way in the wilderness and streams in the wasteland.',
     "prelude":
         '  許多人都喜歡新的東西；喜歡看新的事情；喜歡聽新鮮的故事。但是在每天周而復始的工作與生活中，我們不再盼望看見新的事，生活就變得枯燥乏味了。',
     "laugh": '  有一天，沈姊妹心血來潮，買了一隻母鸚鵡，沒想到帶回家裡，牠說的第一句話就是，「親一親我，寶貝！」'
@@ -382,9 +364,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 14,
     "title": '要作智慧人',
-    "scriptureName": '以弗所書',
+    "scriptureName": 'Ephesians',
     "scriptureChapter": '5:15',
-    "scriptureVerse": '「你們要謹慎行事，不要像愚昧人，當像智慧人。」',
+    "scriptureVerse": 'Be very careful, then, how you live—not as unwise but as wise,',
     "prelude":
         '  我相信沒有一個人天生就想作愚眛人，人人都想作智慧人。其實，愚昧人和智慧人往往只是一線之差。智慧人知道他要的是什麼，並且知道他什麼時候要。',
     "laugh": '  八十四歲的老劉喜歡釣魚，有一天，當他坐在船上釣魚的時候，聽到有一個聲音說：「把我拿起來。」'
@@ -411,9 +393,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 15,
     "title": '上帝榮耀的豐富',
-    "scriptureName": '腓立比書',
+    "scriptureName": 'Philippians',
     "scriptureChapter": '4:19',
-    "scriptureVerse": '我的神必照他榮耀的豐富，在基督耶穌裡使你們一切所需用的都充足。',
+    "scriptureVerse": 'And my God will meet all your needs according to the riches of his glory in Christ Jesus.',
     "prelude": '  我們是有需要的人住在充滿各種需要的世界裡。人人都盼望自己所有的需要都能得滿足，'
         +'有一些需要的確靠自己可以得到滿足，但有時候，我們的需要卻會透過周圍的人得以滿足。',
     "laugh":
@@ -440,9 +422,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 16,
     "title": '起初的愛心',
-    "scriptureName": '啟示錄',
+    "scriptureName": 'Revelation',
     "scriptureChapter": '2:4',
-    "scriptureVerse": '「然而，有一件事我要責備你，就是你把起初的愛心離棄了。」',
+    "scriptureVerse": 'Yet I hold this against you: You have forsaken the love you had at first.',
     "prelude": '  有愛就有熱情。我們都喜歡和有愛有熱情的人在一起。很不幸的是，常常因為工作的忙碌，家務的繁重，'
         +'心中的熱情很容易被熄滅了，生活和婚姻因而失去了樂趣。',
     "laugh": '  有三位姊妹花，一個未婚，一個剛訂婚，一個已結婚。有一天，姊妹花們談起她們的另一半，談完之後，如們決定給另一半來個驚喜。'
@@ -468,9 +450,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 17,
     "title": '要像小孩子',
-    "scriptureName": '馬可福音',
+    "scriptureName": 'Mark',
     "scriptureChapter": '10:15',
-    "scriptureVerse": '「我實在告訴你們：凡要承受神國的，若不像小孩子，斷不能進去。」',
+    "scriptureVerse": 'Truly I tell you, anyone who will not receive the kingdom of God like a little child will never enter it.”',
     "prelude": '  小孩子的天真無邪，單純可愛是我們喜歡他們的原因。但是，有時候他們對現實環境的洞察力和解釋弄得我們啼笑皆非。',
     "laugh": '  有一天，老師要同學們用他們所學習到的成語來作文，題目是〈我的家〉。以下是小明的作文《我的家）：'
         +'\n\n  「我的家有爸爸、媽媽和我三個人。每天早上一出門，我們三人就分道揚鑣：各奔前程，晚上又殊途同歸。'
@@ -495,9 +477,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 18,
     "title": '應當一無掛慮',
-    "scriptureName": '腓立比書',
+    "scriptureName": 'Philippians',
     "scriptureChapter": '4:6',
-    "scriptureVerse": '「應當一無掛慮，只要凡事藉著禱告、祈求和感謝，將你們所要的告訴神。」',
+    "scriptureVerse": 'Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.',
     "prelude": '  憂慮或掛慮不知何時已經成為我們人的天性。從為工作、生活，到為小孩和家庭掛慮，'
         +'每天總是會有一些事或人讓我們掛慮，可笑的是，大部分我們所掛慮的事情都不會發生。',
     "laugh": '  有一天，胡先生夫婦因為相約去吃晚飯產生了一點誤會，第二天他們各自在日記上寫下自己的感受。'
@@ -526,9 +508,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 19,
     "title": '不要以惡報惡',
-    "scriptureName": '羅馬書',
+    "scriptureName": 'Romans',
     "scriptureChapter": '12:17',
-    "scriptureVerse": '「不要以惡報惡。眾人以為美的事，要留心去做。」',
+    "scriptureVerse": 'Do not repay anyone evil for evil. Be careful to do what is right in the eyes of everyone.',
     "prelude": '  當你受到別人的攻擊或不公平的待遇時，你會有什麼反應？一般人自然的反應會是反擊或等待機會報復。'
         +'卻沒有想到，報復的行為不但沒有為自己討回公道，反而弄巧成拙了。',
     "laugh": '  有一對姊妹，有一天在海邊撿到一個瓶子，兩人好奇地打開，竟然有一股煙冒出來，化成一個神仙，兩人嚇壞了，沒想到神仙居然開口說話：'
@@ -550,9 +532,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 20,
     "title": '要孝敬父母',
-    "scriptureName": '以弗所書',
+    "scriptureName": 'Ephesians',
     "scriptureChapter": '6:2~3',
-    "scriptureVerse": '「『要孝敬父母，使你得福，在世長壽。』這是第一條帶應許的誡命。」',
+    "scriptureVerse": '“Honor your father and mother” which is the first commandment with a promise so that it may go well with you and that you may enjoy long life on the earth.',
     "prelude": '  忠孝仁愛禮義廉恥是中國人的傳統美德。孝敬父母理當是天經地義之事，兒女報答父母養育之恩可要趁著他們還健在的時候。'
         +'當父母親不在人間時，做什麼都不是那麼重要了。',
     "laugh": '  老楊在清明節時去買祭品，看到居然有紙糊的iphone，還是最新的iPhone 6，便問老闆說：'
@@ -577,9 +559,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 21,
     "title": '靈巧像蛇、馴良像鴿子',
-    "scriptureName": '馬太福音',
+    "scriptureName": 'Matthew',
     "scriptureChapter": '10:16',
-    "scriptureVerse": '「我差你們去，如同羊進入狼群，所以你們要靈巧像蛇，馴良像鴿子。」',
+    "scriptureVerse": 'I am sending you out like sheep among wolves. Therefore be as shrewd as snakes and as innocent as doves.',
     "prelude":
         '  在這彎曲悖謬，人心險惡的世代裡，大家心裡都沒有平安。雖然害人之心不可有，但是防人之心卻不可少，因為有些事常常會發生在我們意料之外的。',
     "laugh": '  國慶黃金週有對老夫婦要去南方看孫子，離家前擔心家中被偷盜，翻箱倒櫃不算，還會損壞傢俱。'
@@ -605,9 +587,9 @@ const scriptures: Scripture[] = [
     "id": 0,
     "articleId": 52,
     "title": '與你同得福音的好處',
-    "scriptureName": '哥林多前書',
+    "scriptureName": '1 Corinthians',
     "scriptureChapter": '9:23',
-    "scriptureVerse": '「凡我所行的，都是為福音的緣故，為要與人同得這福音的好處。」',
+    "scriptureVerse": '「 I do all this for the sake of the gospel, that I may share in its blessings.',
     "prelude":
         '  與別人認同是建立良好人際關係的方法之一。有些人會想盡方法去和別人認同，為的是要討好對方；有些人卻是真心的要與別人認同，為的是得到對方的接納。',
     "laugh": '  有一個土著部落，每次集會活動時，大家都必須赤身裸體地在一起。'
@@ -638,12 +620,4 @@ const scriptures: Scripture[] = [
   }
 ];
 
-export const getScriptures = () => scriptures;
-
-//export const getScripture = (id: number) => scriptures.find(m => m.id === id);
-export const getScripture = (id: number) => scriptures.find(m => m.articleId === id);
-export const getNewScriptures = () => scriptures.map(m => {
-    if (m.isNew == true) {
-        return m;
-    }
-});
+export default scriptures_enUS;

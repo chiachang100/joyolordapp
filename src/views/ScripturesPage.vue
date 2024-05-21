@@ -63,7 +63,8 @@ import {
   IonContent,
 } from "@ionic/vue";
 import ScriptureListItem from "@/components/ScriptureListItem.vue";
-import { getScriptures, Scripture } from "../../public/data/scriptures";
+import { getScriptures } from "../../public/data/scriptures";
+import { Scripture } from "../../public/data/I_Scriptures";
 import { computed, ref } from "vue";
 import AppLogo from "@/components/AppLogo.vue";
 
