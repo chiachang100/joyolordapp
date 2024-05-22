@@ -13,6 +13,8 @@ import zhTW from '../locales/zh-TW';
 // export const defaultLocale = 'zh-CN'
 export const defaultLocale = 'zh-TW'
 
+export type SupportedLocale = "en-US" | "zh-TW" | "zh-CN";
+
 // type MessageSchema = typeof enUS;
 // const i18n = createI18n<[MessageSchema], 'en-US' | 'zh-CN' | 'zh-TW'>({
 

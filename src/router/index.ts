@@ -12,14 +12,6 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/tabs/joys'
   },
   {
-    path: '/scriptures/scripture/:id',
-    component: () => import('@/views/DetailedScripturePage.vue')
-  },
-  {
-    path: '/joys/article/:id',
-    component: () => import('@/views/DetailedArticlePage.vue')
-  },
-  {
     path: '/tabs/',
     component: TabsPage,
     children: [
@@ -56,7 +48,19 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/PhotosPage.vue')
       },
     ]
-  }
+  },
+  {
+    path: '/scriptures/scripture/:id',
+    component: () => import('@/views/DetailedScripturePage.vue')
+  },
+  {
+    path: '/joys/article/:id',
+    component: () => import('@/views/DetailedArticlePage.vue')
+  },
+  {
+    path: '/firebase',
+    component: () => import('@/views/FirebaseExpoPage.vue')
+  },
 ]
 
 const router = createRouter({

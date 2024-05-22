@@ -2,6 +2,8 @@
 export default {
   "appTitle": "Joy of the Lord",
   "joyolordapp": "joyolordapp",
+  "joyolordappName": "joyolordapp",
+  "xlcdappName": "xlcdapp",
 
   "bibleVerse": "Bible Verses",
   "xlcd": "Xiao Li Cang Dao",
@@ -10,13 +12,14 @@ export default {
   "rankingList": "Ranking List",
   "newList": "New Listing",
   "photos": "Photos",
+  "FirebaseExpo": "FirebaseExpo",
 
   "coreMenu": "Core Menu",
   "infoMenu": "Info Menu",
 
-  "locale_zh-TW": "Traditional Chinese",
-  "locale_zh-CN": "Simplified Chinese",
-  "locale_en-US": "English",
+  "zh-TW": "Traditional Chinese",
+  "zh-CN": "Simplified Chinese",
+  "en-US": "English",
   "search": "Search",
   "qian": "Top",
   "back": "Back",

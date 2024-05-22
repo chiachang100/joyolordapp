@@ -35,10 +35,12 @@
         </ion-card-header>
 
         <ion-card-content>
-          <ion-select v-model="selectedLocale" label-placement="floating">
-            <ion-select-option value="zh-TW">{{ t("locale_zh-TW") }}</ion-select-option>
-            <ion-select-option value="zh-CN">{{ t("locale_zh-CN") }}</ion-select-option>
-            <ion-select-option value="en-US">{{ t("locale_en-US") }}</ion-select-option>
+          <ion-select v-model="selectedLocale" 
+            :label="t('SettingsPage.selectLanguage')" 
+            :placeholder="t(i18n.global.locale.value)">
+            <ion-select-option value="zh-TW">{{ t("zh-TW") }}</ion-select-option>
+            <ion-select-option value="zh-CN">{{ t("zh-CN") }}</ion-select-option>
+            <ion-select-option value="en-US">{{ t("en-US") }}</ion-select-option>
           </ion-select>
         </ion-card-content>
       </ion-card>
@@ -72,13 +74,14 @@ import {
 
 import AppLogo from "@/components/AppLogo.vue";
 import i18n from "../i18n/i18nMain";
+import { SupportedLocale } from "../i18n/i18nMain";
 
 import { ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 const { t } = useI18n();
 
-type SupportedLocale = "en-US" | "zh-TW" | "zh-CN";
+// type SupportedLocale = "en-US" | "zh-TW" | "zh-CN";
 
 const selectedLocale = ref<string>("");
 watch(selectedLocale, (newLocale) => {
@@ -89,4 +92,16 @@ watch(selectedLocale, (newLocale) => {
   // Refresh the entire app
   // window.location.reload();
 });
+
 </script>
+
+<style scoped>
+ion-card {
+  font-weight: 600;
+}
+
+ion-card-title {
+  font-size: 18px;
+}
+
+</style>

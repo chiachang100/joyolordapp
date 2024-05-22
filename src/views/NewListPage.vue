@@ -72,3 +72,6 @@ const newListOfArticles = computed<Scripture[]>(() => {
   return getScriptures().filter((m) => m.isNew === true);
 });
 </script>
+
+<style scoped>
+</style>

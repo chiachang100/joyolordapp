@@ -95,3 +95,6 @@ watch(currentLocale, (newLocale) => {
   console.log("TabsPage: New i18n.global.locale.value = ", newLocale);
 });
 </script>
+
+<style scoped>
+</style>

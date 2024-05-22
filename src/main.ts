@@ -4,6 +4,24 @@ import router from './router';
 
 import { IonicVue } from '@ionic/vue';
 
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+import AppAvatarLogo from '@/components/AppAvatarLogo.vue';
+import AppLogo from '@/components/AppLogo.vue';
+import packageJson from '../package.json';
+
+// vue-plyr
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css'
+
+// I18N
+//import i18n, { defaultLocale } from './i18n/i18nMain';
+import i18n from './i18n/i18nMain';
+
+// VueFire
+import { VueFire, VueFireAuth } from 'vuefire'
+import { firebaseApp } from './services/firebase-services'
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
 
@@ -33,20 +51,8 @@ import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import AppAvatarLogo from '@/components/AppAvatarLogo.vue';
-import AppLogo from '@/components/AppLogo.vue';
-import packageJson from '../package.json';
 
-// vue-plyr
-import VuePlyr from 'vue-plyr'
-import 'vue-plyr/dist/vue-plyr.css'
-
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
 defineCustomElements(window);
-
-// I18N
-//import i18n, { defaultLocale } from './i18n/i18nMain';
-import i18n from './i18n/i18nMain';
 
 // const i18n = createI18n({
 //   // something vue-i18n options here ...
@@ -58,6 +64,13 @@ const app = createApp(App)
   .use(router)
   .use(VuePlyr, {
     plyr: {}
+  })
+  .use(i18n)
+  .use(VueFire, {
+    firebaseApp,
+    modules: [
+      VueFireAuth(),
+    ],
   });
 
 app.component('app-avatar-logo', AppAvatarLogo);
@@ -76,7 +89,7 @@ app.provide('appEmail', 'chiachang100@gmail.com');
 
 app.provide('maxTopNumber', 5);
 
-app.use(i18n);
+// app.use(i18n);
 
 // Hooray! we can mount our app now!
 router.isReady().then(() => {

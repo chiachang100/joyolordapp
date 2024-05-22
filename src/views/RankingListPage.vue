@@ -79,3 +79,6 @@ const rankingListOfArticles = computed<Scripture[]>(() => {
   return topItems;
 });
 </script>
+
+<style scoped>
+</style>

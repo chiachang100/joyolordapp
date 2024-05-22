@@ -2,6 +2,8 @@
 export default {
   "appTitle": "主的喜樂",
   "joyolordapp": "主的喜樂",
+  "joyolordappName": "joyolordapp",
+  "xlcdappName": "xlcdapp",
 
   "bibleVerse": "聖經經文",
   "xlcd": "笑裡藏道",
@@ -10,13 +12,14 @@ export default {
   "rankingList": "喜樂榜",
   "newList": "新出爐",
   "photos": "相片存檔",
+  "FirebaseExpo": "FirebaseExpo",
 
   "coreMenu": "核心選項",
   "infoMenu": "附加選項",
 
-  "locale_zh-TW": "繁體中文",
-  "locale_zh-CN": "簡體中文",
-  "locale_en-US": "英文",
+  "zh-TW": "繁體中文",
+  "zh-CN": "簡體中文",
+  "en-US": "英文",
   "search": "搜尋",
   "qian": "前",
   "back": "返回",

@@ -85,3 +85,6 @@ const showActionSheet = async (photo: UserPhoto) => {
   await actionSheet.present();
 };
 </script>
+
+<style scoped>
+</style>

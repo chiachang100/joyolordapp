@@ -77,12 +77,13 @@ import {
   bookSharp,
   homeOutline,
   homeSharp,
-  imagesOutline,
-  imagesSharp,
+  // imagesOutline,
+  // imagesSharp,
   informationCircleOutline,
   informationCircleSharp,
   listCircleOutline,
   listCircleSharp,
+  logoFirebase,
   newspaperOutline,
   newspaperSharp,
   settingsOutline,
@@ -148,6 +149,12 @@ const infoPages = [
     url: "/tabs/settings",
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,
+  },
+  {
+    title: 'FirebaseExpo',
+    url: "/firebase",
+    iosIcon: logoFirebase,
+    mdIcon: logoFirebase,
   },
 ];
 

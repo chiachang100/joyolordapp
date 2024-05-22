@@ -99,3 +99,6 @@ const onSearchInput = () => {
   console.log("searchTerm=" + searchTerm.value?.trim());
 };
 </script>
+
+<style scoped>
+</style>

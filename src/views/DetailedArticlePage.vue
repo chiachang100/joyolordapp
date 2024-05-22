@@ -18,6 +18,8 @@
     <ion-content :fullscreen="true" v-if="scripture">
       <!-- Bible Scripture Section -->
       <ion-card color="light">
+        <ion-img :src="scripture.photoUrl" :alt="scripture.title" />
+      <!--
         <ion-grid>
           <ion-row>
             <ion-col size="12">
@@ -25,6 +27,7 @@
             </ion-col>
           </ion-row>
         </ion-grid>
+      -->
         <ion-card-header>
           <ion-card-title>{{ scripture.title }} ({{ scripture.articleId }})</ion-card-title>
         <!--
@@ -105,7 +108,7 @@
       <!-- youtube iframe with progressive enhancement (extra queries after the url to optimize the embed) -->
       <!--src="https://www.youtube.com/embed/Mez7DnMOlgc?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"-->
       <!--
-      <ion-card color="success">
+      <ion-card color="light">
         <ion-card-header>
           <ion-card-title>YouTube視頻</ion-card-title>
           <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
@@ -139,9 +142,9 @@ import {
   IonCardSubtitle,
   IonCardTitle,
   IonCardHeader,
-  IonCol,
+  // IonCol,
   IonContent,
-  IonGrid,
+  // IonGrid,
   IonHeader,
   IonImg,
   IonItem,
@@ -150,7 +153,7 @@ import {
   // IonMenuButton,
   //IonNote,
   IonPage,
-  IonRow,
+  // IonRow,
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
@@ -214,6 +217,11 @@ onReady((event: PlayerEvent): void => {
 <style scoped>
 ion-card-title {
   font-size: 18px;
+}
+
+ion-img {
+  width: 100%;
+  object-fit: cover;
 }
 
 ion-item {

@@ -75,6 +75,11 @@
 
       <!-- 「笑裡藏道」書籍介紹 Section -->
       <ion-card>
+        <ion-img style="width: 100%; object-fit: cover;"
+          src="assets/images/xlcd/xlcd_book_photo.png"
+          :alt="t('AboutPage.bookIntro')">
+        </ion-img>
+      <!--
         <ion-grid
           ><ion-row
             ><ion-col size="8" offset="2">
@@ -84,6 +89,7 @@
               >
               </ion-img> </ion-col></ion-row
         ></ion-grid>
+        -->
         <ion-card-header>
           <ion-card-title>{{ t("AboutPage.bookIntro") }}</ion-card-title>
           <ion-card-subtitle>{{ t("AboutPage.bookIntroSubtitle") }}</ion-card-subtitle>
@@ -115,6 +121,11 @@
 
       <!-- 「笑裡藏道」書籍作者 Section -->
       <ion-card>
+        <ion-img style="width: 100%; object-fit: cover;"
+          src="assets/images/xlcd/pastor_cheng_photo.png"
+          :alt="t('AboutPage.bookAuthor')">
+        </ion-img>
+        <!--
         <ion-grid
           ><ion-row
             ><ion-col size="8" offset="2">
@@ -124,6 +135,7 @@
               >
               </ion-img> </ion-col></ion-row
         ></ion-grid>
+        -->
         <ion-card-header>
           <ion-card-title>{{ t("AboutPage.bookAuthor") }}</ion-card-title>
           <ion-card-subtitle>{{ t("AboutPage.bookAuthorSubtitle") }}</ion-card-subtitle>
@@ -141,15 +153,21 @@
 
       <!-- 讚揚「笑裡藏道」書籍 Section -->
       <ion-card>
+        <ion-img style="width: 100%; object-fit: cover;"
+          src="assets/images/xlcd/xlcdapp_photo_default.png"
+          :alt="t('AboutPage.bookPraisesTitle')">
+        </ion-img>
+      <!--
         <ion-grid
-          ><ion-row
+          ><ion-row  style="width: 100%; object-fit: cover;"
             ><ion-col size="8" offset="2">
-              <ion-img
+              <ion-img style="width: 100%; object-fit: cover;"
                 src="assets/images/xlcd/xlcdapp_photo_default.png"
                 :alt="t('AboutPage.bookPraisesTitle')"
               >
               </ion-img> </ion-col></ion-row
         ></ion-grid>
+        -->
         <ion-card-header>
           <ion-card-title>{{ t("AboutPage.bookPraisesTitle") }}</ion-card-title>
           <ion-card-subtitle>{{ t("AboutPage.bookPraisesSubtitle") }}</ion-card-subtitle>
@@ -199,15 +217,21 @@
 
       <!-- App 程式開發員 Section -->
       <ion-card>
+        <ion-img style="width: 100%; object-fit: cover;"
+          src="assets/images/xlcd/joy_pray_thanks.png"
+          :alt="t('AboutPage.appDeveloper')">
+        </ion-img>
+      <!--
         <ion-grid
           ><ion-row
             ><ion-col size="8" offset="2">
-              <ion-img
+              <ion-img style="width: 100%; object-fit: cover;"
                 src="assets/images/xlcd/joy_pray_thanks.png"
                 :alt="t('AboutPage.appDeveloper')"
               >
               </ion-img> </ion-col></ion-row
         ></ion-grid>
+        -->
         <ion-card-header>
           <ion-card-title>{{ t("AboutPage.appDeveloper") }}</ion-card-title>
           <ion-card-subtitle>{{ t("AboutPage.appDeveloperSubtitle") }}</ion-card-subtitle>
@@ -258,6 +282,7 @@ const appVer = inject<string>("appVersion");
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
+
 </script>
 
 <style scoped>
