@@ -304,12 +304,19 @@ const msg = computed(() => t('msg'))
 ## Firebase Authentication, Firestore and Analytics
 - Please see ** Firebase Hosting ** section above for Firebase information.
 
+### Firebase Analytics
+- [@capacitor-firebase/analytics](https://github.com/capawesome-team/capacitor-firebase/tree/main/packages/analytics)
+- `npm install @capacitor-firebase/analytics firebase`
+- Create `src/services/analytics.service.ts`
+
+### Firebase Firestore
 - [VueFire Official Firebase bindings for Vue.js](https://vuefire.vuejs.org/)
 
 - Install VueFIre
 - `npm i vuefire firebase`
+- Create `src/services/firebase.service.ts`
 
-- Firebase Analytics
-- `npm install firebase @capacitor-community/firebase-analytics`
+### Firebase Authentication
+
 
 ---

@@ -20,7 +20,7 @@ import i18n from './i18n/i18nMain';
 
 // VueFire
 import { VueFire, VueFireAuth } from 'vuefire'
-import { firebaseApp } from './services/firebase-services'
+import { firebaseApp } from './services/firebase.services'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
@@ -94,4 +94,14 @@ app.provide('maxTopNumber', 5);
 // Hooray! we can mount our app now!
 router.isReady().then(() => {
   app.mount('#app');
+});
+
+import { AnalyticsService } from './services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'Main',
+    joyolordapp_screen_class: 'Main',
+  },
 });

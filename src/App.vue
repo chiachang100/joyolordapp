@@ -164,6 +164,17 @@ if (path !== undefined) {
     (page) => page.title.toLowerCase() === path.toLowerCase()
   );
 }
+
+import { AnalyticsService } from './services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'App',
+    joyolordapp_screen_class: 'App',
+  },
+});
+
 </script>
 
 <style scoped>

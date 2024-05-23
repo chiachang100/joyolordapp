@@ -98,6 +98,17 @@ const filteredListOfScriptures = computed<Scripture[]>(() => {
 const onSearchInput = () => {
   console.log("searchTerm=" + searchTerm.value?.trim());
 };
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'ScripturesPage',
+    joyolordapp_screen_class: 'ScripturesPage',
+  },
+});
+
 </script>
 
 <style scoped>

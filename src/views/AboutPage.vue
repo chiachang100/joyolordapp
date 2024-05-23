@@ -283,6 +283,16 @@ const appVer = inject<string>("appVersion");
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'AboutPage',
+    joyolordapp_screen_class: 'AboutPage',
+  },
+});
+
 </script>
 
 <style scoped>

@@ -84,6 +84,17 @@ const showActionSheet = async (photo: UserPhoto) => {
   });
   await actionSheet.present();
 };
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'PhotosPage',
+    joyolordapp_screen_class: 'PhotosPage',
+  },
+});
+
 </script>
 
 <style scoped>

@@ -94,6 +94,17 @@ const currentLocale = computed(() => i18n.global.locale.value);
 watch(currentLocale, (newLocale) => {
   console.log("TabsPage: New i18n.global.locale.value = ", newLocale);
 });
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'TabsPage',
+    joyolordapp_screen_class: 'TabBars',
+  },
+});
+
 </script>
 
 <style scoped>

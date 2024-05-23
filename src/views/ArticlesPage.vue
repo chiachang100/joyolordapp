@@ -104,6 +104,17 @@ const filteredListOfArticles = computed<Scripture[]>(() => {
 const onSearchInput = () => {
   console.log("searchTerm=" + searchTerm.value?.trim());
 };
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'ArticlesPage',
+    joyolordapp_screen_class: 'ArticlesPage',
+  },
+});
+
 </script>
 
 <style scoped>

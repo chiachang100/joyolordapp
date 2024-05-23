@@ -74,6 +74,24 @@ import { collection } from "firebase/firestore"
 const db = useFirestore()
 const joys = useCollection(collection(db, 'joys'))
 
+import { ref } from 'vue';
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'Firebase',
+    joyolordapp_screen_class: 'FirebaseExpoPage',
+  },
+});
+
+// Test Firebase Analytics functions
+// const enabled = analytics.isEnabled();
+ref(analytics.setEnabled({ enabled: true }));
+analytics.setEnabled({ enabled: true });
+analytics.setUserId({ userId: 'test' });
+analytics.setUserProperty({ key: 'language', value: 'en-US' });
+
 </script>
 
 <style scoped>

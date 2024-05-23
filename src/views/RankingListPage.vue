@@ -78,6 +78,17 @@ const rankingListOfArticles = computed<Scripture[]>(() => {
   const topItems = filteredArray.slice(0, maxTopNum);
   return topItems;
 });
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'RankingListPage',
+    joyolordapp_screen_class: 'RankingListPage',
+  },
+});
+
 </script>
 
 <style scoped>

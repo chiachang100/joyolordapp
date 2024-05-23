@@ -71,6 +71,17 @@ const refresh = (ev: CustomEvent) => {
 const newListOfArticles = computed<Scripture[]>(() => {
   return getScriptures().filter((m) => m.isNew === true);
 });
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'NewListPage',
+    joyolordapp_screen_class: 'NewListPage',
+  },
+});
+
 </script>
 
 <style scoped>

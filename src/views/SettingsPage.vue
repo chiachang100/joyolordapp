@@ -93,6 +93,16 @@ watch(selectedLocale, (newLocale) => {
   // window.location.reload();
 });
 
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'SettingsPage',
+    joyolordapp_screen_class: 'SettingsPage',
+  },
+});
+
 </script>
 
 <style scoped>

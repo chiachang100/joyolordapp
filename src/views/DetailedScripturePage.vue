@@ -70,6 +70,17 @@ const getBackButtonText = () => {
 
 const route = useRoute();
 const scripture = getScripture(parseInt(route.params.id as string, 10));
+
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'ScripturesPage',
+    joyolordapp_screen_class: 'DetailedScripturesPage',
+  },
+});
+
 </script>
 
 <style scoped>

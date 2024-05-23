@@ -185,6 +185,16 @@ const getBackButtonText = () => {
 const route = useRoute();
 const scripture = getScripture(parseInt(route.params.id as string, 10));
 
+import { AnalyticsService } from '../services/analytics.service';
+const analytics = new AnalyticsService();
+analytics.logEvent({
+  name: 'screen_name',
+  parameters: {
+    joyolordapp_screen: 'ArticlesPage',
+    joyolordapp_screen_class: 'DetailedArticlesPage',
+  },
+});
+
 //const videoSrc = "https://www.youtube.com/embed/bTqVqk7FSmY?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1";
 // const videoSrc =
 //   "https://www.youtube.com/embed/" +

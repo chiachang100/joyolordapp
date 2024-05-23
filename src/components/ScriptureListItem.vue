@@ -45,6 +45,18 @@ defineProps({
 //   const win = window as any;
 //   return win && win.Ionic && win.Ionic.mode === "ios";
 // };
+
+// Disable this event since it generatee too many events.
+// import { AnalyticsService } from '../services/analytics.service';
+// const analytics = new AnalyticsService();
+// analytics.logEvent({
+//   name: 'screen_name',
+//   parameters: {
+//     joyolordapp_screen: 'ScripturesPage',
+//     joyolordapp_screen_class: 'ScriptureListItem',
+//   },
+// });
+
 </script>
 
 <style scoped>

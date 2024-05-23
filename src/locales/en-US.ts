@@ -6,7 +6,7 @@ export default {
   "xlcdappName": "xlcdapp",
 
   "bibleVerse": "Bible Verses",
-  "xlcd": "Xiao Li Cang Dao",
+  "xlcd": "XLCD",
   "about": "About",
   "settings": "Settings",
   "rankingList": "Ranking List",
