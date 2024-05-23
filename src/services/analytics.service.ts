@@ -4,7 +4,6 @@ export class AnalyticsService {
   private analyticsEnabled = true;
 
   constructor() {
-    console.log('analytics.service: constructor');
   }
 
   setEnabled = async ({ enabled }: { enabled: boolean }) => {
