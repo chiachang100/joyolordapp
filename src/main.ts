@@ -92,7 +92,7 @@ app.provide('appXlcdLogoAlt', 'xlcdapp logo');
 app.provide('appDescription', 'packageJson.description');
 app.provide('appEmail', 'chiachang100@gmail.com');
 
-app.provide('maxTopNumber', 5);
+app.provide('maxTopNumber', 7);
 
 // app.use(i18n);
 
@@ -101,12 +101,17 @@ router.isReady().then(() => {
   app.mount('#app');
 });
 
+const app_version = packageJson.version;
+
 import { AnalyticsService } from './services/analytics.service';
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'screen_name',
+  name: 'jola_screen_name',
   parameters: {
+    app_version: app_version,
     joyolordapp_screen: 'Main',
     joyolordapp_screen_class: 'Main',
   },
 });
+
+analytics.setUserProperty({ key: 'app_version', value: app_version });

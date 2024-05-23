@@ -19,7 +19,7 @@
     <ion-content :fullscreen="true" v-if="article">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("article.title") }}</ion-title>
+          <ion-title size="large">{{ article.title }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -196,10 +196,10 @@ const article = getArticle(parseInt(route.params.id as string, 10));
 import { AnalyticsService } from '../services/analytics.service';
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'screen_name',
+  name: 'jola_screen_name',
   parameters: {
     joyolordapp_screen: 'ArticlesPage',
-    joyolordapp_screen_class: 'DetailedArticlesPage',
+    joyolordapp_screen_class: 'DetailedArticlesPage_' + article?.articleId,
   },
 });
 

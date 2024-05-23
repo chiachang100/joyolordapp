@@ -102,7 +102,7 @@ const onSearchInput = () => {
 import { AnalyticsService } from '../services/analytics.service';
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'screen_name',
+  name: 'jola_screen_name',
   parameters: {
     joyolordapp_screen: 'ScripturesPage',
     joyolordapp_screen_class: 'ScripturesPage',

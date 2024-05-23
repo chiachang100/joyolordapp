@@ -77,7 +77,7 @@ const newListOfArticles = computed<Article[]>(() => {
 import { AnalyticsService } from '../services/analytics.service';
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'screen_name',
+  name: 'jola_screen_name',
   parameters: {
     joyolordapp_screen: 'NewListPage',
     joyolordapp_screen_class: 'NewListPage',
