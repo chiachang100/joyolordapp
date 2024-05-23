@@ -30,7 +30,13 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("bibleVerse") }}</ion-title>
+          <!--<ion-title size="large">{{ t("bibleVerse") }}</ion-title>-->
+          <ion-title size="large">
+            <ion-item>
+              <app-logo />
+              <ion-label>{{ t("bibleVerse") }}</ion-label>
+            </ion-item>
+          </ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -64,7 +70,7 @@ import {
 } from "@ionic/vue";
 import ScriptureListItem from "@/components/ScriptureListItem.vue";
 import { getScriptures } from "../../public/data/scriptures";
-import { Scripture } from "../../public/data/I_Scriptures";
+import { Scripture } from "../../public/data/I_Scripture";
 import { computed, ref } from "vue";
 import AppLogo from "@/components/AppLogo.vue";
 

@@ -226,14 +226,12 @@ i  Emulator UI already enabled with port: (automatic)
 - `npm install vue-i18n`
 
 ### Create the locale messages
-- Create a json file for each locale in `src/locales/`
-  - `src/locales/`
+- Create a json file for each locale in `src/i18n/` and include them in `i18nMain.ts`
+  - `src/i18n/`
     - `en-US.json`
     - `zh-CN.json`
     - `zh-TW.json`
-
-### Include all local files in `src/i18n/i18nMain.ts`
-- Create `src/i18n/i18nMain.ts`
+    - `i18nMain.ts`
 
 ### Add the `vue-18n` init in `main.ts`:
 ```

@@ -8,6 +8,7 @@ import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 import AppAvatarLogo from '@/components/AppAvatarLogo.vue';
 import AppLogo from '@/components/AppLogo.vue';
+import AppXlcdLogo from '@/components/AppXlcdLogo.vue';
 import packageJson from '../package.json';
 
 // vue-plyr
@@ -73,8 +74,10 @@ const app = createApp(App)
     ],
   });
 
+// Global components
 app.component('app-avatar-logo', AppAvatarLogo);
 app.component('app-logo', AppLogo);
+app.component('app-xlcd-logo', AppXlcdLogo);
 
 // Global variables
 app.provide('appVersion', packageJson.version);
@@ -84,6 +87,8 @@ app.provide('appName', '主的喜樂');
 app.provide('appNameInEnglish', packageJson.name);
 app.provide('appLogo', 'assets/icon/joyolordapp-logo.webp');
 app.provide('appLogoAlt', packageJson.name + ' logo');
+app.provide('appXlcdLogo', 'assets/icon/xlcdapp-logo.webp');
+app.provide('appXlcdLogoAlt', 'xlcdapp logo');
 app.provide('appDescription', 'packageJson.description');
 app.provide('appEmail', 'chiachang100@gmail.com');
 

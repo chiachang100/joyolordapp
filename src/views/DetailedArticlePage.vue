@@ -1,11 +1,12 @@
 <template>
-  <ion-page v-if="scripture">
+  <ion-page v-if="article">
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>
           <ion-item>
-            <app-logo />
-            <ion-label>{{ scripture.title }}</ion-label>
+            <!--<app-logo />-->
+            <app-xlcd-logo />
+            <ion-label>{{ article.title }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -15,37 +16,50 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true" v-if="scripture">
+    <ion-content :fullscreen="true" v-if="article">
+      <ion-header collapse="condense">
+        <ion-toolbar>
+          <!--<ion-title size="large">{{ t("article.title") }}</ion-title>-->
+          <ion-title size="large">
+            <ion-item>
+              <!--<app-logo />-->
+              <app-xlcd-logo />
+              <ion-label>{{ article.title }}</ion-label>
+            </ion-item>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+
       <!-- Bible Scripture Section -->
       <ion-card color="light">
-        <ion-img :src="scripture.photoUrl" :alt="scripture.title" />
+        <ion-img :src="article.photoUrl" :alt="article.title" />
       <!--
         <ion-grid>
           <ion-row>
             <ion-col size="12">
-              <ion-img :src="scripture.photoUrl" :alt="scripture.title" />
+              <ion-img :src="article.photoUrl" :alt="article.title" />
             </ion-col>
           </ion-row>
         </ion-grid>
       -->
         <ion-card-header>
-          <ion-card-title>{{ scripture.title }} ({{ scripture.articleId }})</ion-card-title>
+          <ion-card-title>{{ article.title }} ({{ article.articleId }})</ion-card-title>
         <!--
           <ion-card-title>
-            {{ scripture.title }}({{ scripture.articleId }})
+            {{ article.title }}({{ article.articleId }})
             <span class="likes">
-              <ion-note>{{ scripture.likes }}</ion-note>
+              <ion-note>{{ article.likes }}</ion-note>
             </span>
           </ion-card-title>
         -->
           <ion-card-subtitle
-            >{{ scripture.scriptureName }}
-            {{ scripture.scriptureChapter }}</ion-card-subtitle
+            >{{ article.scriptureName }}
+            {{ article.scriptureChapter }}</ion-card-subtitle
           >
         </ion-card-header>
 
         <ion-card-content>
-          {{ scripture.scriptureVerse }}
+          {{ article.scriptureVerse }}
         </ion-card-content>
       </ion-card>
 
@@ -57,7 +71,7 @@
           <ion-card-subtitle></ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          {{ scripture.prelude }}
+          {{ article.prelude }}
         </ion-card-content>
       </ion-card>
 
@@ -68,7 +82,7 @@
           <ion-card-subtitle></ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          {{ scripture.laugh }}
+          {{ article.laugh }}
         </ion-card-content>
       </ion-card>
 
@@ -79,7 +93,7 @@
           <ion-card-subtitle></ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          {{ scripture.talk }}
+          {{ article.talk }}
         </ion-card-content>
       </ion-card>
 
@@ -92,14 +106,14 @@
       <ion-card color="light">
         <ion-card-header>
           <ion-card-title>{{ t("DetailedPage.youtubeVideo") }}</ion-card-title>
-          <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
+          <ion-card-subtitle>{{ article.videoName }}</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
           <vue-plyr>
             <div
               data-plyr-provider="youtube"
-              :data-plyr-embed-id="scripture.videoId"
+              :data-plyr-embed-id="article.videoId"
             ></div>
           </vue-plyr>
         </ion-card-content>
@@ -111,7 +125,7 @@
       <ion-card color="light">
         <ion-card-header>
           <ion-card-title>YouTube視頻</ion-card-title>
-          <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
+          <ion-card-subtitle>{{ article.videoName }}</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
@@ -169,9 +183,10 @@ import {
 
  */
 
-//import { Scripture } from "../../public/data/I_Scriptures";
-import { getScripture } from "../../public/data/scriptures";
-import AppLogo from "@/components/AppLogo.vue";
+//import { Article } from "../../public/data/I_Article";
+import { getArticle } from "../../public/data/articles";
+// import AppLogo from "@/components/AppLogo.vue";
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -183,7 +198,7 @@ const getBackButtonText = () => {
 };
 
 const route = useRoute();
-const scripture = getScripture(parseInt(route.params.id as string, 10));
+const article = getArticle(parseInt(route.params.id as string, 10));
 
 import { AnalyticsService } from '../services/analytics.service';
 const analytics = new AnalyticsService();
@@ -198,7 +213,7 @@ analytics.logEvent({
 //const videoSrc = "https://www.youtube.com/embed/bTqVqk7FSmY?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1";
 // const videoSrc =
 //   "https://www.youtube.com/embed/" +
-//   scripture!.videoId +
+//   article!.videoId +
 //   "?amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1";
 
 /*
@@ -207,7 +222,7 @@ import { usePlayer, PlayerEvent } from '@vue-youtube/core';
 import { ref } from 'vue';
 
 // YouTube Player
-//const videoId = ref(scripture!.videoId);
+//const videoId = ref(article!.videoId);
 const videoId = ref('Mez7DnMOlgc');
 const youtube = ref();
 

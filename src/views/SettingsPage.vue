@@ -16,17 +16,26 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("settings") }}</ion-title>
+          <!--<ion-title size="large">{{ t("settings") }}</ion-title>-->
+          <ion-title size="large">
+            <ion-item>
+              <app-logo />
+              <ion-label>{{ t("settings") }}</ion-label>
+            </ion-item>
+          </ion-title>
         </ion-toolbar>
       </ion-header>
 
       <ion-card>
+        <ion-img src="assets/images/xlcd/joy_pray_thanks.png" alt="個人設置" />
+        <!--
         <ion-grid
           ><ion-row
             ><ion-col size="5" offset="3">
               <ion-img src="assets/images/xlcd/joy_pray_thanks.png" alt="個人設置">
               </ion-img> </ion-col></ion-row
         ></ion-grid>
+        -->
         <ion-card-header>
           <ion-card-title>{{ t("SettingsPage.langSetting") }}</ion-card-title>
           <ion-card-subtitle>{{
@@ -56,15 +65,12 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonCol,
-  IonGrid,
   IonHeader,
   IonImg,
   IonItem,
   IonLabel,
   IonMenuButton,
   IonPage,
-  IonRow,
   IonSelect,
   IonSelectOption,
   IonToolbar,

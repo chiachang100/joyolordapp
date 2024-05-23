@@ -16,7 +16,13 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("AboutPage.title") }}</ion-title>
+          <!--<ion-title size="large">{{ t("AboutPage.title") }}</ion-title>-->
+          <ion-title size="large">
+            <ion-item>
+              <app-logo />
+              <ion-label>{{ t("AboutPage.title") }}</ion-label>
+            </ion-item>
+          </ion-title>
         </ion-toolbar>
       </ion-header>
 

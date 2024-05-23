@@ -14,6 +14,17 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
+      <ion-header collapse="condense">
+        <ion-toolbar>
+          <!--<ion-title size="large">{{ t("photos") }}</ion-title>-->
+          <ion-title size="large">
+            <ion-item>
+              <app-logo />
+              <ion-label>{{ t("photos") }}</ion-label>
+            </ion-item>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
       <ion-grid>
         <ion-row>
           <ion-col size="6" v-for="photo in photos" :key="photo.webviewPath">

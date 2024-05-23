@@ -1,19 +1,22 @@
 <template>
   <ion-item
-    v-if="scripture"
-    :routerLink="'/joys/article/' + scripture.articleId"
+    v-if="article"
+    :routerLink="'/joys/article/' + article.articleId"
     :detail="false"
     class="list-item"
   >
+  <!--
     <ion-thumbnail slot="start">
-      <img :src="scripture.photoUrl" alt="thumbnail" />
+      <img :src="article.photoUrl" alt="thumbnail" />
     </ion-thumbnail>
+  -->
+    <app-xlcd-logo />
     <ion-label class="ion-text-wrap">
       <h2>
-        {{index! + 1}}. {{ scripture.title }}({{ scripture.articleId }})
+        {{index! + 1}}. {{ article.title }}({{ article.articleId }})
         <!--
         <span class="likes">
-          <ion-note>{{ scripture.likes }}</ion-note>
+          <ion-note>{{ article.likes }}</ion-note>
           <ion-icon
             aria-hidden="true"
             :name="chevronForward"
@@ -24,26 +27,27 @@
         -->
       </h2>
       <p>
-        ✞ {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
-        {{ scripture.scriptureChapter }})
+        ✞ {{ article.scriptureVerse }} ({{ article.scriptureName }}
+        {{ article.scriptureChapter }})
       </p>
-      <p>•ᴗ•{{ scripture.laugh }}</p>
+      <p>•ᴗ•{{ article.laugh }}</p>
     </ion-label>
   </ion-item>
 </template>
 
 <script setup lang="ts">
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 import {
   // IonIcon,
   IonItem,
   IonLabel,
   // IonNote,
-  IonThumbnail,
+  // IonThumbnail,
 } from "@ionic/vue";
 // import { chevronForward } from "ionicons/icons";
 
 defineProps({
-  scripture: Object,
+  article: Object,
   index: Number,
 });
 

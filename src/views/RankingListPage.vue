@@ -4,7 +4,8 @@
       <ion-toolbar>
         <ion-title>
           <ion-item>
-            <app-logo />
+            <!--<app-logo />-->
+            <app-xlcd-logo />
             <ion-label
               >{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }})</ion-label
             >
@@ -21,15 +22,24 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("rankingList") }}</ion-title>
+          <!--<ion-title size="large">{{ t("rankingList") }}</ion-title>-->
+          <ion-title size="large">
+            <ion-item>
+              <!--<app-logo />-->
+              <app-xlcd-logo />
+              <ion-label
+                >{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }})</ion-label
+              >
+           </ion-item>
+          </ion-title>
         </ion-toolbar>
       </ion-header>
 
       <ion-list>
         <ArticleListItem
-          v-for="(scripture, index) in rankingListOfArticles"
-          :key="scripture.articleId"
-          :scripture="scripture"
+          v-for="(article, index) in rankingListOfArticles"
+          :key="article.articleId"
+          :article="article"
           :index="index"
         />
       </ion-list>
@@ -54,15 +64,16 @@ import {
 } from "@ionic/vue";
 
 import { computed, inject } from "vue";
-import { getScriptures } from "../../public/data/scriptures";
-import { Scripture } from "../../public/data/I_Scriptures";
+import { getArticles } from "../../public/data/articles";
+import { Article } from "../../public/data/I_Article";
 import ArticleListItem from "@/components/ArticleListItem.vue";
-import AppLogo from "@/components/AppLogo.vue";
+// import AppLogo from "@/components/AppLogo.vue";
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
-// const scriptures = ref<Scripture[]>(getScriptures());
+// const articles = ref<Article[]>(getArticles());
 
 const refresh = (ev: CustomEvent) => {
   setTimeout(() => {
@@ -72,8 +83,8 @@ const refresh = (ev: CustomEvent) => {
 
 const maxTopNum = inject<number>("maxTopNumber");
 
-const rankingListOfArticles = computed<Scripture[]>(() => {
-  const filteredArray = getScriptures().filter((m) => m.likes > 0);
+const rankingListOfArticles = computed<Article[]>(() => {
+  const filteredArray = getArticles().filter((m) => m.likes > 0);
   filteredArray.sort((a, b) => b.likes - a.likes);
   const topItems = filteredArray.slice(0, maxTopNum);
   return topItems;

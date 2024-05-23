@@ -1,4 +1,4 @@
-import { Scripture } from "./I_Scriptures";
+import { Scripture } from "./I_Scripture";
 import enUS from "./scriptures_en-US";
 import zhCN from "./scriptures_zh-CN";
 import zhTW from "./scriptures_zh-TW";

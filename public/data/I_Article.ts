@@ -1,4 +1,4 @@
-export interface Scripture {
+export interface Article {
   id: number;
   articleId: number;
   title: string;

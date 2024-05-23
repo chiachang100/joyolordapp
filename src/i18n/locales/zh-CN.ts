@@ -16,6 +16,7 @@ export default {
 
   "coreMenu": "核心选项",
   "infoMenu": "附加选项",
+  "futureMenu": "未来选项",
 
   "zh-TW": "繁体中文",
   "zh-CN": "简体中文",

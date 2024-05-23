@@ -50,6 +50,30 @@
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
+
+          <ion-list id="future-list">
+            <ion-list-header>{{ t("futureMenu") }}</ion-list-header>
+
+            <ion-menu-toggle :auto-hide="false" v-for="(p, i) in futurePages" :key="i">
+              <ion-item
+                @click="selectedIndex = i"
+                router-direction="root"
+                :router-link="p.url"
+                lines="none"
+                :detail="false"
+                class="hydrated"
+                :class="{ selected: selectedIndex === i }"
+              >
+                <ion-icon
+                  aria-hidden="true"
+                  slot="start"
+                  :ios="p.iosIcon"
+                  :md="p.mdIcon"
+                ></ion-icon>
+                <ion-label>{{ t(p.title) }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
         </ion-content>
       </ion-menu>
       <ion-router-outlet id="main-content"></ion-router-outlet>
@@ -77,8 +101,8 @@ import {
   bookSharp,
   homeOutline,
   homeSharp,
-  // imagesOutline,
-  // imagesSharp,
+  imagesOutline,
+  imagesSharp,
   informationCircleOutline,
   informationCircleSharp,
   listCircleOutline,
@@ -129,13 +153,6 @@ const appPages = [
 ];
 
 const infoPages = [
-  // {
-  //   // title: "相片存檔",
-  //   title: 'photos',
-  //   url: "/tabs/photos",
-  //   iosIcon: imagesOutline,
-  //   mdIcon: imagesSharp,
-  // },
   {
     // title: "資源簡介",
     title: 'about',
@@ -149,6 +166,16 @@ const infoPages = [
     url: "/tabs/settings",
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,
+  },
+];
+
+const futurePages = [
+  {
+    // title: "相片存檔",
+    title: 'photos',
+    url: "/tabs/photos",
+    iosIcon: imagesOutline,
+    mdIcon: imagesSharp,
   },
   {
     title: 'FirebaseExpo',
