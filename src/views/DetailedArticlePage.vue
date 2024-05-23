@@ -19,14 +19,7 @@
     <ion-content :fullscreen="true" v-if="article">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <!--<ion-title size="large">{{ t("article.title") }}</ion-title>-->
-          <ion-title size="large">
-            <ion-item>
-              <!--<app-logo />-->
-              <app-xlcd-logo />
-              <ion-label>{{ article.title }}</ion-label>
-            </ion-item>
-          </ion-title>
+          <ion-title size="large">{{ t("article.title") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 

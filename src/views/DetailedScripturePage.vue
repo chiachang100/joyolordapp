@@ -18,13 +18,7 @@
     <ion-content :fullscreen="true" v-if="scripture">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <!--<ion-title size="large">{{ t("bibleVerse") }}</ion-title>-->
-          <ion-title size="large">
-            <ion-item>
-              <app-logo />
-              <ion-label>{{ t("bibleVerse") }}</ion-label>
-            </ion-item>
-          </ion-title>
+          <ion-title size="large">{{ t("bibleVerse") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 

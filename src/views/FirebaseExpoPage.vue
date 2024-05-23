@@ -16,13 +16,7 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <!--<ion-title size="large">FirebaseExpo</ion-title>-->
-          <ion-title size="large">
-            <ion-item>
-              <app-logo />
-              <ion-label>FirebaseExpo</ion-label>
-            </ion-item>
-          </ion-title>
+          <ion-title size="large">FirebaseExpo</ion-title>
         </ion-toolbar>
       </ion-header>
 

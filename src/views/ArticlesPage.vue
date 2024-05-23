@@ -31,14 +31,7 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <!--<ion-title size="large">{{ t("xlcd") }}</ion-title>-->
-          <ion-title size="large">
-            <ion-item>
-              <!--<app-logo />-->
-              <app-xlcd-logo />
-              <ion-label>{{ t("xlcd") }}</ion-label>
-            </ion-item>
-          </ion-title>
+          <ion-title size="large">{{ t("xlcd") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
