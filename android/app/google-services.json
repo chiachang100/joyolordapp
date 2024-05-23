@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "590132492455",
+    "project_id": "joyolordapp",
+    "storage_bucket": "joyolordapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590132492455:android:b96b9ffd3a2c6ab6534382",
+        "android_client_info": {
+          "package_name": "com.joyolord.joyolordapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590132492455-omcm3pfqi75udi77anme37vgkoud3ugu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxwuy3uKICmcJundFEFo14LqlOsnuUFMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590132492455-omcm3pfqi75udi77anme37vgkoud3ugu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "590132492455-11c2fvdj132tr3nig0bn4ivbpvo3tm7q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.joyolord.joyolordapp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
