@@ -100,8 +100,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'TabsPage',
-    joyolordapp_screen_class: 'TabBars',
+    jola_screen: 'TabsPage',
+    jola_screen_class: 'TabBars',
   },
 });
 

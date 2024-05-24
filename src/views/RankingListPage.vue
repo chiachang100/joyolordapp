@@ -86,8 +86,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'RankingListPage',
-    joyolordapp_screen_class: 'RankingListPage',
+    jola_screen: 'RankingListPage',
+    jola_screen_class: 'RankingListPage',
   },
 });
 

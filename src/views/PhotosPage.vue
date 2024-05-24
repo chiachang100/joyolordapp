@@ -95,8 +95,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'PhotosPage',
-    joyolordapp_screen_class: 'PhotosPage',
+    jola_screen: 'PhotosPage',
+    jola_screen_class: 'PhotosPage',
   },
 });
 

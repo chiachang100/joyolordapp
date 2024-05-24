@@ -4,7 +4,9 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="app-list">
+          <!--
             <ion-list-header>{{ t("coreMenu") }}</ion-list-header>
+            -->
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
               <ion-item
@@ -28,7 +30,9 @@
           </ion-list>
 
           <ion-list id="info-list">
+          <!--
             <ion-list-header>{{ t("infoMenu") }}</ion-list-header>
+            -->
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in infoPages" :key="i">
               <ion-item
@@ -52,7 +56,9 @@
           </ion-list>
 
           <ion-list id="future-list">
+          <!--
             <ion-list-header>{{ t("futureMenu") }}</ion-list-header>
+            -->
 
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in futurePages" :key="i">
               <ion-item
@@ -89,7 +95,7 @@ import {
   IonItem,
   IonLabel,
   IonList,
-  IonListHeader,
+  // IonListHeader,
   IonMenu,
   IonMenuToggle,
   IonRouterOutlet,
@@ -206,8 +212,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'App',
-    joyolordapp_screen_class: 'App',
+    jola_screen: 'App',
+    jola_screen_class: 'App',
   },
 });
 

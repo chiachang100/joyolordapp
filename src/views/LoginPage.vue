@@ -161,8 +161,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_login_name',
   parameters: {
-    joyolordapp_screen: 'LoginPage',
-    joyolordapp_screen_class: 'LoginPage',
+    jola_screen: 'LoginPage',
+    jola_screen_class: 'LoginPage',
   },
 });
 

@@ -198,8 +198,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'ArticlesPage',
-    joyolordapp_screen_class: 'DetailedArticlesPage_' + article?.articleId,
+    jola_screen: 'ArticlesPage',
+    jola_screen_class: 'DetailedArticlesPage_' + article?.articleId,
   },
 });
 

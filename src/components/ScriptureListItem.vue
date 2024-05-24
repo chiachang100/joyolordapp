@@ -52,8 +52,8 @@ defineProps({
 // analytics.logEvent({
 //   name: 'jola_screen_name',
 //   parameters: {
-//     joyolordapp_screen: 'ScripturesPage',
-//     joyolordapp_screen_class: 'ScriptureListItem',
+//     jola_screen: 'ScripturesPage',
+//     jola_screen_class: 'ScriptureListItem',
 //   },
 // });
 

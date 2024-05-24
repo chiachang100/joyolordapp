@@ -79,8 +79,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'NewListPage',
-    joyolordapp_screen_class: 'NewListPage',
+    jola_screen: 'NewListPage',
+    jola_screen_class: 'NewListPage',
   },
 });
 

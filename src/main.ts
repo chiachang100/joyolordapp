@@ -139,8 +139,8 @@ analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
     app_version: app_version,
-    joyolordapp_screen: 'Main',
-    joyolordapp_screen_class: 'Main',
+    jola_screen: 'Main',
+    jola_screen_class: 'Main',
   },
 });
 

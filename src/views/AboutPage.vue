@@ -288,8 +288,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'AboutPage',
-    joyolordapp_screen_class: 'AboutPage',
+    jola_screen: 'AboutPage',
+    jola_screen_class: 'AboutPage',
   },
 });
 

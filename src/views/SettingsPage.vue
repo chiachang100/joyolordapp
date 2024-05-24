@@ -98,8 +98,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'SettingsPage',
-    joyolordapp_screen_class: 'SettingsPage',
+    jola_screen: 'SettingsPage',
+    jola_screen_class: 'CurrentLocale_' + i18n.global.locale.value,
   },
 });
 

@@ -80,8 +80,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: 'jola_screen_name',
   parameters: {
-    joyolordapp_screen: 'Firebase',
-    joyolordapp_screen_class: 'FirebaseExpoPage',
+    jola_screen: 'Firebase',
+    jola_screen_class: 'FirebaseExpoPage',
   },
 });
 

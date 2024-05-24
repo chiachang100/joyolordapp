@@ -53,8 +53,8 @@ export class AnalyticsService {
     await FirebaseAnalytics.logEvent({
       // name: 'screen_view',
       // params: {
-      //  joyolordapp_screen: 'MainAppScreen',
-      //  joyolordapp_screen_class: 'Main',
+      //  jola_screen: 'MainAppScreen',
+      //  jola_screen_class: 'Main',
       // },
       name: name,
       params: parameters,

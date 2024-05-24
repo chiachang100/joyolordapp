@@ -62,8 +62,8 @@ defineProps({
 // analytics.logEvent({
 //   name: 'jola_screen_name',
 //   parameters: {
-//     joyolordapp_screen: 'ArticlesPage',
-//     joyolordapp_screen_class: 'ArticleListItem',
+//     jola_screen: 'ArticlesPage',
+//     jola_screen_class: 'ArticleListItem',
 //   },
 // });
 
