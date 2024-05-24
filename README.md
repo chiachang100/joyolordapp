@@ -315,6 +315,27 @@ const msg = computed(() => t('msg'))
 - Create `src/services/firebase.service.ts`
 
 ### Firebase Authentication
+- [VueFire Firebase Authentication](https://vuefire.vuejs.org/guide/auth.html)
+- [@capacitor-firebase/authentication](https://github.com/capawesome-team/capacitor-firebase/tree/main/packages/authentication)
+- [Set up authentication using Google Sign-In](https://github.com/capawesome-team/capacitor-firebase/blob/main/packages/authentication/docs/setup-google.md)
+- `npm install @capacitor-firebase/authentication firebase`
 
+- In `capacitor.config.ts:`
+```
+/// <reference types="@capacitor-firebase/authentication" />
+
+import { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  plugins: {
+    FirebaseAuthentication: {
+      skipNativeAuth: false,
+      providers: ["apple.com", "facebook.com"],
+    },
+  },
+};
+
+export default config;
+```
 
 ---

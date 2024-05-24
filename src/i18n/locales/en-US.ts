@@ -11,6 +11,7 @@ export default {
   "settings": "Settings",
   "rankingList": "Ranking List",
   "newList": "New Listing",
+  "login": "Login",
   "photos": "Photos",
   "FirebaseExpo": "FirebaseExpo",
 

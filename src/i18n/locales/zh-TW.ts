@@ -11,6 +11,7 @@ export default {
   "settings": "個人設置",
   "rankingList": "喜樂榜",
   "newList": "新出爐",
+  "login": "登入頁面",
   "photos": "相片存檔",
   "FirebaseExpo": "FirebaseExpo",
 

@@ -61,6 +61,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/firebase',
     component: () => import('@/views/FirebaseExpoPage.vue')
   },
+  {
+    path: '/login',
+    component: () => import('@/views/LoginPage.vue')
+  },
 ]
 
 const router = createRouter({

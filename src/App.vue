@@ -107,6 +107,8 @@ import {
   informationCircleSharp,
   listCircleOutline,
   listCircleSharp,
+  logInOutline,
+  logInSharp,
   logoFirebase,
   newspaperOutline,
   newspaperSharp,
@@ -166,6 +168,13 @@ const infoPages = [
     url: "/tabs/settings",
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,
+  },
+  {
+    // title: "登入頁面",
+    title: 'login',
+    url: "/login",
+    iosIcon: logInOutline,
+    mdIcon: logInSharp,
   },
 ];
 

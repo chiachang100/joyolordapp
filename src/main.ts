@@ -19,10 +19,6 @@ import 'vue-plyr/dist/vue-plyr.css'
 //import i18n, { defaultLocale } from './i18n/i18nMain';
 import i18n from './i18n/i18nMain';
 
-// VueFire
-import { VueFire, VueFireAuth } from 'vuefire'
-import { firebaseApp } from './services/firebase.services'
-
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
 
@@ -67,12 +63,7 @@ const app = createApp(App)
     plyr: {}
   })
   .use(i18n)
-  .use(VueFire, {
-    firebaseApp,
-    modules: [
-      VueFireAuth(),
-    ],
-  });
+  ;
 
 // Global components
 app.component('app-avatar-logo', AppAvatarLogo);
@@ -94,13 +85,50 @@ app.provide('appEmail', 'chiachang100@gmail.com');
 
 app.provide('maxTopNumber', 7);
 
-// app.use(i18n);
+//==========================================
+// VueFire Authentication
+//==========================================
+// [VueFire Firebase Authentication](https://vuefire.vuejs.org/guide/auth.html)
+import { firebaseApp } from './services/firebase.services'
 
-// Hooray! we can mount our app now!
-router.isReady().then(() => {
-  app.mount('#app');
-});
+import { VueFire, VueFireAuth } from 'vuefire'
+app.use(VueFire, {
+    firebaseApp,
+    modules: [
+      VueFireAuth(),
+    ],
+  });
 
+/* 
+import { VueFire, VueFireAuthWithDependencies } from 'vuefire'
+import {
+  browserLocalPersistence,
+  debugErrorMap,
+  indexedDBLocalPersistence,
+  prodErrorMap,
+} from 'firebase/auth'
+app.use(VueFire, {
+  firebaseApp,
+  modules: [
+    VueFireAuthWithDependencies({
+      dependencies: {
+        errorMap:
+          process.env.NODE_ENV !== 'production'
+            ? debugErrorMap
+            : prodErrorMap,
+        persistence: [
+          indexedDBLocalPersistence,
+          browserLocalPersistence,
+        ]
+      }
+    }),
+  ],
+})
+ */
+
+//==========================================
+// Filebase Analytics
+//==========================================
 const app_version = packageJson.version;
 
 import { AnalyticsService } from './services/analytics.service';
@@ -115,3 +143,10 @@ analytics.logEvent({
 });
 
 analytics.setUserProperty({ key: 'app_version', value: app_version });
+
+//==========================================
+// Hooray! we can mount our app now!
+//==========================================
+router.isReady().then(() => {
+  app.mount('#app');
+});
