@@ -20,7 +20,7 @@
         </ion-toolbar>
       </ion-header>
 
-      <form class="login-form">
+      <form @submit.prevent="login" class="login-form">
         <ion-item lines="full">
           <ion-label position="floating">Email</ion-label>
           <ion-input v-model="email" type="text" required></ion-input>
@@ -34,6 +34,7 @@
         <ion-button expand="block" @click="loginRedirect">Log In</ion-button>
         -->
         <ion-button expand="block" @click="doLogin">Log In</ion-button>
+        <ion-button expand="block" @click="doLogout">Log Out</ion-button>
       </form>
 
       <p v-if="user">Hello {{ user.providerData.displayName }}!!!</p>
@@ -42,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import {
   IonButton,
   IonButtons,
@@ -70,6 +71,58 @@ const password = ref("");
 const error = ref(null)
 
 import {
+  getRedirectResult,
+  signInWithEmailAndPassword,
+  // signInWithRedirect,
+  // signInWithPopup,
+  // signOut,
+} from 'firebase/auth'
+// import { GoogleAuthProvider } from 'firebase/auth'
+import {
+  useCurrentUser,
+  useFirebaseAuth
+} from 'vuefire'
+
+const auth = useFirebaseAuth()! // only exists on client side
+// const googleAuthProvider = new GoogleAuthProvider()
+
+// const loginRedirect = () => {
+const doLogin = () => {
+  // signInWithRedirect(auth, googleAuthProvider).catch((reason) => {
+  //     console.error('Failed signInRedirect', reason)
+  //     error.value = reason
+  //   })
+    console.log("doLogin(): email=" + email.value + "; password=" + password.value);
+  try {
+    // await auth.signInWithEmailAndPassword(email.value, password.value)
+    signInWithEmailAndPassword(auth, email.value, password.value).catch((reason) => {
+      console.error('Failed signInWithEmailAndPassword', reason)
+      error.value = reason
+    })
+
+  } catch (error) {
+    console.error('Login failed', error)
+  }
+}
+
+// Only on client side
+onMounted(() => {
+  getRedirectResult(auth).catch((reason) => {
+    console.error('Failed redirect result', reason)
+    error.value = reason
+  })
+})
+
+const user = useCurrentUser()
+
+const doLogout = () => {
+    console.log('Signed out!')
+  auth.signOut()
+}
+
+/*
+import {
+
   signInWithPopup,
   // signOut,
 } from 'firebase/auth'
@@ -98,6 +151,7 @@ const doLogin = () => {
   // console.log("user=" + user.providerData.displayName)
 } 
 
+ */
 
 //--------------------------------------
 // Firebase Analytics

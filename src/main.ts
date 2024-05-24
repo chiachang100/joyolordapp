@@ -89,13 +89,15 @@ app.provide('maxTopNumber', 7);
 // VueFire Authentication
 //==========================================
 // [VueFire Firebase Authentication](https://vuefire.vuejs.org/guide/auth.html)
+
 import { firebaseApp } from './services/firebase.services'
 
-import { VueFire, VueFireAuth } from 'vuefire'
+// import { VueFire, VueFireAuth } from 'vuefire'
+import { VueFire } from 'vuefire'
 app.use(VueFire, {
     firebaseApp,
     modules: [
-      VueFireAuth(),
+      // VueFireAuth(),
     ],
   });
 

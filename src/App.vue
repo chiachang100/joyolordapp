@@ -107,8 +107,8 @@ import {
   informationCircleSharp,
   listCircleOutline,
   listCircleSharp,
-  logInOutline,
-  logInSharp,
+  // logInOutline,
+  // logInSharp,
   logoFirebase,
   newspaperOutline,
   newspaperSharp,
@@ -169,13 +169,13 @@ const infoPages = [
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,
   },
-  {
-    // title: "登入頁面",
-    title: 'login',
-    url: "/login",
-    iosIcon: logInOutline,
-    mdIcon: logInSharp,
-  },
+  // {
+  //   // title: "登入頁面",
+  //   title: 'login',
+  //   url: "/login",
+  //   iosIcon: logInOutline,
+  //   mdIcon: logInSharp,
+  // },
 ];
 
 const futurePages = [
