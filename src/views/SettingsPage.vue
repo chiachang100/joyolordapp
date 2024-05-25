@@ -49,16 +49,21 @@
           </ion-select>
         </ion-card-content>
       </ion-card>
-      <div>
-        <p v-if="fileContents">File Content: {{ fileContents }}</p>
-        <button @click="readFile">Read File</button>
-      </div>
+      <ion-list>
+        <ion-item v-if="fileContents">
+          <ion-label>File Content: {{ fileContents }}</ion-label>
+          <ion-button fill="outline" expand="block" @click="readFile">
+            Read File
+          </ion-button>
+        </ion-item>
+      </ion-list>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import {
+  IonButton,
   IonButtons,
   IonCard,
   IonCardContent,
@@ -69,6 +74,7 @@ import {
   IonImg,
   IonItem,
   IonLabel,
+  IonList,
   IonMenuButton,
   IonPage,
   IonSelect,
