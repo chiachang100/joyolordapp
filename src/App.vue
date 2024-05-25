@@ -4,7 +4,7 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="app-list">
-          <!--
+            <!--
             <ion-list-header>{{ t("coreMenu") }}</ion-list-header>
             -->
 
@@ -30,7 +30,7 @@
           </ion-list>
 
           <ion-list id="info-list">
-          <!--
+            <!--
             <ion-list-header>{{ t("infoMenu") }}</ion-list-header>
             -->
 
@@ -56,7 +56,7 @@
           </ion-list>
 
           <ion-list id="future-list">
-          <!--
+            <!--
             <ion-list-header>{{ t("futureMenu") }}</ion-list-header>
             -->
 
@@ -122,29 +122,33 @@ import {
   settingsSharp,
 } from "ionicons/icons";
 
-const selectedIndex = ref(0);
-
+import { onMounted, inject } from "vue";
 import { useI18n } from "vue-i18n";
+import i18n from "./i18n/i18nMain";
+import { SupportedLocale } from "./i18n/i18nMain";
+import { useFileReader } from "./composables/useFileReader";
+
+const selectedIndex = ref(0);
 const { t } = useI18n();
 
 const appPages = [
   {
     // title: "聖經經文",
-    title: 'bibleVerse',
+    title: "bibleVerse",
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
   },
   {
     // title: "笑裡藏道",
-    title: 'xlcd',
+    title: "xlcd",
     url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
   },
   {
     // title: "喜樂榜",
-    title: 'rankingList',
+    title: "rankingList",
     url: "/tabs/rankinglist",
     iosIcon: listCircleOutline,
     mdIcon: listCircleSharp,
@@ -152,7 +156,7 @@ const appPages = [
   },
   {
     // title: "新出爐",
-    title: 'newList',
+    title: "newList",
     url: "/tabs/newlist",
     iosIcon: newspaperOutline,
     mdIcon: newspaperSharp,
@@ -163,14 +167,14 @@ const appPages = [
 const infoPages = [
   {
     // title: "資源簡介",
-    title: 'about',
+    title: "about",
     url: "/tabs/about",
     iosIcon: informationCircleOutline,
     mdIcon: informationCircleSharp,
   },
   {
     // title: "個人設置",
-    title: 'settings',
+    title: "settings",
     url: "/tabs/settings",
     iosIcon: settingsOutline,
     mdIcon: settingsSharp,
@@ -187,13 +191,13 @@ const infoPages = [
 const futurePages = [
   {
     // title: "相片存檔",
-    title: 'photos',
+    title: "photos",
     url: "/tabs/photos",
     iosIcon: imagesOutline,
     mdIcon: imagesSharp,
   },
   {
-    title: 'FirebaseExpo',
+    title: "FirebaseExpo",
     url: "/firebase",
     iosIcon: logoFirebase,
     mdIcon: logoFirebase,
@@ -207,16 +211,47 @@ if (path !== undefined) {
   );
 }
 
-import { AnalyticsService } from './services/analytics.service';
+//---------------------------------------------
+// Setup the default locale by loading the saved locale if it's available.
+//---------------------------------------------
+const { locale } = useI18n();
+const appUserProfileFilename = inject<string>("appUserProfileFilename") as string;
+
+const { fileContents, readFile } = useFileReader(appUserProfileFilename);
+
+async function readFileOnMount() {
+  console.log(
+    `[App] #1. BEFORE reading saved locale=${locale.value}; i18n.global.locale=${i18n.global.locale.value}.`
+  );
+
+  await readFile();
+
+  if (fileContents.value.trim().length > 0) {
+    locale.value = fileContents.value;
+    i18n.global.locale.value = fileContents.value as SupportedLocale;
+    console.log(
+      `[App] #1. AFTER reading saved locale=${locale.value}; i18n.global.locale=${i18n.global.locale.value}.`
+    );
+  } else {
+    console.log(
+      `[App] #1. AFTER Saved file not found. Use default locale: locale=${locale.value}; i18n.global.locale=${i18n.global.locale.value}.`
+    );
+  }
+}
+onMounted(readFileOnMount);
+
+//---------------------------------------------
+// Firebase Analytics
+//---------------------------------------------
+import { AnalyticsService } from "./services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'App',
-    jola_screen_class: 'App',
+    jola_screen: "App",
+    jola_screen_class: `App_Locale_${i18n.global.locale.value}`,
   },
 });
-
 </script>
 
 <style scoped>

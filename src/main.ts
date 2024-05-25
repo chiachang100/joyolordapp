@@ -82,6 +82,8 @@ app.provide('appXlcdLogo', 'assets/icon/xlcdapp-logo.webp');
 app.provide('appXlcdLogoAlt', 'xlcdapp logo');
 app.provide('appDescription', 'packageJson.description');
 app.provide('appEmail', 'chiachang100@gmail.com');
+app.provide('appDefaultLocale', 'zh-TW');
+app.provide('appUserProfileFilename', 'UserProfile.txt');
 
 app.provide('maxTopNumber', 7);
 
@@ -95,11 +97,11 @@ import { firebaseApp } from './services/firebase.services'
 // import { VueFire, VueFireAuth } from 'vuefire'
 import { VueFire } from 'vuefire'
 app.use(VueFire, {
-    firebaseApp,
-    modules: [
-      // VueFireAuth(),
-    ],
-  });
+  firebaseApp,
+  modules: [
+    // VueFireAuth(),
+  ],
+});
 
 /* 
 import { VueFire, VueFireAuthWithDependencies } from 'vuefire'

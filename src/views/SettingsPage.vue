@@ -121,64 +121,36 @@ import AppLogo from "@/components/AppLogo.vue";
 import i18n from "../i18n/i18nMain";
 import { SupportedLocale } from "../i18n/i18nMain";
 
-// import { ref, watch, onMounted } from "vue";
-import { onMounted } from "vue";
+// import { inject, ref, watch, onMounted } from "vue";
+import { inject } from "vue";
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 const { t } = useI18n();
 
-// type SupportedLocale = "en-US" | "zh-TW" | "zh-CN";
-
-const upFilename = "UserProfile.txt";
-
 //---------------------------------------------
-// Save locale
+// Save selected locale
 //---------------------------------------------
 // import { Filesystem, Directory, Encoding } from "@capacitor/filesystem";
-import { useFileReader } from "../composables/useFileReader";
 import { useFileWriter } from "../composables/useFileWriter";
-
-const { fileContents, readFile } = useFileReader(upFilename);
-
-async function readFileOnMount() {
-  console.log("#1. BEFORE fileContents: " + fileContents.value);
-  console.log(
-    "#1. BEFORE: locale=" +
-      locale.value +
-      "; i18n.global.locale=" +
-      i18n.global.locale.value
-  );
-
-  await readFile();
-
-  console.log(`#1. AFTER fileContents: ${fileContents.value}.`);
-  if (fileContents.value.trim().length > 0) {
-    locale.value = fileContents.value;
-    i18n.global.locale.value = fileContents.value as SupportedLocale;
-  } else {
-    console.log(`#1. AFTER fileContents is empty: ${fileContents.value}.`);
-  }
-  console.log(
-    "#1. AFTER: locale=" +
-      locale.value +
-      "; i18n.global.locale=" +
-      i18n.global.locale.value
-  );
-}
-onMounted(readFileOnMount);
+const appUserProfileFilename = inject<string>("appUserProfileFilename") as string;
 
 const setNewLocale = (newLocale: string) => {
-  console.log("SettingsPage: Selected locale:", newLocale);
+  console.log(`[SettingsPage] Selected locale: ${newLocale}.`);
   locale.value = newLocale;
   i18n.global.locale.value = newLocale as SupportedLocale;
 
-  // const { writeSuccess, writeFile } = useFileWriter(upFilename, i18n.global.locale.value);
-  const { writeSuccess } = useFileWriter(upFilename, i18n.global.locale.value);
-  console.log("Saved i18n.global.locale.value=" + i18n.global.locale.value);
-  console.log("Returned writeSuccess=", writeSuccess.value);
+  // const { writeSuccess, writeFile } = useFileWriter(appUserProfileFilename, i18n.global.locale.value);
+  const { writeSuccess } = useFileWriter(
+    appUserProfileFilename,
+    i18n.global.locale.value
+  );
+  console.log(
+    `[SettingsPage] Saved i18n.global.locale.value=${i18n.global.locale.value}.`
+  );
+  console.log(`[SettingsPage] Returned writeSuccess=${writeSuccess.value}.`);
 };
 
-/* 
+/*
 const selectedLocale = ref<string>("");
 watch(selectedLocale, (newLocale) => {
   console.log("SettingPage: Selected locale:", newLocale);
