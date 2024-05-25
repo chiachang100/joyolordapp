@@ -38,15 +38,21 @@
         </ion-card-header>
 
         <ion-card-content>
-          <ion-select v-model="selectedLocale" 
-            :label="t('SettingsPage.selectLanguage')" 
-            :placeholder="t(i18n.global.locale.value)">
+          <ion-select
+            v-model="selectedLocale"
+            :label="t('SettingsPage.selectLanguage')"
+            :placeholder="t(i18n.global.locale.value)"
+          >
             <ion-select-option value="zh-TW">{{ t("zh-TW") }}</ion-select-option>
             <ion-select-option value="zh-CN">{{ t("zh-CN") }}</ion-select-option>
             <ion-select-option value="en-US">{{ t("en-US") }}</ion-select-option>
           </ion-select>
         </ion-card-content>
       </ion-card>
+      <div>
+        <p v-if="fileContents">File Content: {{ fileContents }}</p>
+        <button @click="readFile">Read File</button>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -76,12 +82,46 @@ import AppLogo from "@/components/AppLogo.vue";
 import i18n from "../i18n/i18nMain";
 import { SupportedLocale } from "../i18n/i18nMain";
 
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 const { t } = useI18n();
 
 // type SupportedLocale = "en-US" | "zh-TW" | "zh-CN";
+
+const upFilename = "UserProfile.txt";
+
+//---------------------------------------------
+// Save locale
+//---------------------------------------------
+// import { Filesystem, Directory, Encoding } from "@capacitor/filesystem";
+import { useFileReader } from "../composables/useFileReader";
+import { useFileWriter } from "../composables/useFileWriter";
+
+const { fileContents, readFile } = useFileReader(upFilename);
+
+async function readFileOnMount() {
+  console.log("#1. before fileContents: " + fileContents.value);
+  console.log(
+    "#1. BEFORE: locale=" +
+      locale.value +
+      "; i18n.global.locale=" +
+      i18n.global.locale.value
+  );
+
+  await readFile();
+
+  console.log("#1. after fileContents: " + fileContents.value);
+  locale.value = fileContents.value;
+  i18n.global.locale.value = fileContents.value as SupportedLocale;
+  console.log(
+    "#1. AFTER: locale=" +
+      locale.value +
+      "; i18n.global.locale=" +
+      i18n.global.locale.value
+  );
+}
+onMounted(readFileOnMount);
 
 const selectedLocale = ref<string>("");
 watch(selectedLocale, (newLocale) => {
@@ -89,20 +129,24 @@ watch(selectedLocale, (newLocale) => {
   locale.value = newLocale;
   i18n.global.locale.value = newLocale as SupportedLocale;
 
-  // Refresh the entire app
-  // window.location.reload();
+  // const { writeSuccess, writeFile } = useFileWriter(upFilename, i18n.global.locale.value);
+  const { writeSuccess } = useFileWriter(upFilename, i18n.global.locale.value);
+  console.log("Saved i18n.global.locale.value=" + i18n.global.locale.value);
+  console.log("Returned writeSuccess=", writeSuccess.value);
 });
 
-import { AnalyticsService } from '../services/analytics.service';
+//---------------------------------------------
+// Firebase Analytics
+//---------------------------------------------
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'SettingsPage',
-    jola_screen_class: 'CurrentLocale_' + i18n.global.locale.value,
+    jola_screen: "SettingsPage",
+    jola_screen_class: "CurrentLocale_" + i18n.global.locale.value,
   },
 });
-
 </script>
 
 <style scoped>
@@ -113,5 +157,4 @@ ion-card {
 ion-card-title {
   font-size: 18px;
 }
-
 </style>
