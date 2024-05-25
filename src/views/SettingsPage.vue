@@ -38,6 +38,7 @@
         </ion-card-header>
 
         <ion-card-content>
+          <!--
           <ion-select
             v-model="selectedLocale"
             :label="t('SettingsPage.selectLanguage')"
@@ -47,8 +48,36 @@
             <ion-select-option value="zh-CN">{{ t("zh-CN") }}</ion-select-option>
             <ion-select-option value="en-US">{{ t("en-US") }}</ion-select-option>
           </ion-select>
+          -->
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <!--
+            <ion-button fill="outline" expand="block" @click="readFile">
+              {{ t("zh-TW") }}
+            </ion-button>
+            -->
+                <ion-button fill="outline" expand="block" @click="setNewLocale('zh-TW')">
+                  {{ t("zh-TW") }}
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="outline" expand="block" @click="setNewLocale('zh-CN')">
+                  {{ t("zh-CN") }}
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="outline" expand="block" @click="setNewLocale('en-US')">
+                  {{ t("en-US") }}
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </ion-card-content>
       </ion-card>
+
+      <!--
       <ion-list>
         <ion-item v-if="fileContents">
           <ion-label>File Content: {{ fileContents }}</ion-label>
@@ -57,6 +86,7 @@
           </ion-button>
         </ion-item>
       </ion-list>
+      -->
     </ion-content>
   </ion-page>
 </template>
@@ -70,15 +100,18 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
+  IonGrid,
+  IonRow,
+  IonCol,
   IonHeader,
   IonImg,
   IonItem,
   IonLabel,
-  IonList,
+  // IonList,
   IonMenuButton,
   IonPage,
-  IonSelect,
-  IonSelectOption,
+  // IonSelect,
+  // IonSelectOption,
   IonToolbar,
   IonTitle,
   IonContent,
@@ -88,7 +121,8 @@ import AppLogo from "@/components/AppLogo.vue";
 import i18n from "../i18n/i18nMain";
 import { SupportedLocale } from "../i18n/i18nMain";
 
-import { ref, watch, onMounted } from "vue";
+// import { ref, watch, onMounted } from "vue";
+import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 const { t } = useI18n();
@@ -107,7 +141,7 @@ import { useFileWriter } from "../composables/useFileWriter";
 const { fileContents, readFile } = useFileReader(upFilename);
 
 async function readFileOnMount() {
-  console.log("#1. before fileContents: " + fileContents.value);
+  console.log("#1. BEFORE fileContents: " + fileContents.value);
   console.log(
     "#1. BEFORE: locale=" +
       locale.value +
@@ -117,9 +151,13 @@ async function readFileOnMount() {
 
   await readFile();
 
-  console.log("#1. after fileContents: " + fileContents.value);
-  locale.value = fileContents.value;
-  i18n.global.locale.value = fileContents.value as SupportedLocale;
+  console.log(`#1. AFTER fileContents: ${fileContents.value}.`);
+  if (fileContents.value.trim().length > 0) {
+    locale.value = fileContents.value;
+    i18n.global.locale.value = fileContents.value as SupportedLocale;
+  } else {
+    console.log(`#1. AFTER fileContents is empty: ${fileContents.value}.`);
+  }
   console.log(
     "#1. AFTER: locale=" +
       locale.value +
@@ -129,6 +167,18 @@ async function readFileOnMount() {
 }
 onMounted(readFileOnMount);
 
+const setNewLocale = (newLocale: string) => {
+  console.log("SettingsPage: Selected locale:", newLocale);
+  locale.value = newLocale;
+  i18n.global.locale.value = newLocale as SupportedLocale;
+
+  // const { writeSuccess, writeFile } = useFileWriter(upFilename, i18n.global.locale.value);
+  const { writeSuccess } = useFileWriter(upFilename, i18n.global.locale.value);
+  console.log("Saved i18n.global.locale.value=" + i18n.global.locale.value);
+  console.log("Returned writeSuccess=", writeSuccess.value);
+};
+
+/* 
 const selectedLocale = ref<string>("");
 watch(selectedLocale, (newLocale) => {
   console.log("SettingPage: Selected locale:", newLocale);
@@ -140,6 +190,8 @@ watch(selectedLocale, (newLocale) => {
   console.log("Saved i18n.global.locale.value=" + i18n.global.locale.value);
   console.log("Returned writeSuccess=", writeSuccess.value);
 });
+
+ */
 
 //---------------------------------------------
 // Firebase Analytics

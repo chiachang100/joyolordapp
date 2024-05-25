@@ -40,7 +40,7 @@
         </ion-card-header>
 
         <ion-card-content style="padding-top: 0; white-space: pre-wrap">
-          {{ t("useQrCode") }}{{ t("joyolordappApp") }}。 (v{{ appVer }})
+          {{ t("useQrCode") }} {{ t("joyolordappApp") }}。 (v{{ appVer }})
         </ion-card-content>
 
         <ion-button fill="outline" expand="block" href="https://joyolordapp.web.app/"
@@ -66,7 +66,7 @@
         </ion-card-header>
 
         <ion-card-content style="padding-top: 0; white-space: pre-wrap">
-          {{ t("useQrCode") }}{{ t("xlcdappApp") }}。
+          {{ t("useQrCode") }} {{ t("xlcdappApp") }}。
         </ion-card-content>
         <ion-button fill="outline" expand="block" href="https://xlcdapp.web.app/"
           >{{ t("xlcdappApp") }} (xlcdapp)</ion-button
@@ -75,11 +75,13 @@
 
       <!-- 「笑裡藏道」書籍介紹 Section -->
       <ion-card>
-        <ion-img style="width: 100%; object-fit: cover;"
+        <ion-img
+          style="width: 100%; object-fit: cover"
           src="assets/images/xlcd/xlcd_book_photo.png"
-          :alt="t('AboutPage.bookIntro')">
+          :alt="t('AboutPage.bookIntro')"
+        >
         </ion-img>
-      <!--
+        <!--
         <ion-grid
           ><ion-row
             ><ion-col size="8" offset="2">
@@ -121,9 +123,11 @@
 
       <!-- 「笑裡藏道」書籍作者 Section -->
       <ion-card>
-        <ion-img style="width: 100%; object-fit: cover;"
+        <ion-img
+          style="width: 100%; object-fit: cover"
           src="assets/images/xlcd/pastor_cheng_photo.png"
-          :alt="t('AboutPage.bookAuthor')">
+          :alt="t('AboutPage.bookAuthor')"
+        >
         </ion-img>
         <!--
         <ion-grid
@@ -153,11 +157,13 @@
 
       <!-- 讚揚「笑裡藏道」書籍 Section -->
       <ion-card>
-        <ion-img style="width: 100%; object-fit: cover;"
+        <ion-img
+          style="width: 100%; object-fit: cover"
           src="assets/images/xlcd/xlcdapp_photo_default.png"
-          :alt="t('AboutPage.bookPraisesTitle')">
+          :alt="t('AboutPage.bookPraisesTitle')"
+        >
         </ion-img>
-      <!--
+        <!--
         <ion-grid
           ><ion-row  style="width: 100%; object-fit: cover;"
             ><ion-col size="8" offset="2">
@@ -217,11 +223,13 @@
 
       <!-- App 程式開發員 Section -->
       <ion-card>
-        <ion-img style="width: 100%; object-fit: cover;"
+        <ion-img
+          style="width: 100%; object-fit: cover"
           src="assets/images/xlcd/joy_pray_thanks.png"
-          :alt="t('AboutPage.appDeveloper')">
+          :alt="t('AboutPage.appDeveloper')"
+        >
         </ion-img>
-      <!--
+        <!--
         <ion-grid
           ><ion-row
             ><ion-col size="8" offset="2">
@@ -283,16 +291,15 @@ const appVer = inject<string>("appVersion");
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'AboutPage',
-    jola_screen_class: 'AboutPage',
+    jola_screen: "AboutPage",
+    jola_screen_class: "AboutPage",
   },
 });
-
 </script>
 
 <style scoped>

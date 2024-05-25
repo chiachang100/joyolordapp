@@ -17,7 +17,7 @@ export default {
 
   "coreMenu": "Core Menu",
   "infoMenu": "Info Menu",
-  "futureMenu": "未來選項",
+  "futureMenu": "Future Menu",
 
   "zh-TW": "Traditional Chinese",
   "zh-CN": "Simplified Chinese",
@@ -26,16 +26,16 @@ export default {
   "qian": "Top",
   "back": "Back",
 
-  "bible": "聖經",
-  "home": "首頁",
-  "qrCode": "二維碼",
-  "joyolordappApp": "「主的喜樂」App",
-  "xlcdappApp": "「笑裡藏道」App",
-  "useQrCode": "請掃描二維碼便於使用",
+  "bible": "Bible",
+  "home": "Home",
+  "qrCode": "QR Code",
+  "joyolordappApp": "joyolordapp App",
+  "xlcdappApp": "xlcdapp App",
+  "useQrCode": "Please scan the QR Code for easy use",
 
   // AboutPage
   "AboutPage": {
-    "title": "資源簡介",
+    "title": "About",
     "joyolordappQrCode": "「主的喜樂」App 二維碼",
     "xlcdappQrCode": "「笑裡藏道」App 二維碼",
     "bookIntro": "「笑裡藏道」書籍介紹",
@@ -51,7 +51,7 @@ export default {
       "出生於馬來西亞，至英國及美國路易斯安那州攻讀建築學位。"
       + "全職奉獻後於1990年獲得達拉斯神學院神學碩士，曾於德州阿靈頓聖經教會牧會。"
       + "1995年返回馬來西亞擔任吉隆坡信義會主任牧師。"
-      +" 2001年全家返美，加入「矽谷生命河靈糧堂」事奉團隊，目前負責牧養處事工。 與師母 Connie 育有兩個女兒。",
+      + " 2001年全家返美，加入「矽谷生命河靈糧堂」事奉團隊，目前負責牧養處事工。 與師母 Connie 育有兩個女兒。",
     "bookAuthorYouTube": "曾興才牧師講道視頻",
     "bookPraisesTitle": "讚揚「笑裡藏道」書籍",
     "bookPraisesSubtitle":
@@ -83,18 +83,18 @@ export default {
       + " 祈求藉著「笑裡藏道」書籍+App為主多傳喜樂的福音，領人歸主。頌讚、榮耀歸於我們的神，直到永永遠遠！阿們。",
     "onlineBible": "線上閱讀聖經"
   },
-  
+
   // SettingsPage
   "SettingsPage": {
-    "langSetting": "語言設置",
-    "langSettingsSubtitle": "請選擇你想用的語言。",
-    "selectLanguage": "選擇語言"
+    "langSetting": "Language Settings",
+    "langSettingsSubtitle": "Please select the language you prefer to use.",
+    "selectLanguage": "Choose a language"
   },
-  
+
   // DetailedPage
   "DetailedPage": {
-    "prelude": "前奏曲",
-    "laugh": "開懷大笑",
-    "youtubeVideo": "YouTube視頻"
+    "prelude": "Prelude",
+    "laugh": "Laugh Heartily",
+    "youtubeVideo": "YouTube Video"
   },
 };
