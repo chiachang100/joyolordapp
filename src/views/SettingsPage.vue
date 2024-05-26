@@ -22,14 +22,6 @@
 
       <ion-card>
         <ion-img src="assets/images/xlcd/joy_pray_thanks.png" alt="個人設置" />
-        <!--
-        <ion-grid
-          ><ion-row
-            ><ion-col size="5" offset="3">
-              <ion-img src="assets/images/xlcd/joy_pray_thanks.png" alt="個人設置">
-              </ion-img> </ion-col></ion-row
-        ></ion-grid>
-        -->
         <ion-card-header>
           <ion-card-title>{{ t("SettingsPage.langSetting") }}</ion-card-title>
           <ion-card-subtitle>{{
@@ -53,11 +45,6 @@
           <ion-grid>
             <ion-row>
               <ion-col>
-                <!--
-            <ion-button fill="outline" expand="block" @click="readFile">
-              {{ t("zh-TW") }}
-            </ion-button>
-            -->
                 <ion-button fill="outline" expand="block" @click="setNewLocale('zh-TW')">
                   {{ t("zh-TW") }}
                 </ion-button>
@@ -76,17 +63,6 @@
           </ion-grid>
         </ion-card-content>
       </ion-card>
-
-      <!--
-      <ion-list>
-        <ion-item v-if="fileContents">
-          <ion-label>File Content: {{ fileContents }}</ion-label>
-          <ion-button fill="outline" expand="block" @click="readFile">
-            Read File
-          </ion-button>
-        </ion-item>
-      </ion-list>
-      -->
     </ion-content>
   </ion-page>
 </template>
