@@ -2,6 +2,7 @@ import { Scripture } from "./I_Scripture";
 
 const scriptures_zhTW: Scripture[] = [
   // Locale: zh-TW
+  // https://www.biblegateway.com/passage/?search=%E5%93%A5%E6%9E%97%E5%A4%9A%E5%BE%8C%E6%9B%B8+5%3A14&version=CUVMPT
   {
     "id": 0,
     "articleId": 1,

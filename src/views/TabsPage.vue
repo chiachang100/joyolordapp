@@ -29,6 +29,8 @@ import {
   homeSharp,
   informationCircleOutline,
   informationCircleSharp,
+  settingsOutline,
+  settingsSharp,
 } from "ionicons/icons";
 
 import { computed, watch } from "vue";
@@ -43,7 +45,7 @@ const { t } = useI18n();
 const appPages = [
   {
     // title: "聖經經文",
-    title: 'bibleVerse',
+    title: "bibleVerse",
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
@@ -51,7 +53,7 @@ const appPages = [
   },
   {
     // title: "笑裡藏道",
-    title: 'xlcd',
+    title: "xlcd",
     url: "/tabs/joys",
     iosIcon: homeOutline,
     mdIcon: homeSharp,
@@ -59,11 +61,19 @@ const appPages = [
   },
   {
     // title: "資源簡介",
-    title: 'about',
+    title: "about",
     url: "/tabs/about",
     iosIcon: informationCircleOutline,
     mdIcon: informationCircleSharp,
     tab: "about",
+  },
+  {
+    // title: "個人設置",
+    title: "settings",
+    url: "/tabs/settings",
+    iosIcon: settingsOutline,
+    mdIcon: settingsSharp,
+    tab: "settings",
   },
   // {
   // // title: "喜樂榜",
@@ -95,17 +105,15 @@ watch(currentLocale, (newLocale) => {
   console.log("TabsPage: New i18n.global.locale.value = ", newLocale);
 });
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'TabsPage',
-    jola_screen_class: 'TabBars',
+    jola_screen: "TabsPage",
+    jola_screen_class: "TabBars",
   },
 });
-
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
