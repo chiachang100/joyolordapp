@@ -1,7 +1,7 @@
 import { Scripture } from "./I_Scripture";
 
 const scriptures_zhCN: Scripture[] = [
-// Locale: zh-CN
+  // Locale: zh-CN
   {
     "id": 0,
     "articleId": 1,
@@ -267,6 +267,42 @@ const scriptures_zhCN: Scripture[] = [
     "type": 1,
     "isNew": true,
     "category": '冬',
+  },
+  {
+    "id": 0,
+    "articleId": 150,
+    "title": '得永生之道',
+    "scriptureName": '约翰福音',
+    "scriptureChapter": '3:16',
+    "scriptureVerse": '「神爱世人，甚至将他的独生子赐给他们，叫一切信他的不致灭亡，反得永生。」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
+    "articleId": 151,
+    "title": '常常喜乐',
+    "scriptureName": '帖撒罗尼迦前书',
+    "scriptureChapter": '5:16-18',
+    "scriptureVerse": '「要常常喜乐，不住地祷告，凡事谢恩，因为这是神在基督耶稣里向你们所定的旨意。」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
+    "articleId": 152,
+    "title": '主的喜乐是你的力量',
+    "scriptureName": '尼希米记',
+    "scriptureChapter": '8:10b',
+    "scriptureVerse": '「...你们不要忧愁，因靠耶和华而得的喜乐是你们的力量。」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
   },
 ];
 

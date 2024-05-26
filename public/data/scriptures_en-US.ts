@@ -1,7 +1,7 @@
 import { Scripture } from "./I_Scripture";
 
 const scriptures_enUS: Scripture[] = [
-// Locale: en-US
+  // Locale: en-US
   {
     "id": 0,
     "articleId": 1,
@@ -267,7 +267,43 @@ const scriptures_enUS: Scripture[] = [
     "type": 1,
     "isNew": true,
     "category": '冬',
-  }
+  },
+  {
+    "id": 0,
+    "articleId": 150,
+    "title": '得永生之道',
+    "scriptureName": 'John',
+    "scriptureChapter": '3:16',
+    "scriptureVerse": '「For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
+    "articleId": 151,
+    "title": '常常喜樂',
+    "scriptureName": '1 Thessalonians',
+    "scriptureChapter": '5:16-18',
+    "scriptureVerse": '「Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
+    "articleId": 152,
+    "title": '主的喜樂是你的力量',
+    "scriptureName": 'Nehemiah',
+    "scriptureChapter": '8:10b',
+    "scriptureVerse": '「...And do not be grieved, for the joy of the Lord is your strength.」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
 ];
 
 export default scriptures_enUS;
