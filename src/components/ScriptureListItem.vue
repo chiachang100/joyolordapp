@@ -5,7 +5,7 @@
     :detail="false"
     class="list-item"
   >
-    <app-avatar-logo />
+    <app-logo />
     <ion-label class="ion-text-wrap">
       <h2>
         {{index! + 1}}. {{ scripture.scriptureName }} {{ scripture.scriptureChapter }}
@@ -56,7 +56,6 @@ defineProps({
 //     jola_screen_class: 'ScriptureListItem',
 //   },
 // });
-
 </script>
 
 <style scoped>

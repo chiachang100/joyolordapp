@@ -37,6 +37,8 @@
 </template>
 
 <script setup lang="ts">
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
+
 import {
   IonButtons,
   IonHeader,
@@ -56,8 +58,6 @@ import { computed } from "vue";
 import { getArticles } from "../../public/data/articles";
 import { Article } from "../../public/data/I_Article";
 import ArticleListItem from "@/components/ArticleListItem.vue";
-// import AppLogo from "@/components/AppLogo.vue";
-import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -74,17 +74,15 @@ const newListOfArticles = computed<Article[]>(() => {
   return getArticles().filter((m) => m.isNew === true);
 });
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'NewListPage',
-    jola_screen_class: 'NewListPage',
+    jola_screen: "NewListPage",
+    jola_screen_class: "NewListPage",
   },
 });
-
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

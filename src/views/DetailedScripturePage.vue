@@ -29,7 +29,7 @@
           </ion-label>
         </ion-list-header>
         <ion-item>
-          <app-avatar-logo />
+          <app-logo />
           <ion-label>
             {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
             {{ scripture.scriptureChapter }})
@@ -42,6 +42,8 @@
 
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import AppLogo from "@/components/AppLogo.vue";
+
 import {
   IonBackButton,
   IonButtons,
@@ -56,8 +58,6 @@ import {
   IonToolbar,
 } from "@ionic/vue";
 import { getScripture } from "../../public/data/scriptures";
-import AppLogo from "@/components/AppLogo.vue";
-import AppAvatarLogo from "@/components/AppAvatarLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -71,16 +71,15 @@ const getBackButtonText = () => {
 const route = useRoute();
 const scripture = getScripture(parseInt(route.params.id as string, 10));
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'ScripturesPage',
-    jola_screen_class: 'DetailedScripturesPage_' + scripture?.articleId,
+    jola_screen: "ScripturesPage",
+    jola_screen_class: "DetailedScripturesPage_" + scripture?.articleId,
   },
 });
-
 </script>
 
 <style scoped>

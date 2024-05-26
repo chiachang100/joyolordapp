@@ -68,6 +68,11 @@
 </template>
 
 <script setup lang="ts">
+// import { inject, ref, watch, onMounted } from "vue";
+import { inject } from "vue";
+import { useI18n } from "vue-i18n";
+import AppLogo from "@/components/AppLogo.vue";
+
 import {
   IonButton,
   IonButtons,
@@ -93,13 +98,9 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import AppLogo from "@/components/AppLogo.vue";
 import i18n from "../i18n/i18nMain";
 import { SupportedLocale } from "../i18n/i18nMain";
 
-// import { inject, ref, watch, onMounted } from "vue";
-import { inject } from "vue";
-import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 const { t } = useI18n();
 

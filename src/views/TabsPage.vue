@@ -13,6 +13,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed, watch } from "vue";
+
 import {
   IonIcon,
   IonLabel,
@@ -33,7 +35,6 @@ import {
   settingsSharp,
 } from "ionicons/icons";
 
-import { computed, watch } from "vue";
 import i18n from "../i18n/i18nMain";
 import { useI18n } from "vue-i18n";
 

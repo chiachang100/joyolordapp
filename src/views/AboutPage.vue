@@ -260,6 +260,7 @@
 
 <script setup lang="ts">
 import { inject } from "vue";
+import AppLogo from "@/components/AppLogo.vue";
 
 import {
   IonButton,
@@ -283,8 +284,6 @@ import {
   IonTitle,
   IonContent,
 } from "@ionic/vue";
-
-import AppLogo from "@/components/AppLogo.vue";
 
 const appVer = inject<string>("appVersion");
 

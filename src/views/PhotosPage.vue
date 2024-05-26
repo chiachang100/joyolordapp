@@ -37,6 +37,10 @@
 </template>
 
 <script setup lang="ts">
+import { camera, trash, close } from "ionicons/icons";
+import AppLogo from "@/components/AppLogo.vue";
+import { usePhotoGallery, UserPhoto } from "../composables/usePhotoGallery";
+
 import {
   actionSheetController,
   IonButtons,
@@ -56,9 +60,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
-import { camera, trash, close } from "ionicons/icons";
-import { usePhotoGallery, UserPhoto } from "../composables/usePhotoGallery";
-import AppLogo from "@/components/AppLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -90,17 +91,15 @@ const showActionSheet = async (photo: UserPhoto) => {
   await actionSheet.present();
 };
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'PhotosPage',
-    jola_screen_class: 'PhotosPage',
+    jola_screen: "PhotosPage",
+    jola_screen_class: "PhotosPage",
   },
 });
-
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

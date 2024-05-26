@@ -23,15 +23,15 @@
       <ion-card>
         <ion-card-header>
           <ion-card-title>Firebase Firestore</ion-card-title>
-          <ion-card-subtitle>Connect to {{ t('joyolordappName') }}.</ion-card-subtitle>
+          <ion-card-subtitle>Connect to {{ t("joyolordappName") }}.</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
-        <ion-list>
-          <ion-item v-for="(joy, index) in joys" :key="joy.id" :index="index">
-            <ion-label>{{ index + 1 }}. {{ joy.title }} ({{ joy.itemId }})</ion-label>
-          </ion-item>
-        </ion-list>
+          <ion-list>
+            <ion-item v-for="(joy, index) in joys" :key="joy.id" :index="index">
+              <ion-label>{{ index + 1 }}. {{ joy.title }} ({{ joy.itemId }})</ion-label>
+            </ion-item>
+          </ion-list>
         </ion-card-content>
       </ion-card>
     </ion-content>
@@ -39,6 +39,8 @@
 </template>
 
 <script setup lang="ts">
+import AppLogo from "@/components/AppLogo.vue";
+
 import {
   IonButtons,
   IonCard,
@@ -58,8 +60,6 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import AppLogo from "@/components/AppLogo.vue";
-
 defineProps({
   index: Number,
 });
@@ -68,20 +68,20 @@ defineProps({
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
-import { useFirestore, useCollection } from 'vuefire'
-import { collection } from "firebase/firestore"
+import { useFirestore, useCollection } from "vuefire";
+import { collection } from "firebase/firestore";
 
-const db = useFirestore()
-const joys = useCollection(collection(db, 'joys'))
+const db = useFirestore();
+const joys = useCollection(collection(db, "joys"));
 
-import { ref } from 'vue';
-import { AnalyticsService } from '../services/analytics.service';
+import { ref } from "vue";
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'Firebase',
-    jola_screen_class: 'FirebaseExpoPage',
+    jola_screen: "Firebase",
+    jola_screen_class: "FirebaseExpoPage",
   },
 });
 
@@ -89,10 +89,8 @@ analytics.logEvent({
 // const enabled = analytics.isEnabled();
 ref(analytics.setEnabled({ enabled: true }));
 analytics.setEnabled({ enabled: true });
-analytics.setUserId({ userId: 'test' });
-analytics.setUserProperty({ key: 'language', value: 'en-US' });
-
+analytics.setUserId({ userId: "test" });
+analytics.setUserProperty({ key: "language", value: "en-US" });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

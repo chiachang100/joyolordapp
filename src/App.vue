@@ -88,6 +88,9 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, inject } from "vue";
+import { useI18n } from "vue-i18n";
+
 import {
   IonApp,
   IonContent,
@@ -122,8 +125,6 @@ import {
   settingsSharp,
 } from "ionicons/icons";
 
-import { onMounted, inject } from "vue";
-import { useI18n } from "vue-i18n";
 import i18n from "./i18n/i18nMain";
 import { SupportedLocale } from "./i18n/i18nMain";
 import { useFileReader } from "./composables/useFileReader";

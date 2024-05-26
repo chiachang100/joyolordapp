@@ -4,7 +4,6 @@
       <ion-toolbar>
         <ion-title>
           <ion-item>
-            <!--<app-logo />-->
             <app-xlcd-logo />
             <ion-label>{{ article.title }}</ion-label>
           </ion-item>
@@ -26,7 +25,7 @@
       <!-- Bible Scripture Section -->
       <ion-card color="light">
         <ion-img :src="article.photoUrl" :alt="article.title" />
-      <!--
+        <!--
         <ion-grid>
           <ion-row>
             <ion-col size="12">
@@ -37,7 +36,7 @@
       -->
         <ion-card-header>
           <ion-card-title>{{ article.title }} ({{ article.articleId }})</ion-card-title>
-        <!--
+          <!--
           <ion-card-title>
             {{ article.title }}({{ article.articleId }})
             <span class="likes">
@@ -46,8 +45,7 @@
           </ion-card-title>
         -->
           <ion-card-subtitle
-            >{{ article.scriptureName }}
-            {{ article.scriptureChapter }}</ion-card-subtitle
+            >{{ article.scriptureName }} {{ article.scriptureChapter }}</ion-card-subtitle
           >
         </ion-card-header>
 
@@ -104,10 +102,7 @@
 
         <ion-card-content>
           <vue-plyr>
-            <div
-              data-plyr-provider="youtube"
-              :data-plyr-embed-id="article.videoId"
-            ></div>
+            <div data-plyr-provider="youtube" :data-plyr-embed-id="article.videoId"></div>
           </vue-plyr>
         </ion-card-content>
       </ion-card>
@@ -141,6 +136,8 @@
 
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
+
 import {
   IonBackButton,
   IonButtons,
@@ -178,8 +175,6 @@ import {
 
 //import { Article } from "../../public/data/I_Article";
 import { getArticle } from "../../public/data/articles";
-// import AppLogo from "@/components/AppLogo.vue";
-import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -193,13 +188,13 @@ const getBackButtonText = () => {
 const route = useRoute();
 const article = getArticle(parseInt(route.params.id as string, 10));
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'ArticlesPage',
-    jola_screen_class: 'DetailedArticlesPage_' + article?.articleId,
+    jola_screen: "ArticlesPage",
+    jola_screen_class: "DetailedArticlesPage_" + article?.articleId,
   },
 });
 

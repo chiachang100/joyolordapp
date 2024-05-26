@@ -22,7 +22,9 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }})</ion-title>
+          <ion-title size="large"
+            >{{ t("rankingList") }} ({{ t("qian") }} {{ maxTopNum }})</ion-title
+          >
         </ion-toolbar>
       </ion-header>
 
@@ -39,6 +41,9 @@
 </template>
 
 <script setup lang="ts">
+import { computed, inject } from "vue";
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
+
 import {
   IonButtons,
   IonHeader,
@@ -54,12 +59,9 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import { computed, inject } from "vue";
 import { getArticles } from "../../public/data/articles";
 import { Article } from "../../public/data/I_Article";
 import ArticleListItem from "@/components/ArticleListItem.vue";
-// import AppLogo from "@/components/AppLogo.vue";
-import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -81,17 +83,15 @@ const rankingListOfArticles = computed<Article[]>(() => {
   return topItems;
 });
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'RankingListPage',
-    jola_screen_class: 'RankingListPage',
+    jola_screen: "RankingListPage",
+    jola_screen_class: "RankingListPage",
   },
 });
-
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

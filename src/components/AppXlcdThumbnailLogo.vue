@@ -1,12 +1,12 @@
 <template>
-  <ion-avatar slot="start">
+  <ion-thumbnail slot="start">
     <img :src="xlcdLogo" :alt="xlcdLogoAlt" />
-  </ion-avatar>
+  </ion-thumbnail>
 </template>
 
 <script setup lang="ts">
 import { inject } from "vue";
-import { IonAvatar } from "@ionic/vue";
+import { IonThumbnail } from "@ionic/vue";
 
 const xlcdLogo = inject<string>("appXlcdLogo");
 const xlcdLogoAlt = inject<string>("appXlcdLogoAlt");

@@ -6,9 +6,10 @@ import { IonicVue } from '@ionic/vue';
 
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
-import AppAvatarLogo from '@/components/AppAvatarLogo.vue';
 import AppLogo from '@/components/AppLogo.vue';
 import AppXlcdLogo from '@/components/AppXlcdLogo.vue';
+import AppThumbnailLogo from '@/components/AppThumbnailLogo.vue';
+import AppXlcdThumbnailLogo from '@/components/AppXlcdThumbnailLogo.vue';
 import packageJson from '../package.json';
 
 // vue-plyr
@@ -66,9 +67,10 @@ const app = createApp(App)
   ;
 
 // Global components
-app.component('app-avatar-logo', AppAvatarLogo);
 app.component('app-logo', AppLogo);
 app.component('app-xlcd-logo', AppXlcdLogo);
+app.component('app-thumbnail-logo', AppThumbnailLogo);
+app.component('app-xlcd-thumbnail-logo', AppXlcdThumbnailLogo);
 
 // Global variables
 app.provide('appVersion', packageJson.version);

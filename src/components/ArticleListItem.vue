@@ -5,7 +5,7 @@
     :detail="false"
     class="list-item"
   >
-  <!--
+    <!--
     <ion-thumbnail slot="start">
       <img :src="article.photoUrl" alt="thumbnail" />
     </ion-thumbnail>
@@ -66,7 +66,6 @@ defineProps({
 //     jola_screen_class: 'ArticleListItem',
 //   },
 // });
-
 </script>
 
 <style scoped>

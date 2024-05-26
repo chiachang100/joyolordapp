@@ -47,6 +47,9 @@
 </template>
 
 <script setup lang="ts">
+import { computed, ref } from "vue";
+import AppLogo from "@/components/AppLogo.vue";
+
 import {
   IonButtons,
   IonHeader,
@@ -65,8 +68,6 @@ import {
 import ScriptureListItem from "@/components/ScriptureListItem.vue";
 import { getScriptures } from "../../public/data/scriptures";
 import { Scripture } from "../../public/data/I_Scripture";
-import { computed, ref } from "vue";
-import AppLogo from "@/components/AppLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -99,17 +100,15 @@ const onSearchInput = () => {
   console.log("searchTerm=" + searchTerm.value?.trim());
 };
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'ScripturesPage',
-    jola_screen_class: 'ScripturesPage',
+    jola_screen: "ScripturesPage",
+    jola_screen_class: "ScripturesPage",
   },
 });
-
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

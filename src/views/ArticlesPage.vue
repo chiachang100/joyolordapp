@@ -48,6 +48,8 @@
 </template>
 
 <script setup lang="ts">
+import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
+
 import {
   IonButtons,
   IonHeader,
@@ -68,8 +70,6 @@ import { computed, ref } from "vue";
 import { getArticles } from "../../public/data/articles";
 import { Article } from "../../public/data/I_Article";
 import ArticleListItem from "@/components/ArticleListItem.vue";
-// import AppLogo from "@/components/AppLogo.vue";
-import AppXlcdLogo from "@/components/AppXlcdLogo.vue";
 
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -107,17 +107,15 @@ const onSearchInput = () => {
   console.log("searchTerm=" + searchTerm.value?.trim());
 };
 
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_screen_name',
+  name: "jola_screen_name",
   parameters: {
-    jola_screen: 'ArticlesPage',
-    jola_screen_class: 'ArticlesPage',
+    jola_screen: "ArticlesPage",
+    jola_screen_class: "ArticlesPage",
   },
 });
-
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

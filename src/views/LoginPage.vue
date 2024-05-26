@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 import {
   IonButton,
   IonButtons,
@@ -68,7 +68,7 @@ const { t } = useI18n();
 const email = ref("");
 const password = ref("");
 // Display errors if any
-const error = ref(null)
+const error = ref(null);
 
 import {
   getRedirectResult,
@@ -76,14 +76,11 @@ import {
   // signInWithRedirect,
   // signInWithPopup,
   // signOut,
-} from 'firebase/auth'
+} from "firebase/auth";
 // import { GoogleAuthProvider } from 'firebase/auth'
-import {
-  useCurrentUser,
-  useFirebaseAuth
-} from 'vuefire'
+import { useCurrentUser, useFirebaseAuth } from "vuefire";
 
-const auth = useFirebaseAuth()! // only exists on client side
+const auth = useFirebaseAuth()!; // only exists on client side
 // const googleAuthProvider = new GoogleAuthProvider()
 
 // const loginRedirect = () => {
@@ -92,33 +89,32 @@ const doLogin = () => {
   //     console.error('Failed signInRedirect', reason)
   //     error.value = reason
   //   })
-    console.log("doLogin(): email=" + email.value + "; password=" + password.value);
+  console.log("doLogin(): email=" + email.value + "; password=" + password.value);
   try {
     // await auth.signInWithEmailAndPassword(email.value, password.value)
     signInWithEmailAndPassword(auth, email.value, password.value).catch((reason) => {
-      console.error('Failed signInWithEmailAndPassword', reason)
-      error.value = reason
-    })
-
+      console.error("Failed signInWithEmailAndPassword", reason);
+      error.value = reason;
+    });
   } catch (error) {
-    console.error('Login failed', error)
+    console.error("Login failed", error);
   }
-}
+};
 
 // Only on client side
 onMounted(() => {
   getRedirectResult(auth).catch((reason) => {
-    console.error('Failed redirect result', reason)
-    error.value = reason
-  })
-})
+    console.error("Failed redirect result", reason);
+    error.value = reason;
+  });
+});
 
-const user = useCurrentUser()
+const user = useCurrentUser();
 
 const doLogout = () => {
-    console.log('Signed out!')
-  auth.signOut()
-}
+  console.log("Signed out!");
+  auth.signOut();
+};
 
 /*
 import {
@@ -156,16 +152,15 @@ const doLogin = () => {
 //--------------------------------------
 // Firebase Analytics
 //--------------------------------------
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from "../services/analytics.service";
 const analytics = new AnalyticsService();
 analytics.logEvent({
-  name: 'jola_login_name',
+  name: "jola_login_name",
   parameters: {
-    jola_screen: 'LoginPage',
-    jola_screen_class: 'LoginPage',
+    jola_screen: "LoginPage",
+    jola_screen_class: "LoginPage",
   },
 });
-
 
 /*
 import {
@@ -245,7 +240,6 @@ const doLogin = async () => {
 };
 
  */
-
 </script>
 
 <style scoped>
@@ -256,5 +250,4 @@ ion-card {
 ion-card-title {
   font-size: 18px;
 }
-
 </style>
