@@ -231,11 +231,11 @@ i  Emulator UI already enabled with port: (automatic)
     - `en-US.json`
     - `zh-CN.json`
     - `zh-TW.json`
-    - `i18nMain.ts`
+    - `index.ts`
 
 ### Add the `vue-18n` init in `main.ts`:
 ```
-import i18n from './i18n/i18nMain';
+import i18n from './i18n/index';
 
 app.use(i18n);
 

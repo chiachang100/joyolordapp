@@ -17,8 +17,8 @@ import VuePlyr from 'vue-plyr'
 import 'vue-plyr/dist/vue-plyr.css'
 
 // I18N
-//import i18n, { defaultLocale } from './i18n/i18nMain';
-import i18n from './i18n/i18nMain';
+//import i18n, { defaultLocale } from './i18n/index';
+import i18n from './i18n/index';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';

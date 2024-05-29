@@ -98,8 +98,8 @@ import {
   IonContent,
 } from "@ionic/vue";
 
-import i18n from "../i18n/i18nMain";
-import { SupportedLocale } from "../i18n/i18nMain";
+import i18n from "../i18n/index";
+import { SupportedLocale } from "../i18n/index";
 
 const { locale } = useI18n();
 const { t } = useI18n();

@@ -3,7 +3,7 @@ import enUS from "./scriptures_en-US";
 import zhCN from "./scriptures_zh-CN";
 import zhTW from "./scriptures_zh-TW";
 
-import i18n from "../../src/i18n/i18nMain";
+import i18n from "../../src/i18n/index";
 
 let scriptures: Scripture[];
 //export const getScriptures = () => scriptures;

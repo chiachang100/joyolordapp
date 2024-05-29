@@ -35,7 +35,7 @@ import {
   settingsSharp,
 } from "ionicons/icons";
 
-import i18n from "../i18n/i18nMain";
+import i18n from "../i18n/index";
 import { useI18n } from "vue-i18n";
 
 import { ref } from "vue";

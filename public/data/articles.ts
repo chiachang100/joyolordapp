@@ -3,7 +3,7 @@ import enUS from "./articles_en-US";
 import zhCN from "./articles_zh-CN";
 import zhTW from "./articles_zh-TW";
 
-import i18n from "../../src/i18n/i18nMain";
+import i18n from "../../src/i18n/index";
 
 let articles: Article[];
 //export const getArticles = () => articles;

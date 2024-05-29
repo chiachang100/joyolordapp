@@ -125,8 +125,8 @@ import {
   settingsSharp,
 } from "ionicons/icons";
 
-import i18n from "./i18n/i18nMain";
-import { SupportedLocale } from "./i18n/i18nMain";
+import i18n from "./i18n/index";
+import { SupportedLocale } from "./i18n/index";
 import { useFileReader } from "./composables/useFileReader";
 
 const selectedIndex = ref(0);
