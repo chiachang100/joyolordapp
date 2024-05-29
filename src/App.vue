@@ -108,8 +108,10 @@ import { ref } from "vue";
 import {
   bookOutline,
   bookSharp,
-  homeOutline,
-  homeSharp,
+  happyOutline,
+  happySharp,
+  // homeOutline,
+  // homeSharp,
   imagesOutline,
   imagesSharp,
   informationCircleOutline,
@@ -144,8 +146,8 @@ const appPages = [
     // title: "笑裡藏道",
     title: "xlcd",
     url: "/tabs/joys",
-    iosIcon: homeOutline,
-    mdIcon: homeSharp,
+    iosIcon: happyOutline,
+    mdIcon: happySharp,
   },
   {
     // title: "喜樂榜",

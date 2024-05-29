@@ -27,8 +27,10 @@ import {
 import {
   bookOutline,
   bookSharp,
-  homeOutline,
-  homeSharp,
+  happyOutline,
+  happySharp,
+  // homeOutline,
+  // homeSharp,
   informationCircleOutline,
   informationCircleSharp,
   settingsOutline,
@@ -56,8 +58,8 @@ const appPages = [
     // title: "笑裡藏道",
     title: "xlcd",
     url: "/tabs/joys",
-    iosIcon: homeOutline,
-    mdIcon: homeSharp,
+    iosIcon: happyOutline,
+    mdIcon: happySharp,
     tab: "joys",
   },
   {
