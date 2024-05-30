@@ -317,6 +317,18 @@ const scriptures_zhTW: Scripture[] = [
     "isNew": true,
     "category": '喜',
   },
+  {
+    "id": 0,
+    "articleId": 204,
+    "title": '主訓禱文',
+    "scriptureName": '馬太福音',
+    "scriptureChapter": '6:9-13',
+    "scriptureVerse": '「所以，你們禱告要這樣說：『我們在天上的父，願人都尊你的名為聖， 願你的國降臨，願你的旨意行在地上，如同行在天上。 我們日用的飲食，今日賜給我們。 免我們的債，如同我們免了人的債。 不叫我們遇見試探，救我們脫離凶惡。因為國度、權柄、榮耀，全是你的，直到永遠。阿們。」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
 ];
 
 export default scriptures_zhTW;
