@@ -8,7 +8,7 @@
     <app-logo />
     <ion-label class="ion-text-wrap">
       <h2>
-        {{index! + 1}}. {{ scripture.scriptureName }} {{ scripture.scriptureChapter }}
+        {{index! + 1}}. {{ scripture.title }}
         <!--
         <span class="likes">
           <ion-icon
@@ -20,6 +20,7 @@
         </span>
         -->
       </h2>
+      <h3>{{ scripture.scriptureName }} {{ scripture.scriptureChapter }}</h3>
       <p>
         {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
         {{ scripture.scriptureChapter }})

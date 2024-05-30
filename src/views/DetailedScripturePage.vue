@@ -25,14 +25,17 @@
       <ion-list>
         <ion-list-header>
           <ion-label>
-            <h2>{{ scripture.scriptureName }} {{ scripture.scriptureChapter }}</h2>
+            <h2>{{ scripture.title }} ({{ scripture.articleId }})</h2>
           </ion-label>
         </ion-list-header>
         <ion-item>
           <app-logo />
           <ion-label>
-            {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
-            {{ scripture.scriptureChapter }})
+            <h2>{{ scripture.scriptureName }} {{ scripture.scriptureChapter }}</h2>
+            <h3>
+              {{ scripture.scriptureVerse }} ({{ scripture.scriptureName }}
+              {{ scripture.scriptureChapter }})
+            </h3>
           </ion-label>
         </ion-item>
       </ion-list>
