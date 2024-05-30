@@ -329,6 +329,18 @@ const scriptures_zhTW: Scripture[] = [
     "isNew": true,
     "category": '喜',
   },
+  {
+    "id": 0,
+    "articleId": 205,
+    "title": '耶和華要保護你',
+    "scriptureName": '詩篇',
+    "scriptureChapter": '121:9',
+    "scriptureVerse": '「你出你入，耶和華要保護你，從今時直到永遠。」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
 ];
 
 export default scriptures_zhTW;

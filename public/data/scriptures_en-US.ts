@@ -332,6 +332,18 @@ const scriptures_enUS: Scripture[] = [
     "isNew": true,
     "category": '喜',
   },
+  {
+    "id": 0,
+    "articleId": 205,
+    "title": "My Help Comes from the Lord",
+    "scriptureName": 'Paslm ',
+    "scriptureChapter": '121:9',
+    "scriptureVerse": '「The Lord will keep your going out and your coming in from this time forth and forevermore. 」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
 ];
 
 export default scriptures_enUS;

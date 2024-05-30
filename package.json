@@ -1,7 +1,7 @@
 {
   "name": "joyolordapp",
   "private": true,
-  "version": "1.18.4",
+  "version": "1.18.6",
   "description": "joyolordapp-主的喜樂",
   "homepage": "https://joyolordapp.web.app/",
   "type": "module",

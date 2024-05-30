@@ -329,6 +329,18 @@ const scriptures_zhCN: Scripture[] = [
     "isNew": true,
     "category": '喜',
   },
+  {
+    "id": 0,
+    "articleId": 205,
+    "title": '耶和华要保护你',
+    "scriptureName": '诗篇',
+    "scriptureChapter": '121:9',
+    "scriptureVerse": '「你出你入，耶和华要保护你，从今时直到永远。」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
 ];
 
 export default scriptures_zhCN;
