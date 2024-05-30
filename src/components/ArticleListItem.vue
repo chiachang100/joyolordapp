@@ -5,12 +5,12 @@
     :detail="false"
     class="list-item"
   >
-    <!--
     <ion-thumbnail slot="start">
       <img :src="article.photoUrl" alt="thumbnail" />
     </ion-thumbnail>
-  -->
+    <!--
     <app-xlcd-logo />
+    -->
     <ion-label class="ion-text-wrap">
       <h2>
         {{index! + 1}}. {{ article.title }}({{ article.articleId }})
