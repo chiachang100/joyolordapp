@@ -5,6 +5,32 @@ const scriptures_enUS: Scripture[] = [
   // ESV: https://www.biblegateway.com/passage/?search=2+Corinthians+5%3A14&version=ESV
   {
     "id": 0,
+    "articleId": 208,
+    "title": "God will be exalted",
+    "scriptureName": 'Psalm',
+    "scriptureChapter": '46:10',
+    "scriptureVerse": '「"Be still, and know that I am God.'
+      + ' I will be exalted among the nations, I will be exalted in the earth!”」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
+    "articleId": 207,
+    "title": "The Seventh Day, God Rests",
+    "scriptureName": 'Isaiah  ',
+    "scriptureChapter": '26:3',
+    "scriptureVerse": '「And on the seventh day God finished his work that he had done, and he rested on the seventh day from all his work that he had done.'
+      + ' So God blessed the seventh day and made it holy, because on it God rested from all his work that he had done in creation.」',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
     "articleId": 206,
     "title": "You Keep Him in Perfect Peace",
     "scriptureName": 'Isaiah  ',

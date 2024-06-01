@@ -28,6 +28,7 @@ export const getScriptures = () => {
         }
     }
 
+    scriptures.sort((a, b) => b.articleId - a.articleId);
     return scriptures;
 }
 
