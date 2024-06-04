@@ -44,17 +44,17 @@
 
           <ion-grid>
             <ion-row>
-              <ion-col>
+              <ion-col size="12" size-sm="4">
                 <ion-button fill="outline" expand="block" @click="setNewLocale('zh-TW')">
                   {{ t("zh-TW") }}
                 </ion-button>
               </ion-col>
-              <ion-col>
+              <ion-col size="12" size-sm="4">
                 <ion-button fill="outline" expand="block" @click="setNewLocale('zh-CN')">
                   {{ t("zh-CN") }}
                 </ion-button>
               </ion-col>
-              <ion-col>
+              <ion-col size="12" size-sm="4">
                 <ion-button fill="outline" expand="block" @click="setNewLocale('en-US')">
                   {{ t("en-US") }}
                 </ion-button>
