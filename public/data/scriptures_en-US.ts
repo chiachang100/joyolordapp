@@ -5,6 +5,18 @@ const scriptures_enUS: Scripture[] = [
   // ESV: https://www.biblegateway.com/passage/?search=2+Corinthians+5%3A14&version=ESV
   {
     "id": 0,
+    "articleId": 212,
+    "title": "God has prepared for those who love him",
+    "scriptureName": '1 Corinthians',
+    "scriptureChapter": '2:9',
+    "scriptureVerse": '「But, as it is written, "What no eye has seen, nor ear heard, nor the heart of man imagined, what God has prepared for those who love him."',
+    "likes": 4,
+    "type": 1,
+    "isNew": true,
+    "category": '喜',
+  },
+  {
+    "id": 0,
     "articleId": 211,
     "title": "Whoever does good is from God",
     "scriptureName": '3 John',

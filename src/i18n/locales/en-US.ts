@@ -19,8 +19,8 @@ export default {
   "infoMenu": "Info Menu",
   "futureMenu": "Future Menu",
 
-  "zh-TW": "Chinese (Traditional)",
-  "zh-CN": "Chinese (Simplified)",
+  "zh-TW": "Chinese Traditional",
+  "zh-CN": "Chinese Simplified",
   "en-US": "English",
   "search": "Search",
   "qian": "Top",

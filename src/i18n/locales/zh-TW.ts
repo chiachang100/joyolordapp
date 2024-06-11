@@ -19,8 +19,8 @@ export default {
   "infoMenu": "附加選項",
   "futureMenu": "未來選項",
 
-  "zh-TW": "中文 (繁體)",
-  "zh-CN": "中文 (簡體)",
+  "zh-TW": "中文繁體",
+  "zh-CN": "中文簡體",
   "en-US": "英文",
   "search": "搜尋",
   "qian": "前",
