@@ -53,7 +53,7 @@ export default {
       + "1995年返回馬來西亞擔任吉隆坡信義會主任牧師。"
       + " 2001年全家返美，加入「矽谷生命河靈糧堂」事奉團隊，目前負責牧養處事工。 與師母 Connie 育有兩個女兒。",
     "bookAuthorYouTube": "曾興才牧師講道視頻",
-    "bookPraisesTitle": "讚揚「笑裡藏道」書籍",
+    "bookPraisesTitle": "牧者推薦",
     "bookPraisesSubtitle":
       "來，領受一份 「幽默感」的恩膏！"
       + "\n累積你的笑話存款，提升你的親和指數，打開分享真理的機會之門！",

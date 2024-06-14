@@ -29,33 +29,33 @@
           }}</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
-          <!--
-          <ion-select
-            v-model="selectedLocale"
-            :label="t('SettingsPage.selectLanguage')"
-            :placeholder="t(i18n.global.locale.value)"
-          >
-            <ion-select-option value="zh-TW">{{ t("zh-TW") }}</ion-select-option>
-            <ion-select-option value="zh-CN">{{ t("zh-CN") }}</ion-select-option>
-            <ion-select-option value="en-US">{{ t("en-US") }}</ion-select-option>
-          </ion-select>
-          -->
-
+        <ion-card-content :key="componentKey">
           <ion-grid>
             <ion-row>
               <ion-col size="12" size-sm="4">
-                <ion-button fill="outline" expand="block" @click="setNewLocale('zh-TW')">
+                <ion-button
+                  :fill="isZhTw ? 'solid' : 'outline'"
+                  expand="block"
+                  @click="setNewLocale('zh-TW')"
+                >
                   {{ t("zh-TW") }}
                 </ion-button>
               </ion-col>
               <ion-col size="12" size-sm="4">
-                <ion-button fill="outline" expand="block" @click="setNewLocale('zh-CN')">
+                <ion-button
+                  :fill="isZhCn ? 'solid' : 'outline'"
+                  expand="block"
+                  @click="setNewLocale('zh-CN')"
+                >
                   {{ t("zh-CN") }}
                 </ion-button>
               </ion-col>
               <ion-col size="12" size-sm="4">
-                <ion-button fill="outline" expand="block" @click="setNewLocale('en-US')">
+                <ion-button
+                  :fill="isEnUs ? 'solid' : 'outline'"
+                  expand="block"
+                  @click="setNewLocale('en-US')"
+                >
                   {{ t("en-US") }}
                 </ion-button>
               </ion-col>
@@ -69,7 +69,7 @@
 
 <script setup lang="ts">
 // import { inject, ref, watch, onMounted } from "vue";
-import { inject } from "vue";
+import { inject, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import AppLogo from "@/components/AppLogo.vue";
 
@@ -111,10 +111,40 @@ const { t } = useI18n();
 import { useFileWriter } from "../composables/useFileWriter";
 const appUserProfileFilename = inject<string>("appUserProfileFilename") as string;
 
+const componentKey = ref(0);
+
+let isEnUs = false;
+let isZhCn = false;
+let isZhTw = false;
+
+const setLocaleFlag = (localeString: string) => {
+  isEnUs = false;
+  isZhCn = false;
+  isZhTw = false;
+
+  switch (localeString) {
+    case "en-US":
+      isEnUs = true;
+      break;
+    case "zh-CN":
+      isZhCn = true;
+      break;
+    case "zh-TW":
+      isZhTw = true;
+      break;
+    default:
+      break;
+  }
+};
+
+setLocaleFlag(i18n.global.locale.value);
+
 const setNewLocale = (newLocale: string) => {
   console.log(`[SettingsPage] Selected locale: ${newLocale}.`);
   locale.value = newLocale;
   i18n.global.locale.value = newLocale as SupportedLocale;
+
+  setLocaleFlag(i18n.global.locale.value);
 
   // const { writeSuccess, writeFile } = useFileWriter(appUserProfileFilename, i18n.global.locale.value);
   const { writeSuccess } = useFileWriter(
@@ -125,6 +155,7 @@ const setNewLocale = (newLocale: string) => {
     `[SettingsPage] Saved i18n.global.locale.value=${i18n.global.locale.value}.`
   );
   console.log(`[SettingsPage] Returned writeSuccess=${writeSuccess.value}.`);
+  componentKey.value++;
 };
 
 /*

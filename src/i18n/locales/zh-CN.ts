@@ -53,7 +53,7 @@ export default {
       + "1995年返回马来西亚担任吉隆坡信义会主任牧师。"
       + " 2001年全家返美，加入「矽谷生命河灵粮堂」事奉团队，目前负责牧养处事工。 与师母 Connie 育有两个女儿。 ",
     "bookAuthorYouTube": "曾兴才牧师讲道视频",
-    "bookPraisesTitle": "赞扬「笑里藏道」书籍",
+    "bookPraisesTitle": "牧者推荐",
     "bookPraisesSubtitle":
       "来，领受一份 「幽默感」的恩膏！ "
       + "\n累积你的笑话存款，提升你的亲和指数，打开分享真理的机会之门！",
