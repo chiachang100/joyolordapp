@@ -4,10 +4,7 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="app-list">
-            <!--
             <ion-list-header>{{ t("coreMenu") }}</ion-list-header>
-            -->
-
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in appPages" :key="i">
               <ion-item
                 @click="selectedIndex = i"
@@ -30,10 +27,7 @@
           </ion-list>
 
           <ion-list id="info-list">
-            <!--
             <ion-list-header>{{ t("infoMenu") }}</ion-list-header>
-            -->
-
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in infoPages" :key="i">
               <ion-item
                 @click="selectedIndex = i"
@@ -55,11 +49,9 @@
             </ion-menu-toggle>
           </ion-list>
 
+          <!--
           <ion-list id="future-list">
-            <!--
             <ion-list-header>{{ t("futureMenu") }}</ion-list-header>
-            -->
-
             <ion-menu-toggle :auto-hide="false" v-for="(p, i) in futurePages" :key="i">
               <ion-item
                 @click="selectedIndex = i"
@@ -80,6 +72,7 @@
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
+          -->
         </ion-content>
       </ion-menu>
       <ion-router-outlet id="main-content"></ion-router-outlet>
