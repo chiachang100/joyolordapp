@@ -9,7 +9,7 @@ export default {
   "xlcd": "XLCD",
   "about": "About",
   "settings": "Settings",
-  "rankingList": "Ranking List",
+  "rankingList": "Top List",
   "newList": "New Listing",
   "login": "Login",
   "photos": "Photos",
