@@ -23,7 +23,7 @@ export default {
   "zh-CN": "Chinese Simplified",
   "en-US": "English",
   "search": "Search",
-  "qian": "Top",
+  "qian": "Top {num}",
   "back": "Back",
 
   "bible": "Bible",

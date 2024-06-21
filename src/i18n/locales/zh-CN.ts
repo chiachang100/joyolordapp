@@ -23,7 +23,7 @@ export default {
   "zh-CN": "中文简体",
   "en-US": "英文",
   "search": "搜寻",
-  "qian": "前",
+  "qian": "前 {num} 名",
   "back": "返回",
 
   "bible": "圣经",
