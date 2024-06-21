@@ -10,7 +10,7 @@ export default {
   "about": "About",
   "settings": "Settings",
   "rankingList": "Top List",
-  "newList": "New Listing",
+  "newList": "New List",
   "login": "Login",
   "photos": "Photos",
   "FirebaseExpo": "FirebaseExpo",
@@ -23,7 +23,7 @@ export default {
   "zh-CN": "Chinese Simplified",
   "en-US": "English",
   "search": "Search",
-  "qian": "Top {num}",
+  "qian": "Top{num}",
   "back": "Back",
 
   "bible": "Bible",
