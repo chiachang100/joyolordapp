@@ -17,6 +17,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -31,6 +32,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": '81DxRWJAd2Y',
     "videoName": '13. 以恩慈相待 (弗 4:32) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -45,6 +47,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'BWSuy-6ybY8',
     "videoName": '12. 靠主凡事能 (腓 4:13) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -60,6 +63,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": '5w7Tqzhqqkk',
     "videoName": '11. 大使命託付 (太 28:19-20) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -74,6 +78,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'p0eV4uki0zI',
     "videoName": '10. 憂慮卸給神 (彼前 5:7) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -88,6 +93,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'lEPWKkvjLaQ',
     "videoName": '9. 安然睡覺 (詩 4:8) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -103,6 +109,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'Jw0kOnr12Ts',
     "videoName": '8. 耶和華指路 (箴 3: 5-6) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -117,6 +124,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'yjCMJG165GU',
     "videoName": '7. 倚靠聖靈 (亞 4:6) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -131,6 +139,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'L5TQRdW5WfI',
     "videoName": '6. 罪與恩賜 (羅 6:23) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -145,6 +154,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'fwJFnAxDZ9I',
     "videoName": '5. 神愛顯明 (羅 5:8) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -159,6 +169,7 @@ const scriptures_enUS: Scripture[] = [
     "category": 'hi',
     "videoId": 'RXxrqa7c4Nw',
     "videoName": '4. 永遠福樂 (詩 16:11) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -173,6 +184,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -187,6 +199,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -201,6 +214,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -215,6 +229,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -229,6 +244,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -243,6 +259,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -258,6 +275,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -273,6 +291,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -287,6 +306,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -301,6 +321,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -318,6 +339,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -332,6 +354,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": 'wneRh4fP5pM',
     "videoName": '3. 路上燈光 (詩 119:105) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -346,6 +369,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -360,6 +384,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": 'yqKA3aZ5n9c',
     "videoName": '1. 常常喜樂 (帖前5:16-18) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
   {
     "id": 0,
@@ -374,6 +399,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '喜',
     "videoId": 'bt4yyNUPfCQ',
     "videoName": '2. 神愛世人 (約 3:16) | 我的燈光-背誦聖經 | AI3Magi | 耶穌愛你',
+    "isMyLight": true,
   },
 
   //============================================
@@ -390,6 +416,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -404,6 +431,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -418,6 +446,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -432,6 +461,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -446,6 +476,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -460,6 +491,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -474,6 +506,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -488,6 +521,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -502,6 +536,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -516,6 +551,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -530,6 +566,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -544,6 +581,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -558,6 +596,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '春',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -572,6 +611,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -586,6 +626,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -600,6 +641,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -614,6 +656,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -628,6 +671,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -642,6 +686,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -656,6 +701,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
   {
     "id": 0,
@@ -670,6 +716,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '夏',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
 
   //============================================
@@ -686,6 +733,7 @@ const scriptures_enUS: Scripture[] = [
     "category": '冬',
     "videoId": '',
     "videoName": '',
+    "isMyLight": false,
   },
 ];
 

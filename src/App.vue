@@ -118,6 +118,8 @@ import {
   newspaperSharp,
   settingsOutline,
   settingsSharp,
+  sunnyOutline,
+  sunnySharp,
 } from "ionicons/icons";
 
 import i18n from "./i18n/index";
@@ -157,6 +159,14 @@ const appPages = [
     iosIcon: newspaperOutline,
     mdIcon: newspaperSharp,
     tab: "newlist",
+  },
+  {
+    // title: "我的燈光",
+    title: "myLight",
+    url: "/tabs/mylight",
+    iosIcon: sunnyOutline,
+    mdIcon: sunnySharp,
+    tab: "mylight",
   },
 ];
 

@@ -11,5 +11,6 @@ export interface Scripture {
   category: string;
   videoId: string;
   videoName: string;
+  isMyLight: boolean;
 }
 

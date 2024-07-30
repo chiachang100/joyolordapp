@@ -35,6 +35,8 @@ import {
   informationCircleSharp,
   settingsOutline,
   settingsSharp,
+  sunnyOutline,
+  sunnySharp,
 } from "ionicons/icons";
 
 import i18n from "../i18n/index";
@@ -61,6 +63,14 @@ const appPages = [
     iosIcon: bookOutline,
     mdIcon: bookSharp,
     tab: "scriptures",
+  },
+  {
+    // title: "我的燈光",
+    title: "myLight",
+    url: "/tabs/mylight",
+    iosIcon: sunnyOutline,
+    mdIcon: sunnySharp,
+    tab: "mylight",
   },
   {
     // title: "資源簡介",
