@@ -39,6 +39,26 @@
           </ion-label>
         </ion-item>
       </ion-list>
+
+      <!-- YouTube Section -->
+
+      <!-- vue-plyr (https://github.com/redxtech/vue-plyr)-->
+      <!-- youtube div element (None progressive enhancement )-->
+      <ion-card color="light">
+        <ion-card-header>
+          <ion-card-title>{{ t("DetailedPage.youtubeVideo") }}</ion-card-title>
+          <ion-card-subtitle>{{ scripture.videoName }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <vue-plyr>
+            <div
+              data-plyr-provider="youtube"
+              :data-plyr-embed-id="scripture.videoId"
+            ></div>
+          </vue-plyr>
+        </ion-card-content>
+      </ion-card>
     </ion-content>
   </ion-page>
 </template>

@@ -9,5 +9,7 @@ export interface Scripture {
   type: number;
   isNew: boolean;
   category: string;
+  videoId: string;
+  videoName: string;
 }
 

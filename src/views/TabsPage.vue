@@ -27,10 +27,10 @@ import {
 import {
   bookOutline,
   bookSharp,
-  happyOutline,
-  happySharp,
-  // homeOutline,
-  // homeSharp,
+  // happyOutline,
+  // happySharp,
+  homeOutline,
+  homeSharp,
   informationCircleOutline,
   informationCircleSharp,
   settingsOutline,
@@ -47,20 +47,20 @@ const { t } = useI18n();
 
 const appPages = [
   {
+    // title: "笑裡藏道",
+    title: "xlcd",
+    url: "/tabs/joys",
+    iosIcon: homeOutline,
+    mdIcon: homeSharp,
+    tab: "joys",
+  },
+  {
     // title: "聖經經文",
     title: "bibleVerse",
     url: "/tabs/scriptures",
     iosIcon: bookOutline,
     mdIcon: bookSharp,
     tab: "scriptures",
-  },
-  {
-    // title: "笑裡藏道",
-    title: "xlcd",
-    url: "/tabs/joys",
-    iosIcon: happyOutline,
-    mdIcon: happySharp,
-    tab: "joys",
   },
   {
     // title: "資源簡介",
