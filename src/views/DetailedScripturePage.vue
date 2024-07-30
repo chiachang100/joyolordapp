@@ -25,7 +25,10 @@
       <ion-list>
         <ion-list-header>
           <ion-label>
-            <h2>{{ scripture.title }} ({{ scripture.articleId }})</h2>
+            <h2>
+              {{ scripture.title }} ({{ scripture.articleId }})
+              {{ scripture.videoId ? t("myLightTitle") : "" }}
+            </h2>
           </ion-label>
         </ion-list-header>
         <ion-item>
