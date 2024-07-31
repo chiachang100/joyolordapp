@@ -9,7 +9,7 @@
     <ion-label class="ion-text-wrap">
       <h2>
         {{index! + 1}}. {{ scripture.title }}
-        {{ scripture.isMyLight ? t("myLightTitle") : "" }}
+        {{ scripture.isRicherDaily ? t("richerDailyTitle") : "" }}
         <!--
         <span class="likes">
           <ion-icon

@@ -45,8 +45,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/NewListPage.vue')
       },
       {
-        path: 'mylight',
-        component: () => import('@/views/MyLightPage.vue')
+        path: 'richerdaily',
+        component: () => import('@/views/RicherDailyPage.vue')
       },
       {
         path: 'photos',
@@ -63,8 +63,8 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/DetailedArticlePage.vue')
   },
   {
-    path: '/mylight/:id',
-    component: () => import('@/views/DetailedMyLightPage.vue')
+    path: '/richerdaily/:id',
+    component: () => import('@/views/DetailedRicherDailyPage.vue')
   },
   {
     path: '/firebase',

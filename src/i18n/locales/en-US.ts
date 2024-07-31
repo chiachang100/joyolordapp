@@ -11,7 +11,7 @@ export default {
   "settings": "Settings",
   "rankingList": "Top List",
   "newList": "New List",
-  "myLight": "My Light",
+  "richerDaily": "My Light",
   "login": "Login",
   "photos": "Photos",
   "FirebaseExpo": "FirebaseExpo",
@@ -33,7 +33,7 @@ export default {
   "joyolordappApp": "joyolordapp App",
   "xlcdappApp": "xlcdapp App",
   "useQrCode": "Please scan the QR Code for easy use",
-  "myLightTitle": "[My Light-Recite the Bible]",
+  "richerDailyTitle": "[My Light-Recite the Bible]",
 
   // AboutPage
   "AboutPage": {

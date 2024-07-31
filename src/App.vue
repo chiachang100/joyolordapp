@@ -161,12 +161,12 @@ const appPages = [
     tab: "newlist",
   },
   {
-    // title: "我的燈光",
-    title: "myLight",
-    url: "/tabs/mylight",
+    // title: "日富一日",
+    title: "richerDaily",
+    url: "/tabs/richerdaily",
     iosIcon: sunnyOutline,
     mdIcon: sunnySharp,
-    tab: "mylight",
+    tab: "richerdaily",
   },
 ];
 

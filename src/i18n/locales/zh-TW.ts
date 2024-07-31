@@ -11,7 +11,7 @@ export default {
   "settings": "個人設置",
   "rankingList": "喜樂榜",
   "newList": "新出爐",
-  "myLight": "我的燈光",
+  "richerDaily": "日富一日",
   "login": "登入頁面",
   "photos": "相片存檔",
   "FirebaseExpo": "FirebaseExpo",
@@ -33,7 +33,7 @@ export default {
   "joyolordappApp": "「主的喜樂」App",
   "xlcdappApp": "「笑裡藏道」App",
   "useQrCode": "請掃描二維碼便於使用",
-  "myLightTitle": "[我的燈光-背誦聖經]",
+  "richerDailyTitle": "[日富一日背誦聖經]",
 
   // AboutPage
   "AboutPage": {

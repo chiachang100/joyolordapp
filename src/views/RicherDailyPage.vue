@@ -5,7 +5,7 @@
         <ion-title>
           <ion-item>
             <app-logo />
-            <ion-label>{{ t("myLight") }}</ion-label>
+            <ion-label>{{ t("richerDaily") }}</ion-label>
           </ion-item>
         </ion-title>
         <ion-buttons slot="start">
@@ -30,7 +30,7 @@
       </ion-refresher>
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ t("myLight") }}</ion-title>
+          <ion-title size="large">{{ t("richerDaily") }}</ion-title>
         </ion-toolbar>
       </ion-header>
 
@@ -84,13 +84,13 @@ const searchTerm = ref("");
 
 const filteredListOfScriptures = computed<Scripture[]>(() => {
   if (!searchTerm.value?.trim()) {
-    return getScriptures().filter((m) => m.isMyLight);
+    return getScriptures().filter((m) => m.isRicherDaily);
   } else {
     const searchText = searchTerm.value!.toLowerCase();
     console.log("searchText=" + searchText);
     return getScriptures().filter(
       (m) =>
-        (m.isMyLight && m.scriptureVerse.toLowerCase().includes(searchText)) ||
+        (m.isRicherDaily && m.scriptureVerse.toLowerCase().includes(searchText)) ||
         (m.scriptureName + " " + m.scriptureChapter).toLowerCase().includes(searchText)
     );
   }
@@ -105,8 +105,8 @@ const analytics = new AnalyticsService();
 analytics.logEvent({
   name: "jola_screen_name",
   parameters: {
-    jola_screen: "MyLightPage",
-    jola_screen_class: "MyLightPage",
+    jola_screen: "RicherDailyPage",
+    jola_screen_class: "RicherDailyPage",
   },
 });
 </script>

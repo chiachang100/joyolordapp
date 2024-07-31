@@ -27,7 +27,7 @@
           <ion-label>
             <h2>
               {{ scripture.title }} ({{ scripture.articleId }})
-              {{ scripture.isMyLight ? t("myLightTitle") : "" }}
+              {{ scripture.isRicherDaily ? t("richerDailyTitle") : "" }}
             </h2>
           </ion-label>
         </ion-list-header>
