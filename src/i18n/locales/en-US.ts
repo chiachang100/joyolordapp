@@ -33,7 +33,7 @@ export default {
   "joyolordappApp": "joyolordapp App",
   "xlcdappApp": "xlcdapp App",
   "useQrCode": "Please scan the QR Code for easy use",
-  "richerDailyTitle": "[My Light-Recite the Bible]",
+  "richerDailyTitle": "[Richer Daily]",
 
   // AboutPage
   "AboutPage": {

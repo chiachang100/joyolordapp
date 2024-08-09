@@ -33,7 +33,7 @@ export default {
   "joyolordappApp": "「主的喜乐」App",
   "xlcdappApp": "「笑里藏道」App",
   "useQrCode": "请扫描二维码便于使用",
-  "richerDailyTitle": "[我的灯光-背诵圣经]",
+  "richerDailyTitle": "[日富一日]",
 
   // AboutPage
   "AboutPage": {

@@ -571,7 +571,7 @@ const articles_zhCN: Article[] = [
             + '若您想扩大战果，本层对面是铁道部的一位高官，楼上一家是红十字会的领导，楼下那家是银行的行长，他们都很有钱而且这不取报警。 」'
             + '\n\n  一个多月之后，老夫妇回来，发现桌子上的钱变成十万！ 也附有一张纸条，上面写着：'
             + '\n\n 「感谢老师的教诲，过去不用功读书，唉，相识恨晚，那...一切尽在无言中。特留下十万元资讯费，请笑纳！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_21.png',
         "videoId": 'Rom7byceNRM',
         "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
         "talk": '  灵巧像蛇，驯良像鸽子是主耶稣基督给祂的门徒们的忠告，因为耶稣知道当时的世代险恶，善良的门徒们好像羊走入狼群，要他们提高警惕的心。 '
@@ -603,9 +603,9 @@ const articles_zhCN: Article[] = [
             + '他欺骗他太太和其他三个女人乱搞，其中一个是你的太太。是的，我认识他。 」'
             + '\n\n  辩护律师几乎晕了过去。法官马上叫他们两人走到台前来，轻声的对他们说：'
             + '\n\n  「如果你们任何一个笨蛋问她是否认识我，我就把你们送上电椅去！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_22.png',
+        "videoId": '_x0SQu6X1Ns',
+        "videoName": '在患難中活出愛 | 曾興才牧師 | 20210214 | 生命河 ROLCCmedia',
         "talk": '不做亏心事，夜半敲门心不惊。一个行事光明磊落的人，是什么都不惧怕的人。 '
             + '\n\n  其实马可福音四章二十二节之前一节，耶稣乃是鼓励我们要把灯放在灯台上，而不是放在斗底下或床底下'
             + '而不是放在斗底下或床底下。换句话说，行事为人要光明正大，不但自己可以问心无愧，也能够使别人受益'
@@ -636,9 +636,9 @@ const articles_zhCN: Article[] = [
             + '门又打开，又是一位漂亮的小姐走出来。 '
             + '\n\n  尼克传道看了之后，好兴奋！看见儿子和太太一起正走进大厅，就大声的叫着说：'
             + '\n\n  「儿子，儿子，赶快叫你妈妈走进这小房间里去！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_23.png',
+        "videoId": 'q5N1C2m4Bkw',
+        "videoName": '不斷更新 經歷恢復 | 曾興才牧師 | 20210117 | 生命河 ROLCCmedia',
         "talk": '改变自己可能是修补破裂之人际关系的开始。从最基本的态度或心态的改变，就会带'
             + '就会带来行为上的改变。但是改变是需要勇气，甚至放下面子。 '
             + '\n\n  试想一想，有哪一些习惯你需要改掉的？有哪一些态度你需要改变的？ '
@@ -676,9 +676,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「友才，我太老没办法外出旅行。我整天都待在家里，所以我从来没坐过那台宾士轿车。而且，那个司机好粗鲁，很没礼貌！」 '
             + '\n\n  她给三儿子的信柔和许多：'
             + '\n\n  「最亲爱的友光，你是三个儿子中唯一知道妈妈喜欢什么的，…… 谢谢你送的那只鸡，非常好吃。」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_24.png',
+        "videoId": 'EdrWxymdaOM',
+        "videoName": '耶穌 我們的彌賽亞 | 曾興才牧師 | 20201213 | 生命河 ROLCCmedia',
         "talk": '当我们没有看到所期待的结果时，自然的反应就是埋怨。因为我们的眼光只是看到没'
             + '有发生的结果，而忽略了已经发生的事。 '
             + '\n\n  埋怨不但会影响自己的心情，埋怨也无济于事。如果能够从正面的眼光去看待结果，我们的心情就不一样了。 '
@@ -715,9 +715,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「这到底是怎么一回事？」'
             + '\n\n  太太哭着回答说：'
             + '\n\n  「真糟糕的一天！今天阿毛在学校和同学打架，冰箱又坏了，所有的食物都臭了。现在，你却喝醉酒了以后才回家！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_25.png',
+        "videoId": 'l_rrmbHdXik',
+        "videoName": '翻轉世代的勇士 | 曾興才牧師 | 20201115 | 生命河 ROLCCmedia',
         "talk": '爱人真的是要出自真心，一点点的假意都不行。要爱一个人并不是一件困难的事，只'
             + '要你肯用心去了解对方的需要，花一点心思去满足他。但要记得不是按照自己的方法'
             + '去行，乃是对方可以接受的方法。 '
@@ -747,9 +747,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  爱丽丝惊叹地说：「你在我的班级！」'
             + '\n\n  牙医就很近距离的打量着她，然后这个又老、又秃头、充满皱纹、灰发的家伙就问她：'
             + '\n\n  「您是教什么的？？」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_26.png',
+        "videoId": 'EnhFWEWorxE',
+        "videoName": '神的大能勇士興起吧 | 曾興才牧師 | 20201025 | 生命河 ROLCCmedia',
         "talk": '我们总是很容易以外貌来看一个人，以这个人的穿着，外表来下判断。结果很可能不是我们眼中所看到的。 '
             + '\n\n  先知撒母耳要去寻找并膏立以色列的国王时，他也犯了我们一般人的错，以外貌看'
             + '人。结果上帝要拣选的国王却是大家想都没有想到的，就是大卫。 '
@@ -796,9 +796,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「是吗？我简直不可相信，祂临死前有说了些什么吗？」老板好奇的问她。 '
             + '\n\n  「有的，其实当祂躺在那里，快死去的时候，用很轻微的声音说：'
             + '\n\n  『难道他们店里没有卖食物吗？ 』」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_27.png',
+        "videoId": 'SsOt07Z01zU',
+        "videoName": '新的季節 新的恩膏 | 曾興才牧師 | 20200913 | 生命河 ROLCCmedia',
         "talk": '喜乐其实是一个选择，好像我们每天都在作不同的选择一样。我们可以选择忧忧愁愁的过一天，也可以选择快快乐乐的过一天。 '
             + '\n\n  若是我们不故意去选择喜乐时，很容易就会落入忧伤的低谷去，看什么都不顺眼，'
             + '心里总是往负面去钻牛角尖，不但会惹出病来，更可怕的是连骨头都会枯干呀！ '
@@ -829,9 +829,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「我一生中最幸福的时光是在两个女人的怀抱里度过的，一个是我的母亲。」'
             + '\n\n  大家都很吃惊地望着他。他就得意忘形，忘记了下一句要说什么，接着他说：'
             + '\n\n  「……可是…可是…另一个…我却想不起她是谁了。」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_28.png',
+        "videoId": 'S00xN1NVfx4',
+        "videoName": '耶和華是我的幫助 | 曾興才牧師 | 20200809 | 生命河 ROLCCmedia',
         "talk": '有些人的个性取向就比较困难集中精神，有些人会因为生活中烦琐的事情而分心，或是因为生活中的困难而无法专心。 '
             + '\n\n  专注或集中精神可以产生很大的能力，尤其是当我们把精神专注在正确的目标上。雷射的发明就是基于这个原理。 '
             + '\n\n  耶稣是最好的例子，虽然十字架充满痛苦和羞辱，简直不是常人所能忍受的。 '
@@ -861,9 +861,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「那么，两种都成功的人叫什么呢？」'
             + '\n\n  整个会场顿时静了下来。不久以后，有一个中年男子大声叫道：'
             + '\n\n  「老婆！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_29.png',
+        "videoId": 'MtDF6hw-dD0',
+        "videoName": '疫情中的身心靈健康 | 曾興才牧師 | 20200719 | 生命河 ROLCCmedia',
         "talk": '大家都想要成功，因为成功也意味着幸福和美满的生活。因此，大家都尽所能的去追求它。 '
             + '有人会不惜任何代价，甚至踩在别人身上爬上成功的梯子。 '
             + '\n\n  当约书亚接下伟大领袖摩西的棒子时，心中又是彷徨又是恐惧战兢，上帝就鼓励他，'
@@ -898,9 +898,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「你流泪跟我妈妈有什么关系？」'
             + '\n\n  英国人说：'
             + '\n\n  「我只是想起你妈妈，怎么会生出你这个不诚实的儿子来！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_30.png',
+        "videoId": 'vA3WJbxNwGE',
+        "videoName": '有主同在的祝福 | 曾興才牧師 | 20200223 | 生命河 ROLCCmedia',
         "talk": '用爱心说诚实话是人与人沟通最重要的基础。 '
             + '\n\n  首先，一个真正爱你、关心你的人，他会向你说诚实话。当然用爱心也包括了知道你的需要，'
             + '并能在最合适的时候，用最恰当的言词向你表达。 '
@@ -934,9 +934,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  当天下午，老伯收到儿子的另一封信，说：'
             + '\n\n  “亲爱的爸爸：'
             + '\n\n  现在你可以去种你的番茄了。这是我在目前的状况下唯一能为你做的事。 阿强”',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_31.png',
+        "videoId": 'C_7OjSmUblQ',
+        "videoName": '期待主應許的復興 | 曾興才牧師 | 20200209 | 生命河 ROLCCmedia',
         "talk": '种番茄的问题，动一动脑筋就可以解决了。但是生命的问题，内心的问题需要属天的能力，上帝的帮助。 '
             + '\n\n  当大卫王犯了奸淫及谋杀罪之后，在先知拿单面前，承认自己所犯的罪过。之后，还作了诗篇五十一篇公开地向上帝忏悔。 '
             + '\n\n  大卫王知道他虽为一国之君，满有权柄与能力。但是他却无法控制自己的心。他谦卑的求上帝为他造一颗清洁的心，'
@@ -962,9 +962,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  朋友问：「妳真的把五万美金拿去陪葬？」'
             + '\n\n  她毫不犹疑的回答说：'
             + '\n\n  「那当然，我开了一张支票给他……。」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_32.png',
+        "videoId": 'V9SATtBX12c',
+        "videoName": '新年新異象 | 曾興才牧師 | 20200112 | 生命河 ROLCCmedia',
         "talk": '正确的钱财观才会帮助我们以正确的态度来看待它。钱财本身就是身外之物，生不带来，死也不能带去。 '
             + '\n\n  钱财乃是上帝赐给我们去管理和经营的资产之一。当我们有聪明智慧去使用它时，'
             + '它可以成为祝福多人的管道。上帝就会把更多的钱财交给我们去管理。 '
@@ -990,9 +990,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  老李说：「我希望他们说，我曾经是一位很棒的教师，一位影响许多人生命，上帝的仆人。」'
             + '\n\n  「那你呢？老崔」，牧师看到他若有所思的样子。 '
             + '\n\n  老崔毫无头绪的说：「我希望他们说，看啊，他还在动！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_33.png',
+        "videoId": 'RlAS--BGZYs',
+        "videoName": '你是最有福氣的人 | 曾興才牧師 | 20191103 | 生命河 ROLCCmedia',
         "talk": '生老病死是人生必经的旅程。无论你是贫富贵贱，高官贩卒，没有一个人是可以幸免的。 '
             + '\n\n  那到底是什么原因人人都必须经过生老病死呢？上帝说是因为世人都犯了罪，亏缺了上帝的荣耀，'
             + '达不到祂圣洁、公义的标准。而且这个罪所带来的结果就是死。 '
@@ -1025,9 +1025,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  但是，老师听了心中大喜，心想居然还有如此尊师重道的同学。不禁再问他说： 「为什么呢？」'
             + '\n\n  大牛突然很正经地站起来说：'
             + '\n\n  「因为听你的课，让我有度日如年的感觉……」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_34.png',
+        "videoId": 'M_DMXNFWB6o',
+        "videoName": '得著你腳掌所踏之地 | 曾興才牧師 | 20191013 | 生命河 ROLCCmedia',
         "talk": '作一个诚实人是需要勇气的。而且诚实是从心里开始的。因为有些人口里可以讲“诚实话”，做出来的却是另一回事。 '
             + '\n\n  所以，诗人大卫说，上帝所喜爱的是内里诚实。因为当你心里有诚实的时候，你口里所说的，和你手里所做的也都必诚实。 '
             + '\n\n  当上帝喜爱你的时候，祂也会把智慧赐给你，使你可以在任何的环境中知道当如何行。而且你所说所行的，必能成为多人的祝福。 ',
@@ -1062,9 +1062,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  爸爸，我所写的事，都不是真的，请您放心好了，我现在在同学家里打游戏机，没有女朋友，也没有喝酒。 '
             + '我只是想提醒您，这世上会有更坏的事，请打开书桌上的学校成绩表，分数太差，请原谅。 '
             + '\n\n 又，如果您息怒了，请打我的手机叫我回来吃饭。 」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_35.png',
+        "videoId": 'CodOk9jKWAU',
+        "videoName": '要傳福音給萬民聽 | 曾興才牧師 | 20190922 | 生命河 ROLCCmedia',
         "talk": '虽然管教儿女充满许多挑战，但是它仍是必须的。若是以正确的心态和目的去管教儿女，虽然辛苦，结果却是美好的。 '
             + '\n\n  圣经说上帝所爱的，祂必责备。当我们因为爱儿女的缘故责备他们时，感觉虽然不好受，却不要灰心，知道最终他们必会明白的。 '
             + '\n\n  管教是爱，责备也是爱。 ',
@@ -1098,9 +1098,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「再见，我也爱妳！」'
             + '\n\n  老陈挂了电话，然后把它举起来问所有在场的人说：'
             + '\n\n  「这支手机是谁的？」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_36.png',
+        "videoId": 'hYllgoSyx_8',
+        "videoName": '歡迎耶和華作王 | 曾興才牧師 | 20190901 | 生命河 ROLCCmedia',
         "talk": '试探是从人的私欲或魔鬼来的。试探的目的乃是叫人跌倒、犯罪。因此圣经告诉我们说，'
             + '上帝不试探人，但祂会试炼我们，因为试炼的目的叫人长大成熟。 '
             + '\n\n  我们如何可以胜过试探呢？为你每天的生活祷告。 '
@@ -1133,9 +1133,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「那么是哪些大事由我来决定呢？」'
             + '\n\n  太太说：'
             + '\n\n  「哦，你决定谁来当总统，我国的赤字该如何去平衡，我们对伊拉克战争应该采取什么样的态度，等等……」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_37.png',
+        "videoId": 'nGUwACBEkq0',
+        "videoName": '你可以為神做大事 | 曾興才牧師 | 20190707 | 生命河 ROLCCmedia',
         "talk": '有人说爱是一件很麻烦的事，因为爱一个人是需要付上时间，精力和心思。 '
             + '人不是天生就懂得爱人，爱需要教导，学习和经历。爱是一个非常具体的行动。 '
             + '\n\n  上帝吩咐作丈夫的，要爱你们的妻子。这不是一个选择，乃是一个命令。因为我们的本能是爱自己，'
@@ -1166,9 +1166,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  圣彼得说：「赐你棉袍和木手杖…。」'
             + '\n\n  「刚刚那个大汉是纽约的计程车司机，您赐给他丝袍，金手杖，这怎么可能？」'
             + '\n\n  「在天上，我们是看工作的果效，」圣彼得说：「当你讲道的时候，大家都睡着了，但是当周易开车的时候，大家都在拼命祷告！ 」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_38.png',
+        "videoId": 'ePsQGEjimW8',
+        "videoName": '尊榮父親 全家復興 | 曾興才牧師 | 20190616 | 生命河 ROLCCmedia',
         "talk": '有人说，懒惰是人的本性。我想这只是某些人不肯努力的借口。创造天地万物的主宰一直工作到如今，因此，祂劝勉我们要殷勤，不可懒惰。 '
             + '\n\n  当你发现有人常常游手好闲，无所事事时，他极可能对人生没有一个清楚的目标。一个有异象或有人生目标的人，肯定是个殷勤的人。 '
             + '因为这个异象或目标带给他动力和方向，他就会殷勤，很努力去完成他所要做的事。 '
@@ -1194,9 +1194,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「因为不知道拍一拍你的肩膀会把你吓成这个样子。」'
             + '\n\n  「不，不，是我对不起。」司机完全冷静后说：'
             + '\n\n  「这不是你的错，今天是我第一天当计程车司机 ― 过去二十五年我是在一家殡仪馆开灵车的!!」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_39.png',
+        "videoId": 'B8__4EmIsy0',
+        "videoName": '你是王子和公主 | 曾興才牧師 | 20190519 | 生命河 ROLCCmedia',
         "talk": '当你活得越久，人生经历越丰富时，你就知道平安比一切都宝贵。 '
             + '\n\n  你若和一些年长的人谈谈，他们不会向你炫耀有多少财富或过去有何丰功伟业。 '
             + '他们所关心的是儿女子孙是否有平安，自己的身体是否都健康。 '
@@ -1229,9 +1229,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「到底发生了什么事？」'
             + '\n\n  小虎回答说：'
             + '\n\n  「这一次我们可麻烦了，上帝不见了，他们以为是我们干的！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_40.png',
+        "videoId": 'Fj7fe0xnmxo',
+        "videoName": '耶穌愛你愛到底 | 曾興才牧師 | 20190414 | 生命河 ROLCCmedia',
         "talk": '虽然教养孩子不是一件容易的事，但不是一件不可能的事。圣经中的箴言书，最有智慧的一本书，'
             + '充满了教养孩子的话语。第二十二章的第六节就给我们几个重要的提示：'
             + '\n\n  第一，教养必须趁孩子小的时候开始。这里的“孩童”，乃是指在十二岁以下的孩子。 '
@@ -1266,9 +1266,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「我必须要问妳，车内其他的乘客都好吗？这些妇人好像受到了极大的震惊！」'
             + '\n\n  「哦！」老太太回答说：'
             + '\n\n  「她们将会没事的，因为我们刚从127号公路转过来的！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_41.png',
+        "videoId": 'AVUzUvGGTS8',
+        "videoName": '升等的秘訣 | 曾興才牧師 | 20190224 | 生命河 ROLCCmedia',
         "talk": '看错路标没有闹出人命真是大幸。但是有些人因为一时糊涂而后悔一辈子。所以，使徒保罗劝勉我们不要作糊涂人。 '
             + '\n\n  人为什么会糊涂呢？无知、大意、或年纪大了，记忆衰退了。无论是什么原因，我们都不想作糊涂人，我们要作聪明人。 '
             + '\n\n  聪明人是知道在什么时候做什么事情或不该做什么事情，这就是智慧。 '
@@ -1295,9 +1295,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  到了学校，司机果然去讲课，并且一字不误的把课上完。但正当他要离开时，'
             + '忽然有一个学生问了个问题，司机一时答不出，但还是很镇定地说：'
             + '\n\n  「这位同学，你问的问题太简单了，为了让你明白到底有多简单，我决定叫我的司机来回答你！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_42.png',
+        "videoId": 'PYJphzxyJIE',
+        "videoName": '你要先求神的國 | 曾興才牧師 | 20190106 | 生命河 ROLCCmedia',
         "talk": '中国有一句话说：近朱者赤，近墨者黑。乃是教导我们要小心结交朋友，因为我们会受到朋友好的或坏的影响。 '
             + '\n\n  同样的，圣经中最有智慧的人所罗门王直接的告诉我们说，与智慧人同行的，必得智慧，和愚昧人作伴的，必受亏损。 '
             + '因此，不论在选择朋友或工作时，都得三思而后行。 '
@@ -1333,9 +1333,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  妈妈有点急了，说：「喔，那么，是什么原因呢？」'
             + '\n\n  小明回答说：「是这样的，开学的那一天，我在教室里看见一个人，'
             + '脱光了衣服被钉在加减乘除的加号上面，我知道，我知道……，他们是玩真的。 ',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_43.png',
+        "videoId": '48qffMTRwIg',
+        "videoName": '經歷感恩的能力 | 曾興才牧師 | 20181118 | 生命河 ROLCCmedia',
         "talk": '养育儿女需要智慧和技巧。有些父母亲按照他们过去的经历教养儿女，又有一些父母亲从书本上所学习的来帮助儿女。 '
             + '\n\n  无论是用什么方法教养儿女，使徒保罗特别劝勉作父亲的，不要惹儿女的气，意思说，不要使儿女因为你权柄式的管教而失去志气。 '
             + '乃是要照着主耶稣在圣经里的教导，从儿女年幼时就塑造他们的心思，按照他们的年龄协助他们茁壮成长。 '
@@ -1366,9 +1366,9 @@ const articles_zhCN: Article[] = [
             + '我的愿望是能够有一位比我年轻三十岁的太太。 」'
             + '\n\n  老高的太太和小天使都非常失望，但是愿望毕竟还是愿望，因此，小天使挥一挥手，'
             + '“噗”的吹口气，老高变成九十二岁的老太公！ ',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_44.png',
+        "videoId": 'mjrZPYWhS4g',
+        "videoName": '新的道路 新的恩膏 | 曾興才牧師 | 20171008 | 生命河 ROLCCmedia',
         "talk": '圣经中的上帝是一位美善的上帝，祂非常乐意将祝福赐给求告祂的人。但是，我们为什么却常常没有得到上帝的祝福呢？ '
             + '答案是我们没有向祂祈求。你说：“我有啊，为什么还是得不到祝福呢？'
             + '\n\n  雅各告诉我们，“你们求也得不着，是因为你们妄求。”那就是没有按照上帝的心意求，乃是自私自利，为自己的宴乐、享受而求。 '
@@ -1395,9 +1395,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  水牛先生说：「我结婚七年了，我的太太仍然说我不了解她，你能不能令我开窍，明白女人不讲话时，脑子里究竟在想什么？说『不需要』的时候，其实是想要什么？」'
             + '\n\n  灯神叹了一口气，说：'
             + '\n\n  「那条横跨太平洋大桥，你要双线还是四线车道？」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_45.png',
+        "videoId": 'MuBajqfb43U',
+        "videoName": '神能成就一切 | 曾興才牧師 | 20180902 | 生命河 ROLCCmedia',
         "talk": '当我们面对生活中的困境或危机时，我们会想尽办法去寻找解决方案，我们真的很盼望有贵人出现，帮助我们脱离险境。 '
             + '\n\n  以色列百姓也有类似的经历，当他们四面受敌，在危机重重的环境中，倚靠自己的智慧和能力，仍然找不到出路。 '
             + '主耶和华就透过先知以赛亚告诉他们一个解决方案，那就是回转归向上帝，专心的信靠这位过去曾经帮助他们，'
@@ -1426,9 +1426,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  来到神的面前，她很不服气的对神说：'
             + '\n\n  「你不是说我还有四十三年吗？你怎么没有把我从救护车那里救出来！」'
             + '\n\n  神回答说：「我不认得妳了！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_46.png',
+        "videoId": '9tB8P5ftalQ',
+        "videoName": '恩慈相待 彼此饒恕 | 曾興才牧師 | 20180729 | 曾興才牧師 | 20210321 | 生命河 ROLCCmedia',
         "talk": '爱美不是一件坏事。创造天地万物的上帝为我们创造了这个美丽的世界，'
             + '充满许多漂亮的飞禽走兽、花草树木等等。更是照着上帝自己的形象造了男女，最漂亮完美的设计。 '
             + '\n\n  只是有时候，当我们过分的强调外在的化妆与打扮，而忽略了内里的温柔、安静时就不好了。 '
@@ -1457,9 +1457,9 @@ const articles_zhCN: Article[] = [
             + '当你吃了，以后的年日会带给你最多的忧伤与痛苦？ 」'
             + '\n\n  等了好久，都没有人回答。终于坐在后排的一位七十五岁的老先生，站起来大声叫说：'
             + '\n\n  「Wedding cake结婚蛋糕！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_47.png',
+        "videoId": 'zEg_C0UvBmI',
+        "videoName": '美好婚姻影響世代 | 曾興才牧師 | 20180708 | 生命河 ROLCCmedia',
         "talk": '有人如此评论婚姻：婚姻，许多在外面的人很想进去，但是在里面的人却很想出去。 '
             + '\n\n  那最有智慧的人，怎么说“得着贤妻的、是得着好处、也是蒙了耶和华的恩惠。”你会说，没错啊！ '
             + '他说的是得着“贤妻”的，当然是得着好处。那得不着“贤妻”的，就得不着好处了吗？ '
@@ -1489,9 +1489,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  林牧师听了沾沾自喜，二十年才讲六篇不好的信息。 '
             + '\n\n  「那两千美元又是什么意思呢？」接着又问说。 '
             + '\n\n  太太笑着回答他：「哦，每当我收集到一打鸡蛋时，我都拿到市场去卖，这两千美元是卖鸡蛋得来的钱！」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_48.png',
+        "videoId": 'jSsGUYNWa18',
+        "videoName": '爸爸非常的愛你 | 曾興才牧師 | 20180617 | 生命河 ROLCCmedia',
         "talk": '一个自高自大的人，不但众人都不喜欢他，上帝也会有办法叫他谦卑。一个谦卑的人，上帝也会将他升为高的。 '
             + '\n\n  到底谦卑的人会有哪些特点？第一，他会勇于认错，承当责任。骄傲的人总是看到别人的过错，而看不见自己的缺失。 '
             + '谦卑的人不随意论断人，处处包容他人的软弱，心中常觉得亏欠。 '
@@ -1522,9 +1522,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  老先生又寄了一张账单来，上面只有两个项目：'
             + '\n\n  1. 用锤子敲一下 $2.00'
             + '\n\n  2.	知道敲在那里 $9,998.00　',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_49.png',
+        "videoId": 'MYkYllGEOIk',
+        "videoName": '同心合意 迎接復興 | 曾興才牧師 | 20180527 | 生命河 ROLCCmedia',
         "talk": '知识固然重要，但智慧却比知识重要。知识是死的，智慧可以叫知识活过来。因为有智慧的人，才知道如何最有效的去使用知识。 '
             + '\n\n  所以，最有智慧的所罗门王劝勉我们不可离弃智慧。主要原因有二：一，智慧可以护卫你。 '
             + '当你在危险的环境中而未察觉时，智慧会及时提醒你，帮助你脱离险境。或当有恶人要攻击你时，智慧会告诉你如何去应对，或给你出路，胜过要攻击你的恶人。 '
@@ -1553,9 +1553,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  「女人都说：『你一定很难过！』所以我点点头；男人都说：『可否借你的驴子用一用？』'
             + '我只能摇摇头，因为驴子已经排到明年了，不能再接受申请了！ 」',
 
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_50.png',
+        "videoId": 'G4MskEJXwdI',
+        "videoName": '屬靈爭戰得勝的秘訣 | 曾興才牧師 | 20180506 | 生命河 ROLCCmedia',
         "talk": '处理复杂的人际关系并非我们想像的那么困难。中国近年来流行的一句话：'
             + '有关系，就没有关系，没有关系，就有关系。 '
             + '\n\n  到底要有什么样的关系，才会没有关系呢？答案就是爱。这种爱不只是男女之间的情爱，朋友之间的友爱，'
@@ -1594,9 +1594,9 @@ const articles_zhCN: Article[] = [
             + '\n\n  中年邻居很诧异的说：「尊夫人真是太残忍了！」'
             + '\n\n  老曾说道：「可不是吗？我当时也看不过去，就停在路边指责她的不是。结果，她并不跟我争辩，'
             + '只是冷冷的对我说：『这是第一次！ 』从此以后，我就懂了！ 」',
-        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_00.png',
-        "videoId": 'Rom7byceNRM',
-        "videoName": '无人像耶稣这样爱你 | 曾兴才牧师 | 20210321 | 生命河 ROLCCmedia',
+        "photoUrl": 'assets/images/xlcd/xlcdapp_photo_51.png',
+        "videoId": 'H2OPZy4Po6s',
+        "videoName": '得神和人的恩寵 | 曾興才牧師 | 20180318 | 生命河 ROLCCmedia',
         "talk": '当上帝设立婚姻的制度之后，祂宣告说：因此，人要离开父母，与妻子连合，二人成为一体。 （创世记2: 24）'
             + '夫妻关系成为世上最亲密的关系，同时也成为最具挑战性的关系。 '
             + '\n\n  所以，使徒保罗在讲解夫妻之间该如何相处时，就把一个大原则先讲清楚：又当存敬畏的心，彼此顺服。 '
