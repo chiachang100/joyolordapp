@@ -11,7 +11,7 @@ export default {
   "settings": "个人设置",
   "rankingList": "喜乐榜",
   "newList": "新出炉",
-  "richerDaily": "我的灯光",
+  "richerDaily": "日富一日",
   "login": "登录页面",
   "photos": "相片存档",
   "FirebaseExpo": "FirebaseExpo",

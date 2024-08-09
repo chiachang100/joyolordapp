@@ -11,7 +11,7 @@ export default {
   "settings": "Settings",
   "rankingList": "Top List",
   "newList": "New List",
-  "richerDaily": "My Light",
+  "richerDaily": "Richer Daily",
   "login": "Login",
   "photos": "Photos",
   "FirebaseExpo": "FirebaseExpo",
