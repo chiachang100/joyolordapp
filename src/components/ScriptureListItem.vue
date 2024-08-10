@@ -9,8 +9,10 @@
     <ion-label class="ion-text-wrap">
       <h2>
         {{index! + 1}}. {{ scripture.title }}
-        {{ scripture.isRicherDaily ? t("richerDailyTitle") : "" }}
+        {{ scripture.isRicherDaily ? "*" : "" }}
         <!--
+        {{ scripture.isRicherDaily ? t("richerDailyTitle") : "" }}
+
         <span class="likes">
           <ion-icon
             aria-hidden="true"
