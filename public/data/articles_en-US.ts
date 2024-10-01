@@ -854,7 +854,7 @@ const articles_enUS: Article[] = [
         "scriptureVerse": 'This Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. '
             + 'For then you will make your way prosperous, and then you will have good success.',
         "prelude": '人人都想要成功。追求成功是許多人的目標。但是每個人對成功有不同的定義，不同的看法。'
-            + '重點是看你是從什麼角度去看成功。。',
+            + '重點是看你是從什麼角度去看成功。',
         "laugh": '在一個直銷經紀人的講座會裡，講員問大家幾個問題，他說：'
             + '\n\n  「世上有兩種成功的人，第一種成功的人，是把自己的思想裝進別人的腦袋裡。'
             + '第二種成功的人，是把別人的錢裝進自己的口袋裡。請問第一種成功的人叫什麼？」'
