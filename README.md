@@ -8,18 +8,18 @@
 ## References
 ### Ionic Framework
 - [Ionic Framework](https://ionicframework.com/)
-- [One Codebase Any Platform Just React](https://ionicframework.com/docs/react)
+- [One Codebase Any Platform Just Vue](https://ionicframework.com/docs/vue)
 - [Ionic UI Components](https://ionicframework.com/docs/components)
-- [Your First Ionic App: React](https://ionicframework.com/docs/react/your-first-app)
-  - [Ionic React and Capacitor@GitHub](https://github.com/ionic-team/tutorial-photo-gallery-react.git)
+- [Your First Ionic App: Vue](https://ionicframework.com/docs/vue/your-first-app)
+  - [Ionic Vue and Capacitor@GitHub](https://github.com/ionic-team/tutorial-photo-gallery-vue.git)
 - [Configure Ionic in Dark Mode](https://ionicframework.com/docs/theming/dark-mode)
 
-### React
-- [React website](https://react.dev/)
-   - [Legacy React website](https://legacy.reactjs.org/)
+### Vue
+- [Vue website](https://vue.dev/)
+   - [Legacy Vue website](https://legacy.vuejs.org/)
 
 ### Progressive Web Apps (PWA)
-- [Progressive Web Apps in React](https://ionicframework.com/docs/react/pwa)
+- [Progressive Web Apps in Vue](https://ionicframework.com/docs/vue/pwa)
 
 ### Use Capacitor to Deploy to iOS and Android
 - [Capacitor: Deploying to iOS and Android](https://ionicframework.com/docs/vue/your-first-app/deploying-mobile)
@@ -41,36 +41,21 @@
 - `ionic -v`
 - `ionic --help`
 - `ionic start --help`
-- `ionic start joyolordapp blank --type=react --capacitor`
+- `ionic start joyolordapp blank --type=vue --capacitor`
 - `ionic build`
 - `ionic serve`
 
 ## Create an App
 - Using the `blank` starter template and add `Capacitor` for native functionality.
-  - `ionic start joyolordapp blank --type=react --capacitor`
+  - `ionic start joyolordapp blank --type=vue --capacitor`
 
 ## Install the necessary Capacitor plugins
   - `cd joyolordapp`
   - `npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem`
 
-## Progressive Web Apps (PWA) in React
+## Progressive Web Apps (PWA) in Vue
 ### PWA Elements
   - `npm install @ionic/pwa-elements`
-  - `code .`
-  - Next, import `@ionic/pwa-elements` by editing `src/main.tsx`.
-```
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
-
-// Call the element loader before the render call
-defineCustomElements(window);
-
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-```
-  - That’s it! Now for the fun part - let’s see the app in action.
 
 ---
 ### Running `vite-plugin-pwa`
@@ -106,9 +91,9 @@ export default defineConfig({
  * https://ionicframework.com/docs/theming/dark-mode
  */
 
-// import '@ionic/react/css/palettes/dark.always.css';
-// import '@ionic/react/css/palettes/dark.class.css';
-import '@ionic/react/css/palettes/dark.system.css';
+// import '@ionic/vue/css/palettes/dark.always.css';
+// import '@ionic/vue/css/palettes/dark.class.css';
+import '@ionic/vue/css/palettes/dark.system.css';
 ```
 
 ## Run the APP
