@@ -30,6 +30,8 @@
 - [vue-plyr: YouTube Video Player](https://github.com/redxtech/vue-plyr)
   - [VueYoutube](https://github.com/vue-youtube/vue-youtube). Tried but it didn't work for me.
 
+#### Install and/or Update packages
+- `npx update-browserslist-db@latest`
 ---
 ## Download Required Tools
 - [LTS version of Node.js](https://nodejs.org/en/).
@@ -111,20 +113,36 @@ import '@ionic/vue/css/palettes/dark.system.css';
 - `ionic build`
 - `ionic cap copy`
 - `ionic cap sync`
-- `ionic cap run android --livereload --external`
+
+- Launch Android Emulator and bind to external IP address (e.g., http://192.168.1.25:8100 on your LAN).
+  - `ionic cap run android --livereload --external`
+
+- Forces the app to connect to the specific URL you provide (http://localhost:8100 in this case)
   - `ionic cap run android --livereload-url=http://localhost:8100`
-- `ionic cap open android`
+
+- Open Android Studio
+  - `ionic cap open android`
 
 ---
 ## Deploying to iOS
+- Check your target iOS device ID
+- `xcrun simctl list devices`
+
 - Complete a fresh build of the Ionic project (web default directory: `build`)
 - `ionic cap add ios`
 - `ionic build`
 - `ionic cap copy`
 - `ionic cap sync`
-- `ionic cap run ios --livereload --external`
+
+- Bind to external IP address (e.g., http://192.168.1.25:8100 on your LAN). 
+  - `ionic cap run ios --livereload --external`
+
+- Forces the app to connect to the specific URL you provide (http://localhost:8100 in this case)
   - `ionic cap run ios --livereload-url=http://localhost:8100`
-- `ionic cap open ios`
+
+- Open Xcode
+  - `ionic cap open ios`
+
 - Modify `Info.plist` and other parameters...
 
 ---
