@@ -380,4 +380,9 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+ion-item {
+  --padding-start: 12px;
+}
+
 </style>

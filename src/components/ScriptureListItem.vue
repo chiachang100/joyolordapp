@@ -1,9 +1,8 @@
 <template>
-  <ion-item
+  <ion-item class="list-item ion-margin-start"
     v-if="scripture"
     :routerLink="'/scriptures/scripture/' + scripture.articleId"
     :detail="false"
-    class="list-item"
   >
     <app-logo />
     <ion-label class="ion-text-wrap">

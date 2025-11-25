@@ -93,4 +93,10 @@ analytics.setUserId({ userId: "test" });
 analytics.setUserProperty({ key: "language", value: "en-US" });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+ion-item {
+  --padding-start: 12px;
+}
+
+</style>

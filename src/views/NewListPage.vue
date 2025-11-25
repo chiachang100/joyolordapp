@@ -85,4 +85,10 @@ analytics.logEvent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+ion-item {
+  --padding-start: 12px;
+}
+
+</style>

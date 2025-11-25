@@ -1,9 +1,8 @@
 <template>
-  <ion-item
+  <ion-item class="list-item ion-margin-start"
     v-if="article"
     :routerLink="'/joys/article/' + article.articleId"
     :detail="false"
-    class="list-item"
   >
     <ion-thumbnail slot="start">
       <img :src="article.photoUrl" alt="thumbnail" />

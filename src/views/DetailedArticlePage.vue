@@ -238,6 +238,7 @@ ion-img {
 }
 
 ion-item {
+  --padding-start: 12px;
   --inner-padding-end: 0;
   --background: transparent;
 }

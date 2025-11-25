@@ -195,4 +195,9 @@ ion-card {
 ion-card-title {
   font-size: 18px;
 }
+
+ion-item {
+  --padding-start: 12px;
+}
+
 </style>

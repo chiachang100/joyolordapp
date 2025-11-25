@@ -110,6 +110,7 @@ analytics.logEvent({
 
 <style scoped>
 ion-item {
+  --padding-start: 12px;
   --inner-padding-end: 0;
   --background: transparent;
 }
