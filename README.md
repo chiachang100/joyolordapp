@@ -110,7 +110,8 @@ import '@ionic/vue/css/palettes/dark.system.css';
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
-- `ionic build`
+- Web: `ionic build`
+- `ionic cap build android`
 - `ionic cap copy`
 - `ionic cap sync`
 
@@ -125,16 +126,32 @@ import '@ionic/vue/css/palettes/dark.system.css';
 
 ---
 ## Deploying to iOS
+- Add `Firebase` in `ios/App/Podfile`:
+```
+target 'App' do
+  capacitor_pods
+  # Add your Pods here
+  pod 'FirebaseCore'
+  pod 'FirebaseAnalytics'
+end
+```
+- Run `pod install`
+- `cd ios/App`
+- `pod install`
+- `pod update`
+- `cd ../..`
+
 - Check your target iOS device ID
 - `xcrun simctl list devices`
 
 - Complete a fresh build of the Ionic project (web default directory: `build`)
 - `ionic cap add ios`
-- `ionic build`
+- Web: `ionic build`
+- iOS: `ionic cap build ios`
 - `ionic cap copy`
 - `ionic cap sync`
 
-- Bind to external IP address (e.g., http://192.168.1.25:8100 on your LAN). 
+- Launch iOS Simulator and bind to external IP address (e.g., http://192.168.1.25:8100 on your LAN). 
   - `ionic cap run ios --livereload --external`
 
 - Forces the app to connect to the specific URL you provide (http://localhost:8100 in this case)
@@ -339,5 +356,18 @@ const config: CapacitorConfig = {
 
 export default config;
 ```
+
+---
+## Generating Splash Screen and App Icon Using Capacitor Sssets Plugin
+
+- Create icons
+```
+assets/
+- icon.png (png|jpg) must be at least 1024x1024px
+- splash.png (png|jpg) must be at least 2732x2732px
+
+- Install Capacitor assets plugin
+- `npm install @capacitor/assets`
+- `npx capacitor-assets generate`
 
 ---
