@@ -1,7 +1,7 @@
 {
   "name": "joyolordapp",
   "private": true,
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "joyolordapp-主的喜樂",
   "homepage": "https://joyolordapp.web.app/",
   "type": "module",
@@ -62,7 +62,7 @@
     "semver": ">=7.5.2",
     "terser": "^5.4.0",
     "typescript": "^5.1.6",
-    "vite": "5.2.11",
+    "vite": "^5.4.21",
     "vite-plugin-pwa": "^0.20.0",
     "vitest": "^0.34.6",
     "vue-tsc": "^1.0.24"
