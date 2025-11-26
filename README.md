@@ -136,10 +136,11 @@ target 'App' do
 end
 ```
 - Run `pod install`
+- `pushd .`
 - `cd ios/App`
 - `pod install`
 - `pod update`
-- `cd ../..`
+- `popd`
 
 - Check your target iOS device ID
 - `xcrun simctl list devices`

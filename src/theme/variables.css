@@ -9,7 +9,6 @@ ion-card-content {
 /* Primary color definition (for light mode) */
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
   /* ... all other custom light colors ... */
   /* Ensure these are set for the light theme */
   --ion-background-color: #ffffff;

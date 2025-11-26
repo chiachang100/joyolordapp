@@ -3,24 +3,24 @@ PODS:
     - CapacitorCordova
   - CapacitorApp (6.0.0):
     - Capacitor
-  - CapacitorCamera (6.0.0):
+  - CapacitorCamera (6.1.2):
     - Capacitor
   - CapacitorCommunityFirebaseAnalytics (6.0.0):
     - Capacitor
     - FirebaseAnalytics
   - CapacitorCordova (6.0.0)
-  - CapacitorFilesystem (6.0.0):
+  - CapacitorFilesystem (6.0.3):
     - Capacitor
-  - CapacitorFirebaseAnalytics (6.0.0):
+  - CapacitorFirebaseAnalytics (6.3.1):
     - Capacitor
-    - CapacitorFirebaseAnalytics/Lite (= 6.0.0)
-  - CapacitorFirebaseAnalytics/Lite (6.0.0):
+    - CapacitorFirebaseAnalytics/Lite (= 6.3.1)
+  - CapacitorFirebaseAnalytics/Lite (6.3.1):
     - Capacitor
   - CapacitorHaptics (6.0.0):
     - Capacitor
   - CapacitorKeyboard (6.0.0):
     - Capacitor
-  - CapacitorPreferences (6.0.0):
+  - CapacitorPreferences (6.0.3):
     - Capacitor
   - CapacitorStatusBar (6.0.0):
     - Capacitor
@@ -167,14 +167,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Capacitor: c527d208447590a004f0a4a2c42a5f361848fa8a
   CapacitorApp: 30145f2ea2311e4f3744472119ec87d2ddf4c0a7
-  CapacitorCamera: de6cb68cccaa9e9dfaec96bd17ea998fabf8fdb2
+  CapacitorCamera: 9bc7b005d0e6f1d5f525b8137045b60cffffce79
   CapacitorCommunityFirebaseAnalytics: 4d041384ba78907803c9783dd6d65cb15a1e6f05
   CapacitorCordova: 8c4bfdf69368512e85b1d8b724dd7546abeb30af
-  CapacitorFilesystem: 9c2cc1e89d3b8b91503b316e9f6c2915c9bf9419
-  CapacitorFirebaseAnalytics: fdc20877af95d34a12035be740b3c82fc29f471d
+  CapacitorFilesystem: 59270a63c60836248812671aa3b15df673fbaf74
+  CapacitorFirebaseAnalytics: ea41b789c09aa13dad7be76d8391dfcddc04988c
   CapacitorHaptics: 0cea833e6a8bf489dd6acaaebf6d953b90086c59
   CapacitorKeyboard: dc97fe50dcfdcbe12af56c49bbed150077d08043
-  CapacitorPreferences: b2634203fb3c3a380a8eb01c0e25e4a10a91e522
+  CapacitorPreferences: f3eadae2369ac3ab8e21743a2959145b0d1286a3
   CapacitorStatusBar: 129c68650d3f950e080e8e7e03d69c3b361dbe52
   FirebaseAnalytics: 6433dfd311ba78084fc93bdfc145e8cb75740eae
   FirebaseCore: efb3893e5b94f32b86e331e3bd6dadf18b66568e
