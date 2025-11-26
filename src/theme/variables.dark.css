@@ -1,0 +1,76 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+ion-card-content {
+  padding-top: 0;
+  white-space: pre-wrap;
+}
+
+@media (prefers-color-scheme:
+  /*dark*/
+  light) {
+  :root {
+    /* Backgrounds (you already set these) */
+    --ion-background-color: #121212;
+    --ion-background-color-rgb: 18, 18, 18;
+
+    /* Foreground / Text Colors (Crucial for visibility!) */
+    --ion-text-color: #ffffff;
+    /* Sets the default light text color */
+    --ion-text-color-rgb: 255, 255, 255;
+
+    /* Toolbar/Header Text Color */
+    --ion-toolbar-color: #ffffff;
+
+    /* Item/Card Text Color */
+    --ion-item-color: #ffffff;
+
+    /* Menu Text Color */
+    --ion-menu-color: #ffffff;
+
+    /* Other text/element colors often need to be set to light values */
+
+    /* Ensure the color of the base element (like white) is defined */
+    --ion-color-base: #ffffff;
+
+    /* ... other variables ... */
+    /* --- ADD/UPDATE THESE STEP COLORS FOR DIVIDERS --- */
+
+    /* The step colors should be progressively lighter in dark mode */
+    --ion-color-step-50: #1e1e1e;
+    /* Used for faint borders/dividers */
+    --ion-color-step-100: #2a2a2a;
+    /* ...and so on ... */
+    --ion-color-step-950: #cccccc;
+    /* Used for dark text/icons */
+
+    /* --- AND THE IONIC BORDER VARIABLE --- */
+
+    /* This variable directly controls item divider lines */
+    --ion-border-color: var(--ion-color-step-50);
+
+    /* Explicitly set the border color for items */
+    /* A visible but subtle dark gray */
+    --ion-item-border-color: #444444;
+
+    /* Add this general input text color variable */
+    --ion-input-color: #ffffff;
+
+    /* --- IONIC SEARCHBAR VARIABLES --- */
+
+    /* 1. Background (Must be lighter than #121212) */
+    --ion-searchbar-background: #222222;
+
+    /* 2. Text and Icons (Must be light) */
+    --ion-searchbar-input-color: #ffffff;
+    --ion-searchbar-placeholder-color: #cccccc;
+    --ion-searchbar-icon-color: #cccccc;
+  }
+
+  /* --- Explicit Override for Searchbar Text --- */
+  ion-searchbar.sc-ion-searchbar-md-h input,
+  ion-searchbar.sc-ion-searchbar-ios-h input {
+    color: #ffffff !important;
+    /* !important is used here only as a last resort to bypass Ionic's component styling */
+  }
+}

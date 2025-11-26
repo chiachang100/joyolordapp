@@ -5,3 +5,25 @@ ion-card-content {
   padding-top: 0;
   white-space: pre-wrap;
 }
+
+/* Primary color definition (for light mode) */
+:root {
+  /** primary **/
+  --ion-color-primary: #3880ff;
+  /* ... all other custom light colors ... */
+  /* Ensure these are set for the light theme */
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+}
+
+/* ONLY use this block to define color changes based on the default theme */
+@media (prefers-color-scheme: dark) {
+
+  /* DO NOT define backgrounds, text colors, or step colors here.
+  Ionic's core CSS takes care of those for the default dark theme. 
+  Only override specific light-mode colors if you want them to be different in dark mode.
+  */
+
+  /** primary (can be different in dark mode) **/
+  --ion-color-primary: #52a1ff;
+}
