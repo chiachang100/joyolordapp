@@ -1,7 +1,10 @@
 import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import { defineConfig } from 'vite'
+
+/// <reference types="vitest/config" />
+//import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -13,12 +16,12 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        "name":"主的喜樂",
-        "short_name":"主的喜樂",
-        "start_url":"/",
-        "display":"standalone",
-        "lang":"en",
-        "scope":"/",
+        "name": "主的喜樂",
+        "short_name": "主的喜樂",
+        "start_url": "/",
+        "display": "standalone",
+        "lang": "en",
+        "scope": "/",
         "theme_color": "#ffffff",
         "background_color": "#eeeeee",
         "description": "主的喜樂-joyolordapp",
@@ -74,8 +77,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // test: {
-  //   globals: true,
-  //   environment: 'jsdom'
-  // }
+  test: {
+    globals: true,
+    environment: 'jsdom'
+  },
 })
