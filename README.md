@@ -98,6 +98,10 @@ export default defineConfig({
 import '@ionic/vue/css/palettes/dark.system.css';
 ```
 
+## Update Browserslist Regularly
+- `npx update-browserslist-db@latest`
+  - Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
 ## Run the APP
 - `ionic serve`
 
