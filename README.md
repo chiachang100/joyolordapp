@@ -29,6 +29,8 @@
 - [Emoji](https://emojidb.org/more-emojis?utm_source=user_search)
 - [vue-plyr: YouTube Video Player](https://github.com/redxtech/vue-plyr)
   - [VueYoutube](https://github.com/vue-youtube/vue-youtube). Tried but it didn't work for me.
+- [Update Browserslist Regularly](https://github.com/browserslist/update-db#readme)
+  - `npx update-browserslist-db@latest`
 
 #### Install and/or Update packages
 - `npx update-browserslist-db@latest`
@@ -97,10 +99,6 @@ export default defineConfig({
 // import '@ionic/vue/css/palettes/dark.class.css';
 import '@ionic/vue/css/palettes/dark.system.css';
 ```
-
-## Update Browserslist Regularly
-- `npx update-browserslist-db@latest`
-  - Why you should do it regularly: https://github.com/browserslist/update-db#readme
 
 ## Run the APP
 - `ionic serve`
